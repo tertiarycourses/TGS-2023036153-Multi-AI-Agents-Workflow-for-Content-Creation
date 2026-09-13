@@ -1,0 +1,4 @@
+segment,channel,impressions,engagements,clicks,unsubscribes,source,consent_status
+weekday-workers,email,1317,112,46,4,synthetic_campaign_export,opted_in
+weekday-workers,instagram,2053,177,63,0,synthetic_campaign_export,not_applicable
+weekend-families,email,931,68,26,6,synthetic_campaign_export,opted_in

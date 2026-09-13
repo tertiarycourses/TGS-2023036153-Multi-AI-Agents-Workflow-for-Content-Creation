@@ -1,0 +1,5 @@
+claim_id,claim,status,evidence,approved_use
+GL-01,Lunch bowls start at S$12.90,mock_verified,brand brief,yes
+GL-02,Second outlet near MRT,mock_verified,brand brief,yes
+GL-03,S$0.50 reusable-container discount,mock_verified,brand brief,yes
+GL-04,Carbon neutral operations,unverified,,no

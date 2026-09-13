@@ -1,0 +1,12 @@
+.env
+.env.*
+.claude/
+.codex/
+assessment/
+reference/
+build/
+**/__pycache__/
+**/.DS_Store
+*.key
+*.pem
+**/archive/
