@@ -1,12 +1,21 @@
+# Security — never pushed
 .env
 .env.*
-.claude/
-.codex/
-assessment/
-reference/
-build/
-**/__pycache__/
-**/.DS_Store
 *.key
 *.pem
+
+# Private — assessment papers/keys and source references
+assessment/
+reference/
+
+# Private build source: build_assessment.py holds the WA/PP model answers,
+# qa/ holds LMS/TMS push logs. Anchored to the root so lab solutions that
+# contain .claude/ folders are still published.
+/build/
+/.claude/
+/.codex/
+
+# Superseded versions and regenerated files
 **/archive/
+**/__pycache__/
+**/.DS_Store

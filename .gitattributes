@@ -3,3 +3,4 @@
 *.docx binary
 *.png binary
 *.csv -text
+*.mp4 binary

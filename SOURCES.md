@@ -1,19 +1,18 @@
 # Source register
 
-Content authority: the official [course page](https://www.tertiarycourses.com.sg/multi-ai-agents-workflow-for-content-creation.html), course code `TGS-2023036153`, and the Content Strategy TSC `ICT-SNM-4004-1.1`. The legacy 203-slide *Mastering Prompt Engineering for Generative AI Content Creation* PPT supplied in `reference/` is a content source, not the visual design authority. Its prompt frameworks, roles, content strategy, storyboard, marketing and ethics material were adapted; dated platform controls and off-scope examples were not repeated as current instructions. `build/legacy-slide-map.csv` records slide-level dispositions and is kept with the private build source.
+**Content authority:** the official [course page](https://www.tertiarycourses.com.sg/multi-ai-agents-workflow-for-content-creation.html) (2 days, 16 hours total, 2-hour assessment), course code `TGS-2023036153` and the Content Strategy TSC `ICT-SNM-4004-1.1`. The four learning outcomes and four topic titles are used word for word.
 
-Design authority: current Tertiary all-white WSQ house standard; new editable diagrams and charts, and two original imagegen illustrations. Synthetic GreenLeaf Café campaign data is labelled as classroom material throughout.
+**Design authority:** *Agentic AI Applications with Codex* (TGS-2023041081, v12.4) — its deck engine, slide vocabulary and lab-folder structure; the admin slides are reused from *Agentic AI Applications with Claude Code* v17 (house-approved).
 
-The supplied ebook, *Multi-Agent Development with Claude Code: Subagents, Team Orchestration, and Long-Running Systems for Autonomous AI Development*, informed workflow patterns, orchestrator handoffs, bounded tools, evaluator loops, recovery and observability. It is a private reference, not redistributed.
+**Case:** Horizon Wealth Planning is fictitious. Its website text, services, FAQ and testimonials come from the reference site <https://alfredang.github.io/financial-planning/v2/>. All metrics, survey answers, enquiries, subscribers, benchmarks and campaign results are synthetic and generated with fixed seeds.
 
-Additional source examples and design patterns:
+**Product facts (checked 8 October 2026):**
+- Claude Code — [subagents](https://code.claude.com/docs/en/sub-agents), [agent teams](https://code.claude.com/docs/en/agent-teams), [model configuration](https://code.claude.com/docs/en/model-config), [setup](https://code.claude.com/docs/en/setup).
+- Claude Cowork — [getting started](https://support.claude.com/en/articles/13345190-getting-started-with-cowork) and the house *Claude Cowork Masterclass* v4.2.
+- Codex — the Codex course's verified product facts (24 September 2026).
+- Hermes Agent — [repository](https://github.com/NousResearch/hermes-agent), [delegation](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/delegation.md), [Kanban](https://hermes-agent.nousresearch.com/docs/user-guide/features/kanban), [profiles](https://hermes-agent.nousresearch.com/docs/user-guide/profiles), [cron](https://hermes-agent.nousresearch.com/docs/user-guide/features/cron).
+- Publishing — LinkedIn Posts API (`rest/posts`, `LinkedIn-Version`), Facebook Graph API Page feed, YouTube Data API v3 resumable upload (unaudited projects upload as private).
 
-- [Microsoft Agent Framework content strategy example](https://techcommunity.microsoft.com/blog/educatordeveloperblog/creating-a-fun-multi-agent-content-strategy-system-with-microsoft-agent-framewor/4495105)
-- [MindStudio research-to-post sub-agent pipeline](https://www.mindstudio.ai/blog/ai-content-creation-sub-agents-research-to-post)
-- [Sight multi-agent content guide](https://www.trysight.ai/blog/content-generation-with-multi-agent-ai)
-- [n8n SEO blog and newsletter workflow](https://n8n.io/workflows/10293-multi-agent-ai-content-creator-for-seo-blogs-and-newsletters-with-openrouter-dall-e-gemini/)
-- [Pavel Polívka's task-ledger content system](https://dev.to/pavel_polivka/building-a-multi-agent-content-management-system-with-ai-29i7)
-- [PromptRefinery multi-agent content overview](https://promptrefinery.ai/multi-agent-ai-workflows-content-creation-2026/)
-- [Jeff Bullas agent tool survey](https://www.jeffbullas.com/research/best-ai-agent-tools/)
+**Singapore figures (checked 8 October 2026):** CPF retirement sums for 2026 (cpf.gov.sg); SRS contribution cap, CPF Cash Top-up Relief and the S$80,000 relief cap (iras.gov.sg); MAS *Guidelines on Standards of Conduct for Digital Advertising Activities* (issued 25 September 2025, effective 25 March 2026). The lab compliance checklist summarises good practice and is a classroom aid, not legal advice.
 
-The supplied Medium and Diseec pages were not independently readable in this environment, so no specific factual claim in the course depends on them.
+The supplied ebook *Multi-Agent Development with Claude Code* informed the orchestration, hand-off, reviewer-loop and observability patterns; it is a private reference and is not redistributed.
