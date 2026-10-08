@@ -1157,7 +1157,7 @@ Three agent teams produce reviewed content and a person approves every piece. Bu
 
 ## Topic 4 — Content Distribution, Strategy Guidelines and Responsible AI Practices
 
-Slides 112–141. In this topic you will:
+Slides 112–142. In this topic you will:
 
 - Hermes Agent: open-source agent bots on any model
 - A Kanban board for a team of agents
@@ -1449,6 +1449,14 @@ Two days, four tools, one regulated business.
 1. **Plan** — Storyboard, personas, cadence and shared skills.
 1. **Create** — Agent teams for social, email and video, gated.
 1. **Run** — Hermes bots on Kanban, measured and governed.
+
+#### Practice Exam: Claude Certified Associate
+
+exams.tertiaryinfotech.com/practice-exams/anthropic/anthropic-ccao-foundations
+
+- **CCAO-F · Foundations** — For professionals who use Claude as a productivity tool — the Cowork side of this course.
+- **What it covers** — Prompting and task execution, output evaluation, model selection, workflow integration, responsible use.
+- **Try it free** — Start with the free practice teaser; exam mode is 60 questions in 120 minutes.
 
 ## Quick Command Reference
 
