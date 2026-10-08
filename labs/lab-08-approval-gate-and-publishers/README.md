@@ -1,7 +1,7 @@
 # Lab 08 — The Human Approval Gate and the Publishers
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 2 · Topic 3 · about 35 minutes · slides 86–90**\
+**Day 2 · Topic 3 · about 35 minutes · slides 87–91**\
 **Surface:** Codex\
 **Features:** approve.mjs (people only) · publish.mjs (dry run by default) · a hook that blocks agents · LinkedIn, Facebook and YouTube APIs
 

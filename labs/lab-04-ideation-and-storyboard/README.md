@@ -1,7 +1,7 @@
 # Lab 04 — Ideation Sub-agents and a Digital Storyboard
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 1 · Topic 1 · about 40 minutes · slides 48–52**\
+**Day 1 · Topic 1 · about 40 minutes · slides 49–53**\
 **Surface:** Claude Cowork (sub-agents, Live Artefact)\
 **Features:** three ideators in parallel · rubric scoring · a human concept checkpoint · a five-beat storyboard
 

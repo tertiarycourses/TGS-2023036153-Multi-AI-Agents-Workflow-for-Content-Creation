@@ -1,7 +1,7 @@
 # Lab 10 — The Newsletter Agent Team: the Sunny Sunday Email
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 2 · Topic 3 · about 40 minutes · slides 99–103**\
+**Day 2 · Topic 3 · about 40 minutes · slides 100–104**\
 **Surface:** Claude Code (agent team) → Claude Cowork (Gmail)\
 **Features:** an agent team with a task that waits for a person · consent filtering · HTML and text email · Gmail drafts
 

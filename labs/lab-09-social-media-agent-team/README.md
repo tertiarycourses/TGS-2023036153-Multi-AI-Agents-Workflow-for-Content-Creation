@@ -1,7 +1,7 @@
 # Lab 09 — The Social Media Agent Team: LinkedIn and Facebook
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 2 · Topic 3 · about 45 minutes · slides 92–97**\
+**Day 2 · Topic 3 · about 45 minutes · slides 93–98**\
 **Surface:** Claude Code (subagents + agent teams)\
 **Features:** subagent definitions in .claude/agents/ · an agent team with a shared task list · teammates message each other · human review → auto-post
 

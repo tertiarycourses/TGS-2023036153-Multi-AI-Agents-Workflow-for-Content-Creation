@@ -1,7 +1,7 @@
 # Lab 11 — The Video Agent Team: Script to YouTube
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 2 · Topic 3 · about 40 minutes · slides 105–110**\
+**Day 2 · Topic 3 · about 40 minutes · slides 106–111**\
 **Surface:** Claude Code (agent team) → Codex (render, upload)\
 **Features:** agent team for the script · approval of script and video · ffmpeg render · private YouTube upload
 

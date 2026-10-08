@@ -1,7 +1,7 @@
 # Lab 03 — A Compliance Subagent, Then Publish
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 1 · Topic 1 · about 35 minutes · slides 41–45**\
+**Day 1 · Topic 1 · about 35 minutes · slides 42–46**\
 **Surface:** Codex → GitHub Pages\
 **Features:** a reviewer subagent that only reports · the compliance checklist · GitHub Pages from /docs
 

@@ -110,7 +110,7 @@ Tip: Day 2 assessment: Written Assessment 4:00–5:00 PM, Practical Performance 
 
 ## Topic 1 — Multi-AI-Agent Content Ideation and Digital Storyboarding
 
-Slides 18–53. In this topic you will:
+Slides 18–54. In this topic you will:
 
 - From one chatbot to teams of agents
 - Claude Cowork, Codex, Claude Code and Hermes — and the agent loop
@@ -260,6 +260,14 @@ Why it matters: A sub-agent does its research in its own context and hands back 
 
 ### Key ideas for Lab 2
 
+#### Claude Code: Plan Before You Build
+
+The same habit in Claude: plan first, build from the brief, keep the rules in CLAUDE.md.
+
+- **Plan mode first** — Press Shift+Tab until the mode reads plan. Claude reads the brief and proposes the steps — nothing changes until you approve.
+- **Build from the brief** — Point it at site-brief.md, brand.md and the CSVs. Ask it to list what it could not determine before it writes a line.
+- **CLAUDE.md** — /init drafts the project memory. Add @AGENTS.md to it so Claude and Codex follow the same rules file.
+
 #### Codex: Plan Before You Build
 
 Create a local project, add the horizon-studio folder, then plan.
@@ -292,7 +300,7 @@ The two places a visitor becomes a lead.
 
 **You'll build:** docs/index.html: hero, services, retirement calculator, checklist, reviews, FAQ, contact form with PDPA consent
 
-**Surface:** Codex  ·  **Time:** 45 min  ·  **Slides:** 35–38
+**Surface:** Codex  ·  **Time:** 45 min  ·  **Slides:** 36–39
 
 **Lab folder:** labs/lab-02-build-the-website-with-codex/ — assets: site-brief.md, brand.md, faq.md, testimonials.csv, checklist-items.md, recommendation-sample.md
 
@@ -388,7 +396,7 @@ Lab 3: Codex starts a compliance reviewer as a subagent.
 
 **You'll build:** review/site-compliance.md (FAIL, then PASS) and the site live on GitHub Pages
 
-**Surface:** Codex → GitHub Pages  ·  **Time:** 35 min  ·  **Slides:** 41–45
+**Surface:** Codex → GitHub Pages  ·  **Time:** 35 min  ·  **Slides:** 42–46
 
 **Lab folder:** labs/lab-03-compliance-subagent-and-publish/ — assets: compliance-checklist.md, facts-2026.md, publish-checklist.md
 
@@ -463,7 +471,7 @@ Every channel tells the same story with the same claims.
 
 **You'll build:** strategy/ideas.md (15 scored ideas), strategy/storyboard.md and an interactive storyboard Live Artefact
 
-**Surface:** Claude Cowork (sub-agents, Live Artefact)  ·  **Time:** 40 min  ·  **Slides:** 48–52
+**Surface:** Claude Cowork (sub-agents, Live Artefact)  ·  **Time:** 40 min  ·  **Slides:** 49–53
 
 **Lab folder:** labs/lab-04-ideation-and-storyboard/ — assets: campaign-objective.md, idea-rubric.md, storyboard-template.md
 
@@ -524,7 +532,7 @@ The research is done, the site is live and the campaign has a story. But who exa
 
 ## Topic 2 — Audience Research and Content Requirement Analysis
 
-Slides 54–77. In this topic you will:
+Slides 55–78. In this topic you will:
 
 - Personas from evidence, not instinct
 - Content requirements every agent can follow
@@ -572,7 +580,7 @@ A model that "reads" a CSV estimates. A sub-agent that runs code counts.
 
 **You'll build:** strategy/personas.md (three personas with evidence) and strategy/content-spec.md
 
-**Surface:** Claude Cowork (sub-agents)  ·  **Time:** 40 min  ·  **Slides:** 58–62
+**Surface:** Claude Cowork (sub-agents)  ·  **Time:** 40 min  ·  **Slides:** 59–63
 
 **Lab folder:** labs/lab-05-audience-research-and-personas/ — assets: survey-responses.csv, enquiries.csv, checklist-results.csv, persona-template.md, content-spec-template.md
 
@@ -635,7 +643,7 @@ Tip: A third LinkedIn post a week brings more unfollows than value. Weekly email
 
 **You'll build:** strategy/cadence.md and strategy/calendar.csv (four weeks from 2 November 2026)
 
-**Surface:** Claude Cowork  ·  **Time:** 35 min  ·  **Slides:** 64–68
+**Surface:** Claude Cowork  ·  **Time:** 35 min  ·  **Slides:** 65–69
 
 **Lab folder:** labs/lab-06-cadence-and-editorial-calendar/ — assets: channel-benchmarks.csv, team-capacity.md, calendar-format.csv
 
@@ -726,7 +734,7 @@ What every agent on Day 2 needs to know about Horizon.
 
 **You'll build:** Four skills — sunny-voice, fact-check, fin-compliance, channel-formats — in skills/, .claude/skills/ and .agents/skills/
 
-**Surface:** Claude Cowork (/skill-creator) → every tool  ·  **Time:** 40 min  ·  **Slides:** 72–76
+**Surface:** Claude Cowork (/skill-creator) → every tool  ·  **Time:** 40 min  ·  **Slides:** 73–77
 
 **Lab folder:** labs/lab-07-studio-skills/ — assets: skills-spec.md, channel-formats.md, brand.md, facts-2026.md, compliance-checklist.md
 
@@ -780,7 +788,7 @@ Everything the content teams need tomorrow is ready.
 
 ## Topic 3 — Multi-Channel Content Creation and Agent Workflow Coordination
 
-Slides 78–111. In this topic you will:
+Slides 79–112. In this topic you will:
 
 - Subagents or an agent team?
 - Human in the loop — enforced, not requested
@@ -901,7 +909,7 @@ Tip: No accounts? Every lab works in dry-run mode: you see the exact request tha
 
 **You'll build:** scripts/submit.mjs, approve.mjs, publish.mjs, gate-hook.mjs, the hook in .claude/settings.json, and review/approvals.csv
 
-**Surface:** Codex  ·  **Time:** 35 min  ·  **Slides:** 86–90
+**Surface:** Codex  ·  **Time:** 35 min  ·  **Slides:** 87–91
 
 **Lab folder:** labs/lab-08-approval-gate-and-publishers/ — assets: publishing-spec.md, approvals-format.csv, connect-accounts.md, env.example
 
@@ -969,7 +977,7 @@ Lab 9: three teammates, five posts, one person deciding.
 
 **You'll build:** content/social/week-01/: 2 LinkedIn and 3 Facebook posts, reviewed, approved by you and posted (or dry-run)
 
-**Surface:** Claude Code (subagents + agent teams)  ·  **Time:** 45 min  ·  **Slides:** 92–97
+**Surface:** Claude Code (subagents + agent teams)  ·  **Time:** 45 min  ·  **Slides:** 93–98
 
 **Lab folder:** labs/lab-09-social-media-agent-team/ — assets: social-brief.md, team-roles.md, sample-calendar.csv
 
@@ -1036,7 +1044,7 @@ Lab 10: a task that waits for a person, then a list filtered by consent.
 
 **You'll build:** content/newsletter/2026-11/: issue.md, newsletter.html, newsletter.txt, recipients.csv, excluded.csv, and Gmail drafts
 
-**Surface:** Claude Code (agent team) → Claude Cowork (Gmail)  ·  **Time:** 40 min  ·  **Slides:** 99–103
+**Surface:** Claude Code (agent team) → Claude Cowork (Gmail)  ·  **Time:** 40 min  ·  **Slides:** 100–104
 
 **Lab folder:** labs/lab-10-newsletter-agent-team/ — assets: newsletter-brief.md, newsletter-spec.md, subscribers.csv
 
@@ -1098,7 +1106,7 @@ Lab 11: a team writes the script; Codex makes the video.
 
 **You'll build:** content/video/ep01/: scenes.json, ep01.mp4, ep01.md, and a private YouTube upload (or dry run)
 
-**Surface:** Claude Code (agent team) → Codex (render, upload)  ·  **Time:** 40 min  ·  **Slides:** 105–110
+**Surface:** Claude Code (agent team) → Codex (render, upload)  ·  **Time:** 40 min  ·  **Slides:** 106–111
 
 **Lab folder:** labs/lab-11-video-agent-team-to-youtube/ — assets: youtube-brief.md, video-spec.md, sample-explainer.mp4
 
@@ -1157,7 +1165,7 @@ Three agent teams produce reviewed content and a person approves every piece. Bu
 
 ## Topic 4 — Content Distribution, Strategy Guidelines and Responsible AI Practices
 
-Slides 112–142. In this topic you will:
+Slides 113–143. In this topic you will:
 
 - Hermes Agent: open-source agent bots on any model
 - A Kanban board for a team of agents
@@ -1242,7 +1250,7 @@ Two ways to run a team. Choose by how long the work lives.
 
 **You'll build:** Three Hermes profiles, a researcher → writer → reviewer pipeline on the board, and Week 2 content approved by you
 
-**Surface:** Hermes Agent (profiles, Kanban)  ·  **Time:** 45 min  ·  **Slides:** 117–121
+**Surface:** Hermes Agent (profiles, Kanban)  ·  **Time:** 45 min  ·  **Slides:** 118–122
 
 **Lab folder:** labs/lab-12-hermes-agent-bots-on-kanban/ — assets: hermes-setup.md, hermes-roles.md, kanban-pipeline.sh
 
@@ -1314,7 +1322,7 @@ Lab 13: Hermes prepares, a person decides — from a phone.
 
 **You'll build:** A Telegram bot, a Monday 8am content-brief job, and one approved brief from your phone
 
-**Surface:** Hermes Agent (gateway bot, cron)  ·  **Time:** 30 min  ·  **Slides:** 123–126
+**Surface:** Hermes Agent (gateway bot, cron)  ·  **Time:** 30 min  ·  **Slides:** 124–127
 
 **Lab folder:** labs/lab-13-always-on-telegram-bot/ — assets: telegram-bot-setup.md, cron-brief.md
 
@@ -1385,7 +1393,7 @@ Lab 14: the numbers decide next month — and which agents earn their tokens.
 
 **You'll build:** A results dashboard (Live Artefact), reports/agent-comparison.md and strategy/content-strategy-playbook.md
 
-**Surface:** Claude Cowork (sub-agents, Live Artefact)  ·  **Time:** 40 min  ·  **Slides:** 129–133
+**Surface:** Claude Cowork (sub-agents, Live Artefact)  ·  **Time:** 40 min  ·  **Slides:** 130–134
 
 **Lab folder:** labs/lab-14-measure-govern-playbook/ — assets: campaign-results.csv, run-log.csv, playbook-outline.md, responsible-ai-checklist.md
 

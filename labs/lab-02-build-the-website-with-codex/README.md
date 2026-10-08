@@ -1,7 +1,7 @@
 # Lab 02 — Plan and Build the Horizon Website with Codex
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 1 · Topic 1 · about 45 minutes · slides 35–38**\
+**Day 1 · Topic 1 · about 45 minutes · slides 36–39**\
 **Surface:** Codex\
 **Features:** Add a folder · /plan · AGENTS.md (/init) · build from data, not memory
 

@@ -1,7 +1,7 @@
 # Lab 14 — Measure, Govern and Write the Playbook
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 2 · Topic 4 · about 40 minutes · slides 129–133**\
+**Day 2 · Topic 4 · about 40 minutes · slides 130–134**\
 **Surface:** Claude Cowork (sub-agents, Live Artefact)\
 **Features:** analyst sub-agents · cost per chat · comparing agent patterns · responsible-AI controls · the execution playbook
 

@@ -1,7 +1,7 @@
 # Lab 05 — Audience Research and Personas from Evidence
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 1 · Topic 2 · about 40 minutes · slides 58–62**\
+**Day 1 · Topic 2 · about 40 minutes · slides 59–63**\
 **Surface:** Claude Cowork (sub-agents)\
 **Features:** one analyst sub-agent per data source · counts, not impressions · confidence labels · content requirements
 

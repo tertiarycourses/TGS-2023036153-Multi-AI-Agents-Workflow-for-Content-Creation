@@ -1,7 +1,7 @@
 # Lab 06 — Content Cadence and the Editorial Calendar
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 1 · Topic 2 · about 35 minutes · slides 64–68**\
+**Day 1 · Topic 2 · about 35 minutes · slides 65–69**\
 **Surface:** Claude Cowork\
 **Features:** marginal value vs fatigue · team capacity · review buffers · a four-week calendar
 

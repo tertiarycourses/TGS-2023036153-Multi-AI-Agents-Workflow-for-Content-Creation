@@ -1,7 +1,7 @@
 # Lab 07 — Studio Skills: Voice, Facts, Compliance and Formats
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 1 · Topic 2 · about 40 minutes · slides 72–76**\
+**Day 1 · Topic 2 · about 40 minutes · slides 73–77**\
 **Surface:** Claude Cowork (/skill-creator) → every tool\
 **Features:** /skill-creator · SKILL.md · one skill set shared by Cowork, Claude Code, Codex and Hermes
 

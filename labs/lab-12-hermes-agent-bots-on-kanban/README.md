@@ -1,7 +1,7 @@
 # Lab 12 — Hermes Agent Bots on a Kanban Board
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 2 · Topic 4 · about 45 minutes · slides 117–121**\
+**Day 2 · Topic 4 · about 45 minutes · slides 118–122**\
 **Surface:** Hermes Agent (profiles, Kanban)\
 **Features:** open-source Hermes Agent · one profile per role · a Kanban role pipeline · review and human unblock · the same skills
 

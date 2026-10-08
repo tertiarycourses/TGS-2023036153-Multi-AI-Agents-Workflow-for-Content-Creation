@@ -1,7 +1,7 @@
 # Lab 13 — Always On: a Telegram Bot That Asks Before It Acts
 
 **Course:** Multi AI Agents Workflow for Content Creation (TGS-2023036153)\
-**Day 2 · Topic 4 · about 30 minutes · slides 123–126**\
+**Day 2 · Topic 4 · about 30 minutes · slides 124–127**\
 **Surface:** Hermes Agent (gateway bot, cron)\
 **Features:** a Telegram bot · scheduled jobs in plain words · delivery targets · approve from your phone · pause
 
