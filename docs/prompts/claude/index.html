@@ -192,7 +192,7 @@ its owner (a subagent, or the Lead) and its
 &quot;Use when&quot; line in a table. Confirm there are
 twenty, that each specialist has the skills
 the spec gives it, and that fact-check and
-fin-compliance belong to the Lead (this session).</pre></article></section><section class="lab" data-lab="4"><p class="eyebrow">Lab 4 · Day 1 · 45 min</p><h2>Connect the Tools Each Agent Needs</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 4&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Add the connectors</b> Desktop app: Customize → Connectors → Discover. Add (+) Google Drive, Gmail, Google Calendar, Canva and Firecrawl; sign in to each.</li><li><b>Add the plugin</b> In the chat type /plugin marketplace add anthropics/knowledge-work-plugins, then /plugin install marketing@knowledge-work-plugins.</li><li><b>Check</b> Start a new session. Type /mcp: the five connectors are listed. Type /plugin: Marketing is installed.</li><li><b>Put the data on Drive</b> Upload data/ to a Drive folder named Horizon Studio.</li><li><b>Give each agent its connectors</b> Copy and paste Prompt A, then start a new session so the agents reload.</li><li><b>Test each agent</b> After the new session opens, copy and paste Prompt B — one small job per agent, each on its own connector.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 4 · Prompt A</span><span class="ptool">Claude Code: give each agent its connectors</span></div><button class="copy" type="button" data-copy="Read data/connectors-setup.md. For each
+fin-compliance belong to the Lead (this session).</pre></article></section><section class="lab" data-lab="4"><p class="eyebrow">Lab 4 · Day 1 · 45 min</p><h2>Connect the Tools Each Agent Needs</h2><p class="use"><b>Use:</b> Claude Code — Code mode (the &lt;/&gt; button) in the Claude desktop app, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it &quot;Lab 4&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Add the connectors</b> Desktop app: Customize → Connectors → Discover. Add (+) Google Drive, Gmail, Google Calendar and Firecrawl; sign in to each.</li><li><b>Add the plugin</b> In the chat type /plugin marketplace add anthropics/knowledge-work-plugins, then /plugin install marketing@knowledge-work-plugins.</li><li><b>Check</b> Start a new session. Type /mcp: the four connectors are listed. Type /plugin: Marketing is installed.</li><li><b>Put the data on Drive</b> Upload data/ to a Drive folder named Horizon Studio.</li><li><b>Give each agent its connectors</b> Copy and paste Prompt A, then start a new session so the agents reload.</li><li><b>Test each agent</b> After the new session opens, copy and paste Prompt B — one small job per agent, each on its own connector.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 4 · Prompt A</span><span class="ptool">Claude Code: give each agent its connectors</span></div><button class="copy" type="button" data-copy="Read data/connectors-setup.md. For each
 subagent in .claude/agents/, replace its tools line
 with the one given there, add the disallowedTools
 line where one is given, and update its
@@ -213,8 +213,8 @@ Then run these five checks, each by its own subagent:
    average monthly enquiries.
 3. content-creator: Gmail — a DRAFT to me with the
    subject &quot;Connector test&quot;. Do not send.
-4. creative-designer: Canva — list my designs, or
-   create a 1080x1080 test design in Horizon colours.
+4. creative-designer: render a 1080x1080 test card
+   in Horizon colours and save it in content/test/.
 5. website-designer: built-in browser — open
    Horizon&#x27;s public site at 375px wide and report
    any problem.
@@ -230,8 +230,8 @@ Then run these five checks, each by its own subagent:
    average monthly enquiries.
 3. content-creator: Gmail — a DRAFT to me with the
    subject &quot;Connector test&quot;. Do not send.
-4. creative-designer: Canva — list my designs, or
-   create a 1080x1080 test design in Horizon colours.
+4. creative-designer: render a 1080x1080 test card
+   in Horizon colours and save it in content/test/.
 5. website-designer: built-in browser — open
    Horizon&#x27;s public site at 375px wide and report
    any problem.
@@ -569,8 +569,8 @@ Lead.
   with linkedin-post, facebook-post and copywriting,
   one file each in content/social/week-01/, with the
   frontmatter in data/publishing-spec.md.
-- creative-designer: one image per post (Canva or a
-  rendered card) with alt text; message the creator
+- creative-designer: one image per post (a rendered
+  card in Horizon colours) with alt text; message the creator
   for each post&#x27;s hook before designing.
 - You: fact-check and fin-compliance on every post;
   message fixes to the teammate who owns it.
@@ -591,8 +591,8 @@ Lead.
   with linkedin-post, facebook-post and copywriting,
   one file each in content/social/week-01/, with the
   frontmatter in data/publishing-spec.md.
-- creative-designer: one image per post (Canva or a
-  rendered card) with alt text; message the creator
+- creative-designer: one image per post (a rendered
+  card in Horizon colours) with alt text; message the creator
   for each post&#x27;s hook before designing.
 - You: fact-check and fin-compliance on every post;
   message fixes to the teammate who owns it.
