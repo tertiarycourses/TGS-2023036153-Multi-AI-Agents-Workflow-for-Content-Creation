@@ -1374,7 +1374,6 @@
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#services">Services</a></li>
           <li><a href="#calculator">Calculator</a></li>
-          <li><a href="#checklist">Free checklist</a></li>
           <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -1637,73 +1636,9 @@
     </section>
 
     <!-- =========================================================
-         5. FREE CHECKLIST (lead magnet)
-         ========================================================= -->
-    <section class="section" id="checklist" aria-labelledby="checklist-title">
-      <div class="container">
-        <div class="magnet">
-          <div class="magnet-copy">
-            <h2 id="checklist-title">Free: the 10-minute Money Check-up Checklist</h2>
-            <p>Ten quick questions every Singapore household should be able to answer. Tick them off and you'll know exactly where you stand, and what to fix first.</p>
-            <ul class="inside" aria-label="What's inside">
-              <li>Is your emergency fund big enough?</li>
-              <li>Are your CPF nominations and will up to date?</li>
-              <li>Do you have gaps (or overlaps) in your insurance?</li>
-              <li>Are you using SRS to cut your income tax?</li>
-              <li>Do you know your retirement number?</li>
-            </ul>
-            <p class="fine-print">Instant access, plus one friendly money tip a month. No spam, unsubscribe any time.</p>
-          </div>
-
-          <div class="capture-card">
-            <!-- Locked state: email capture -->
-            <div id="checklist-lock">
-              <h3>Get your free checklist</h3>
-              <p>Pop in your email and the checklist unlocks right here, ready to tick off or print.</p>
-              <form class="capture-form" id="checklist-form" novalidate>
-                <label for="checklist-email" class="visually-hidden">Email address</label>
-                <input class="input" type="email" id="checklist-email" name="email" placeholder="you@example.com"
-                       autocomplete="email" maxlength="254" required aria-describedby="checklist-msg">
-                <div class="hp" aria-hidden="true">
-                  <label for="checklist-website">Leave this empty</label>
-                  <input type="text" id="checklist-website" name="website" tabindex="-1" autocomplete="off">
-                </div>
-                <button type="submit" class="btn btn-sun btn-block">Unlock my free checklist</button>
-                <p class="capture-msg" id="checklist-msg" aria-live="polite"></p>
-              </form>
-            </div>
-
-            <!-- Unlocked state: the interactive checklist itself -->
-            <div class="checklist-panel" id="checklist-content" tabindex="-1" hidden>
-              <h3 id="checklist-panel-title">Your Money Check-up</h3>
-              <p class="fine-print" id="checklist-progress-text" aria-live="polite">0 of 10 done. Sunny believes in you!</p>
-              <div class="progress" aria-hidden="true"><div class="progress-bar" id="checklist-bar"></div></div>
-              <ul class="check-list" id="check-list" aria-labelledby="checklist-panel-title">
-                <li><label><input type="checkbox"><span>I have 3 to 6 months of expenses saved as an emergency fund.</span></label></li>
-                <li><label><input type="checkbox"><span>I know how much I spend each month, roughly.</span></label></li>
-                <li><label><input type="checkbox"><span>My high-interest debts (credit cards, personal loans) are paid off or have a plan.</span></label></li>
-                <li><label><input type="checkbox"><span>I have a hospitalisation plan and I know what it covers.</span></label></li>
-                <li><label><input type="checkbox"><span>My life and critical illness cover would look after my family.</span></label></li>
-                <li><label><input type="checkbox"><span>I've made my CPF nominations.</span></label></li>
-                <li><label><input type="checkbox"><span>I have a will and a Lasting Power of Attorney.</span></label></li>
-                <li><label><input type="checkbox"><span>I've considered SRS contributions to lower my income tax.</span></label></li>
-                <li><label><input type="checkbox"><span>My investments match my goals and I've reviewed them this year.</span></label></li>
-                <li><label><input type="checkbox"><span>I know my retirement number and I'm on track for it.</span></label></li>
-              </ul>
-              <div class="checklist-actions">
-                <button type="button" class="btn btn-white btn-small" id="checklist-print">Print or save as PDF</button>
-                <a href="#contact" class="btn btn-sun btn-small">Talk through my answers</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
          6. TESTIMONIALS (carousel)
          ========================================================= -->
-    <section class="section section-white" id="testimonials" aria-labelledby="testimonials-title">
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
       <div class="container">
         <header class="section-intro">
           <h2 id="testimonials-title">Kind words from our clients</h2>
@@ -1830,7 +1765,7 @@
     <!-- =========================================================
          7. FAQ (mirrors the FAQPage structured data in <head>)
          ========================================================= -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
+    <section class="section section-white" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <header class="section-intro">
           <h2 id="faq-title">Questions people ask us</h2>
@@ -1925,7 +1860,7 @@
               <ol>
                 <li>Log in to your CPF account and see how close you are to each sum.</li>
                 <li>Write down what you want your monthly retirement budget to be.</li>
-                <li>Tick the retirement item on our free Money Check-up Checklist. It is the one most people leave blank.</li>
+                <li>Try our retirement calculator above to see roughly where your savings could get to.</li>
               </ol>
               <div class="post-cta">
                 <p>Not sure which sum fits your plans? We can look at your CPF, savings and goals together, in plain English.</p>
@@ -2226,7 +2161,6 @@
           <ul class="footer-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#calculator">Retirement calculator</a></li>
-            <li><a href="#checklist">Free Money Check-up Checklist</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Book a free chat</a></li>
@@ -2270,26 +2204,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Slide-in checklist offer (non-modal, shown once per session) -->
-  <aside class="nudge" id="nudge" aria-labelledby="nudge-title" hidden>
-    <button class="nudge-close" id="nudge-close" type="button" aria-label="Close checklist offer">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    </button>
-    <h2 id="nudge-title">Psst! Want a free money check-up?</h2>
-    <p>Our 10-minute checklist shows where you stand and what to fix first.</p>
-    <form class="capture-form" id="nudge-form" novalidate>
-      <label for="nudge-email" class="visually-hidden">Email address</label>
-      <input class="input" type="email" id="nudge-email" name="email" placeholder="you@example.com"
-             autocomplete="email" maxlength="254" aria-describedby="nudge-msg">
-      <div class="hp" aria-hidden="true">
-        <label for="nudge-website">Leave this empty</label>
-        <input type="text" id="nudge-website" name="website" tabindex="-1" autocomplete="off">
-      </div>
-      <button type="submit" class="btn btn-sun btn-block">Send me the checklist</button>
-      <p class="capture-msg" id="nudge-msg" aria-live="polite"></p>
-    </form>
-  </aside>
 
   <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
@@ -2610,47 +2524,8 @@
       startAutoplay();
 
       /* =========================================================
-         5. EMAIL CAPTURE (checklist, nudge, newsletter) & CHECKLIST
+         5. EMAIL CAPTURE (newsletter)
          ========================================================= */
-      const checklistLock = document.getElementById("checklist-lock");
-      const checklistContent = document.getElementById("checklist-content");
-      const checkboxes = Array.from(document.querySelectorAll("#check-list input"));
-      const progressText = document.getElementById("checklist-progress-text");
-      const progressBar = document.getElementById("checklist-bar");
-      const UNLOCK_KEY = "hw-checklist-unlocked";
-      const TICKS_KEY = "hw-checklist-ticks";
-
-      function unlockChecklist(moveFocus) {
-        checklistLock.hidden = true;
-        checklistContent.hidden = false;
-        store.set("localStorage", UNLOCK_KEY, "1");
-        if (moveFocus) checklistContent.focus();
-      }
-
-      function updateProgress() {
-        const done = checkboxes.filter((box) => box.checked).length;
-        const cheers = ["Sunny believes in you!", "Nice start!", "You're on a roll!", "Over halfway, woohoo!", "Almost there!", "All done. You're a money superstar!"];
-        progressText.textContent = done + " of " + checkboxes.length + " done. " +
-          cheers[done === checkboxes.length ? 5 : Math.min(Math.ceil(done / 2), 4)];
-        progressBar.style.setProperty("--p", (done / checkboxes.length).toFixed(2));
-        store.set("localStorage", TICKS_KEY, checkboxes.map((box) => (box.checked ? "1" : "0")).join(""));
-      }
-
-      const savedTicks = store.get("localStorage", TICKS_KEY) || "";
-      checkboxes.forEach((box, i) => {
-        box.checked = savedTicks[i] === "1";
-        box.addEventListener("change", updateProgress);
-      });
-      updateProgress();
-
-      if (store.get("localStorage", UNLOCK_KEY) === "1") unlockChecklist(false);
-
-      document.getElementById("checklist-print").addEventListener("click", () => {
-        document.body.classList.add("print-checklist");
-        window.print();
-      });
-      window.addEventListener("afterprint", () => document.body.classList.remove("print-checklist"));
-
       // Shared handler for the single-field email forms
       function wireEmailCapture(form, onSuccess) {
         const input = form.querySelector('input[type="email"]');
@@ -2692,8 +2567,6 @@
           }
         });
       }
-
-      wireEmailCapture(document.getElementById("checklist-form"), () => unlockChecklist(true));
 
       wireEmailCapture(document.getElementById("newsletter-form"), (msg) => {
         msg.textContent = "You're in! Look out for your first Sunny Sunday email.";
@@ -2838,54 +2711,6 @@
       });
 
       /* =========================================================
-         7. NUDGE (checklist offer: once per session, after real interest)
-         ========================================================= */
-      const nudge = document.getElementById("nudge");
-      const NUDGE_KEY = "hw-nudge-seen";
-      let nudgeArmed = store.get("sessionStorage", NUDGE_KEY) !== "1" && store.get("localStorage", UNLOCK_KEY) !== "1";
-
-      function showNudge() {
-        if (!nudgeArmed) return;
-        nudgeArmed = false;
-        store.set("sessionStorage", NUDGE_KEY, "1");
-        nudge.hidden = false;
-        requestAnimationFrame(() => requestAnimationFrame(() => nudge.classList.add("show")));
-      }
-
-      function hideNudge() {
-        nudge.classList.remove("show");
-        setTimeout(() => { nudge.hidden = true; }, 450);
-      }
-
-      document.getElementById("nudge-close").addEventListener("click", hideNudge);
-      nudge.addEventListener("keydown", (e) => { if (e.key === "Escape") hideNudge(); });
-
-      wireEmailCapture(document.getElementById("nudge-form"), (msg) => {
-        unlockChecklist(false);
-        msg.textContent = "Unlocked! Your checklist is waiting in the Free checklist section.";
-        setTimeout(hideNudge, 3500);
-      });
-
-      // Show after 45 seconds or once the visitor reaches the testimonials, but never over the checklist or form
-      const nudgeTimer = setTimeout(() => {
-        if (!isNear("checklist") && !isNear("contact")) showNudge();
-      }, 45000);
-
-      function isNear(id) {
-        const rect = document.getElementById(id).getBoundingClientRect();
-        return rect.top < window.innerHeight && rect.bottom > 0;
-      }
-
-      const nudgeObserver = new IntersectionObserver((entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          clearTimeout(nudgeTimer);
-          showNudge();
-          nudgeObserver.disconnect();
-        }
-      }, { threshold: 0.4 });
-      if (nudgeArmed) nudgeObserver.observe(document.getElementById("testimonials"));
-
-      /* =========================================================
          8. FOOTER YEAR
          ========================================================= */
       document.getElementById("year").textContent = new Date().getFullYear();
@@ -2898,7 +2723,7 @@
       function onScroll() {
         const y = window.scrollY;
         header.classList.toggle("scrolled", y > 10);
-        backToTop.classList.toggle("show", y > 600 && !nudge.classList.contains("show"));
+        backToTop.classList.toggle("show", y > 600);
       }
 
       window.addEventListener("scroll", onScroll, { passive: true });
