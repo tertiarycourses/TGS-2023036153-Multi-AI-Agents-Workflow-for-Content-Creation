@@ -9,7 +9,7 @@ Build an AI marketing team — a Marketing Team Lead and five specialist agents,
 | Duration | 2 days · 16 hours including a 2-hour assessment |
 | Registration | [View course details and register](https://www.tertiarycourses.com.sg/multi-ai-agents-workflow-for-content-creation.html) |
 | Funding | Up to 70% course-fee funding for eligible learners. Eligibility and terms apply; check the registration page. |
-| Package version | v3.0 · 8 October 2026 · Claude Edition and ChatGPT Edition |
+| Package version | v3.1 · 9 October 2026 · Claude Edition and ChatGPT Edition |
 
 ## About the course
 
@@ -91,9 +91,9 @@ Each lab folder has a README, the prompts (Markdown and PDF), the assets it need
 
 | | Claude Edition | ChatGPT Edition |
 |---|---|---|
-| Slide deck | [PPTX](courseware_claude/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.pptx) · [PDF](courseware_claude/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.pdf) | [PPTX](courseware_chatgpt/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.pptx) · [PDF](courseware_chatgpt/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.pdf) |
-| Lesson Plan | [DOCX](courseware_claude/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.docx) · [PDF](courseware_claude/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.pdf) | [DOCX](courseware_chatgpt/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.docx) · [PDF](courseware_chatgpt/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.pdf) |
-| Learner Guide | [DOCX](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.docx) · [PDF](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.pdf) · [MD](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.md) | [DOCX](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.docx) · [PDF](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.pdf) · [MD](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.md) |
+| Slide deck | [PPTX](courseware_claude/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.1.pptx) · [PDF](courseware_claude/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.1.pdf) | [PPTX](courseware_chatgpt/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.1.pptx) · [PDF](courseware_chatgpt/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.1.pdf) |
+| Lesson Plan | [DOCX](courseware_claude/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.1.docx) · [PDF](courseware_claude/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.1.pdf) | [DOCX](courseware_chatgpt/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.1.docx) · [PDF](courseware_chatgpt/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.1.pdf) |
+| Learner Guide | [DOCX](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.1.docx) · [PDF](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.1.pdf) · [MD](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.1.md) | [DOCX](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.1.docx) · [PDF](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.1.pdf) · [MD](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.1.md) |
 
 ## Safety by design
 
