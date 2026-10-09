@@ -1,6 +1,6 @@
 # Multi AI Agents Workflow for Content Creation
 
-Build a content studio of AI agents — sub-agents, agent teams and always-on agent bots — that researches, plans, writes, reviews and publishes for one regulated business, with a person approving every piece.
+Build an AI marketing team — a Marketing Team Lead and five specialist agents, each with instructions, skills and connectors — then run five campaigns with it for one regulated business. Two editions: **Claude** and **ChatGPT**.
 
 | Course detail | Information |
 |---|---|
@@ -9,19 +9,31 @@ Build a content studio of AI agents — sub-agents, agent teams and always-on ag
 | Duration | 2 days · 16 hours including a 2-hour assessment |
 | Registration | [View course details and register](https://www.tertiarycourses.com.sg/multi-ai-agents-workflow-for-content-creation.html) |
 | Funding | Up to 70% course-fee funding for eligible learners. Eligibility and terms apply; check the registration page. |
-| Package version | v2.0 · 8 October 2026 |
+| Package version | v3.0 · 8 October 2026 · Claude Edition and ChatGPT Edition |
 
-## The case: Horizon Wealth Planning
+## About the course
 
-One fictitious business runs through every lab: **Horizon Wealth Planning**, an independent financial-planning firm in Singapore ([reference site](https://alfredang.github.io/financial-planning/v2/)). Its founder wants 40 booked free chats a month without hiring a marketing team. Learners build her content studio:
+Horizon Wealth Planning, a fictitious independent financial-planning firm in Singapore, has a website, a goal of 40 booked free chats a month — and no marketing team. Learners build one, made of AI agents:
 
-| Stage | Tool | Labs |
+| Agent | Job |
+|---|---|
+| Marketing Team Lead | Plans each campaign, assigns the work, checks everything, hands it to a person |
+| Growth Strategist | Research, positioning, campaign briefs, storyboards |
+| Content Creator | Posts, the newsletter, video scripts, page copy |
+| Creative Designer | Images, thumbnails, the video |
+| Website Designer | Campaign landing pages, published and checked |
+| Growth Analyst | Personas, cadence, campaign results, the weekly report |
+
+Day 1 forms the team (instructions, twelve skills, connectors) and runs Campaign 1. Day 2 runs a social media week, a newsletter with a landing page, a YouTube explainer and an always-on weekly report — every piece approved by a person before it goes out.
+
+| | Claude Edition | ChatGPT Edition |
 |---|---|---|
-| Research — market, numbers, competitors, recommendation | Claude Cowork sub-agents | 1 |
-| Build — the website every post points to, checked by a compliance subagent | Codex | 2–3 |
-| Plan — ideas, storyboard, personas, cadence, shared skills | Claude Cowork | 4–7 |
-| Create — social, newsletter and video agent teams behind a human approval gate | Claude Code subagents + agent teams, Codex | 8–11 |
-| Run — agent bots on a Kanban board, a Telegram bot, measurement and governance | Hermes Agent, Claude Cowork | 12–14 |
+| The team's home | Claude Code: subagent files in `.claude/agents/`, agent teams | Codex: role cards in `agents/`, subagents by asking |
+| Skills | `.claude/skills/` and Claude | `.agents/skills/` and ChatGPT |
+| Connectors | Google Drive, Gmail, Canva, Playwright | @Google Drive, @Gmail, @Canva, @Computer Use, $imagegen |
+| Website and landing pages | Claude artifacts | @Sites |
+| Always on | Claude scheduled task | ChatGPT Work scheduled task |
+| Optional demo | Hermes Agent on a Kanban board | A Dot Team Lead and workspace agents |
 
 ## Learning outcomes
 
@@ -30,37 +42,62 @@ One fictitious business runs through every lab: **Horizon Wealth Planning**, an 
 3. Determine content types and styles and decide on modes and processes for distributing content.
 4. Develop guidelines for content strategy execution using appropriate delivery modes and responsible AI practices.
 
-## Topics
+## Topics covered
 
 1. Multi-AI-Agent Content Ideation and Digital Storyboarding
 2. Audience Research and Content Requirement Analysis
 3. Multi-Channel Content Creation and Agent Workflow Coordination
 4. Content Distribution, Strategy Guidelines and Responsible AI Practices
 
-## Labs
+## Labs — Claude Edition
 
-| # | Lab | Tool |
+| # | Lab |
+|---|---|
+| 01 | [Set Up the Studio and Publish Horizon's Website](labs_claude/lab-01-studio-and-website/) |
+| 02 | [Form the Team: Instructions for Each Agent](labs_claude/lab-02-agent-instructions/) |
+| 03 | [Give Each Agent Its Skills](labs_claude/lab-03-agent-skills/) |
+| 04 | [Connect the Tools Each Agent Needs](labs_claude/lab-04-agent-connectors/) |
+| 05 | [Campaign 1: Research to Storyboard, with Subagents](labs_claude/lab-05-campaign-1-research-to-storyboard/) |
+| 06 | [Growth Analyst: Personas from Evidence](labs_claude/lab-06-personas-from-evidence/) |
+| 07 | [Growth Analyst and Strategist: Cadence and Calendar](labs_claude/lab-07-cadence-and-calendar/) |
+| 08 | [Campaign 2: A Social Media Week](labs_claude/lab-08-campaign-2-social-week/) |
+| 09 | [Campaign 3: Newsletter and a Landing Page](labs_claude/lab-09-campaign-3-newsletter-and-landing-page/) |
+| 10 | [Campaign 4: The YouTube Explainer](labs_claude/lab-10-campaign-4-youtube-explainer/) |
+| 11 | [Campaign 5: Always On — the Weekly Growth Report](labs_claude/lab-11-campaign-5-weekly-growth-report/) |
+| 12 | [Measure, Govern and Write the Team Playbook](labs_claude/lab-12-team-playbook/) |
+| 13 | [Optional Demo: the Team on Hermes Agent](labs_claude/lab-13-optional-hermes-agent-demo/) |
+
+## Labs — ChatGPT Edition
+
+| # | Lab |
+|---|---|
+| 01 | [Set Up the Studio and Publish Horizon's Website](labs_chatgpt/lab-01-studio-and-website/) |
+| 02 | [Form the Team: Instructions for Each Agent](labs_chatgpt/lab-02-agent-instructions/) |
+| 03 | [Give Each Agent Its Skills](labs_chatgpt/lab-03-agent-skills/) |
+| 04 | [Install the Plugins Each Agent Needs](labs_chatgpt/lab-04-agent-connectors/) |
+| 05 | [Campaign 1: Research to Storyboard, with Subagents](labs_chatgpt/lab-05-campaign-1-research-to-storyboard/) |
+| 06 | [Growth Analyst: Personas from Evidence](labs_chatgpt/lab-06-personas-from-evidence/) |
+| 07 | [Growth Analyst and Strategist: Cadence and Calendar](labs_chatgpt/lab-07-cadence-and-calendar/) |
+| 08 | [Campaign 2: A Social Media Week](labs_chatgpt/lab-08-campaign-2-social-week/) |
+| 09 | [Campaign 3: Newsletter and a Landing Page](labs_chatgpt/lab-09-campaign-3-newsletter-and-landing-page/) |
+| 10 | [Campaign 4: The YouTube Explainer](labs_chatgpt/lab-10-campaign-4-youtube-explainer/) |
+| 11 | [Campaign 5: Always On — the Weekly Growth Report](labs_chatgpt/lab-11-campaign-5-weekly-growth-report/) |
+| 12 | [Measure, Govern and Write the Team Playbook](labs_chatgpt/lab-12-team-playbook/) |
+| 13 | [Optional Demo: a Dot Team Lead and Workspace Agents](labs_chatgpt/lab-13-optional-dot-and-workspace-agents/) |
+
+Each lab folder has a README, the prompts (Markdown and PDF), the assets it needs, an evidence checklist and, where useful, a reference solution.
+
+## Courseware
+
+| | Claude Edition | ChatGPT Edition |
 |---|---|---|
-| 01 | [A Research Team of Sub-agents](labs/lab-01-research-team-of-subagents/) | Claude Cowork |
-| 02 | [Plan and Build the Horizon Website with Codex](labs/lab-02-build-the-website-with-codex/) | Codex |
-| 03 | [A Compliance Subagent, Then Publish](labs/lab-03-compliance-subagent-and-publish/) | Codex → GitHub Pages |
-| 04 | [Ideation Sub-agents and a Digital Storyboard](labs/lab-04-ideation-and-storyboard/) | Claude Cowork |
-| 05 | [Audience Research and Personas from Evidence](labs/lab-05-audience-research-and-personas/) | Claude Cowork |
-| 06 | [Content Cadence and the Editorial Calendar](labs/lab-06-cadence-and-editorial-calendar/) | Claude Cowork |
-| 07 | [Studio Skills: Voice, Facts, Compliance and Formats](labs/lab-07-studio-skills/) | Claude Cowork → every tool |
-| 08 | [The Human Approval Gate and the Publishers](labs/lab-08-approval-gate-and-publishers/) | Codex |
-| 09 | [The Social Media Agent Team: LinkedIn and Facebook](labs/lab-09-social-media-agent-team/) | Claude Code agent team |
-| 10 | [The Newsletter Agent Team: the Sunny Sunday Email](labs/lab-10-newsletter-agent-team/) | Claude Code → Cowork (Gmail) |
-| 11 | [The Video Agent Team: Script to YouTube](labs/lab-11-video-agent-team-to-youtube/) | Claude Code → Codex |
-| 12 | [Hermes Agent Bots on a Kanban Board](labs/lab-12-hermes-agent-bots-on-kanban/) | Hermes Agent |
-| 13 | [Always On: a Telegram Bot That Asks Before It Acts](labs/lab-13-always-on-telegram-bot/) | Hermes Agent |
-| 14 | [Measure, Govern and Write the Playbook](labs/lab-14-measure-govern-playbook/) | Claude Cowork |
-
-Each lab folder has a README, the prompts (Markdown and PDF), the assets it needs, an evidence checklist and, where useful, reference solutions. Full procedures are in the [Learner Guide](courseware/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation-v2.0.pdf); the [slide deck](courseware/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation-v2.0.pdf) and [Lesson Plan](courseware/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation-v2.0.pdf) are alongside.
+| Slide deck | [PPTX](courseware_claude/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.pptx) · [PDF](courseware_claude/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.pdf) | [PPTX](courseware_chatgpt/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.pptx) · [PDF](courseware_chatgpt/Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.pdf) |
+| Lesson Plan | [DOCX](courseware_claude/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.docx) · [PDF](courseware_claude/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.pdf) | [DOCX](courseware_chatgpt/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.docx) · [PDF](courseware_chatgpt/LP-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.pdf) |
+| Learner Guide | [DOCX](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.docx) · [PDF](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.pdf) · [MD](courseware_claude/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20Claude-v3.0.md) | [DOCX](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.docx) · [PDF](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.pdf) · [MD](courseware_chatgpt/LG-Multi%20AI%20Agents%20Workflow%20for%20Content%20Creation%20-%20ChatGPT-v3.0.md) |
 
 ## Safety by design
 
-Financial content is regulated, so nothing reaches LinkedIn, Facebook, YouTube or an inbox unless a person approved that exact version: `approve.mjs` only runs in a person's own terminal, approvals store a hash of the content, and a Claude Code hook blocks agents from approving or publishing. Every publishing lab also works in dry-run mode. All data is synthetic, and every learner email address resolves to the learner's own inbox.
+Financial content is regulated, so nothing reaches LinkedIn, Facebook, YouTube or an inbox unless a person approved that exact version: `approve.mjs` only runs in a person's own terminal, approvals store a hash of the content, and a hook blocks agents from approving or publishing. Each agent gets only the connectors its job needs. Every publishing lab also works in dry-run mode. All data is synthetic, and every learner email address resolves to the learner's own inbox.
 
 ## Distribution boundary
 

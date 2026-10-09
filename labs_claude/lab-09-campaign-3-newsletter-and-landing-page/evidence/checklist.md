@@ -1,0 +1,17 @@
+# Evidence — Lab 09: Campaign 3: Newsletter and a Landing Page
+
+Capture a screenshot or file for each line. Evidence beats a description.
+
+- [ ] Three specialists worked on the campaign; the Lead checked all.
+- [ ] You approved nl-2026-11 in your own terminal before the build.
+- [ ] The landing page passed page-qa and is published.
+- [ ] recipients.csv holds 31 people; excluded.csv lists 9 with reasons.
+- [ ] The email has unsubscribe, address and disclaimer.
+- [ ] Drafts only — nothing was sent to the list.
+
+## Notes
+
+What did not work first time, and what you changed:
+
+
+What you did NOT verify:

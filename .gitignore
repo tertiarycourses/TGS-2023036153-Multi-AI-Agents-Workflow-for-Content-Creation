@@ -6,6 +6,7 @@
 
 # Private — assessment papers/keys and source references
 assessment/
+assessment_*/
 reference/
 
 # Private build source: build_assessment.py holds the WA/PP model answers,
