@@ -1,4 +1,4 @@
-# Content requirements template (Lab 5)
+# Content requirements template (Lab 6)
 
 One block per persona:
 

@@ -2,12 +2,12 @@
 
 Capture a screenshot or file for each line. Evidence beats a description.
 
-- [ ] Three analyst subagents ran, one per file.
+- [ ] Three analyst sub-agents ran, one per file.
 - [ ] Every persona statement carries a count and a file.
 - [ ] The 60+ group is LOW CONFIDENCE (n = 12).
 - [ ] The most-unticked checklist item is the retirement number.
 - [ ] Enquiry quotes are verbatim, with ids.
-- [ ] content-spec.md has every field for every persona.
+- [ ] The writing guide answers every question for every persona.
 
 ## Notes
 

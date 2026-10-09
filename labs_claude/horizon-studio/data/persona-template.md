@@ -1,4 +1,4 @@
-# Persona template (Lab 5)
+# Persona template (Lab 6)
 
 For each persona:
 - **Name and one-line summary** (a label, not a real person)

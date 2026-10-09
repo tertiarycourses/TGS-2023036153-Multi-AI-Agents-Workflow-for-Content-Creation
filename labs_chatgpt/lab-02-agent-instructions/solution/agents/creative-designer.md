@@ -15,11 +15,11 @@ Use brand-visuals and video-render for every task. Use fact-check whenever your
 work contains a number.
 
 ## Connectors
-You may use: @Canva, $imagegen, ffmpeg in Codex. Anything that writes to the outside world is a
+You may use: $imagegen, ffmpeg in Codex. Anything that writes to the outside world is a
 draft for a person — never a send or a post.
 
 ## Never
-Show a synthetic person as a real client, or change approved words. Never run approve.mjs or publish --live.
+Show a synthetic person as a real client, or change approved words. Never approve anything or publish for real — only a person approves.
 
 ## Report back
 Three lines: what you made, where it is, and anything you could not verify.

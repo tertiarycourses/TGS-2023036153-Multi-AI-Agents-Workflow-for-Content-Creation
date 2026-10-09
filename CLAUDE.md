@@ -55,12 +55,19 @@ Creator, Creative Designer, Website Designer, Growth Analyst — with
 instructions, two skills each (fact-check and fin-compliance for the Lead)
 and least-privilege connectors. Labs 5-11 are campaigns: research to
 storyboard, personas, cadence, social week, newsletter + landing page,
-YouTube explainer, weekly report on a schedule. Lab 12 the playbook; Lab 13
-an optional demo (Claude: Hermes; ChatGPT: Dot + workspace agents).
+YouTube explainer, weekly report on a schedule. Lab 14 the playbook;
+Lab 15 (Claude: agent teams at work — a strategy debate, then a QA loop
+that sends failed drafts back to the writer; ChatGPT: optional Dot +
+workspace agents demo).
 
 - Claude Edition: subagent files in .claude/agents/ (also used as agent-team
   teammate types), skills in .claude/skills/, claude.ai connectors (/mcp),
-  pages as Claude artifacts, scheduled task in Claude.
+  pages as Claude artifacts, scheduled task as a Code-tab routine. **Every
+  lab runs in Code mode** (owner decision 10 Oct 2026: Work mode hid the
+  folder). Each lab after Lab 1 starts a new session named "Lab N".
+- Learners are not IT people: from Lab 5 every result is an artifact plus a
+  Word copy, in plain English; prompts are copied from the Prompts page
+  (docs/prompts/, build/build_prompts_page.py, GitHub Pages), not the PDFs.
 - ChatGPT Edition: role cards in agents/ + "use subagents — one per role"
   (Codex), skills in .agents/skills/ and @skill-creator, plugins, @Sites,
   scheduled task in ChatGPT Work. Built for Plus/Pro (owner decision 8 Oct
@@ -118,6 +125,14 @@ Re-verify before changing; do not "correct" from memory.
   $100/$125; Enterprise $20/seat + API usage; Claude Code in all paid plans.
   API per MTok in/out: Fable 5.1 $10/$50, Opus 5.5 $4/$20, Sonnet 5.5
   $2/$10, Haiku 5.5 from $0.10/$0.50.
+- **Code mode, verified 10 Oct 2026** (code.claude.com/docs): claude.ai
+  connectors load automatically when signed in with a claude.ai account
+  (`/mcp` lists them, `/status` shows the account); rename a session by
+  clicking its title at the top; Marketing plugin via `/plugin marketplace
+  add anthropics/knowledge-work-plugins` then `/plugin install
+  marketing@knowledge-work-plugins`; scheduled tasks are Routines → New
+  routine → Local (runs while the app is open; Run now once to approve
+  permissions); project skills load from .claude/skills/ with no upload.
 - **Permission modes**: default, acceptEdits, plan, auto, bypassPermissions;
   Shift+Tab cycles them.
 - **Hermes Agent** (Nous Research, MIT): install
@@ -153,6 +168,6 @@ Re-verify before changing; do not "correct" from memory.
   approval → publish, with a dry run first.
 - `assessment/` holds the v2.1 WA (6 SAQ, K1-K6) and PP (4 tasks, A1-A7),
   1 hour each (owner decision, 8 Oct 2026), built by build/build_assessment.py.
-  Hermes (Lab 14) is optional and must never be assessed.
+  Lab 15 is never assessed.
 - The Drive push script in .claude/skills/gdrive-push uploads question
   papers only; answer keys never leave the repo.

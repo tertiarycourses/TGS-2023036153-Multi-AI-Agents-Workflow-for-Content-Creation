@@ -16,7 +16,7 @@ exact version.
 
 ## How we work
 - The Lead is the main Claude Code session. Specialists are subagents in .claude/agents/; for collaborative campaigns the Lead runs them as an agent team.
-- Skills live in .claude/skills/. Connectors come from your claude.ai account (check /mcp).
+- Skills live in .claude/skills/. Connectors come from your desktop app (Customize → Connectors).
 - Every number comes from data/facts-2026.md. Every piece passes
   fact-check and fin-compliance before a person sees it.
 - Files: research/ · strategy/ · content/<channel>/ · web/ · reports/ ·

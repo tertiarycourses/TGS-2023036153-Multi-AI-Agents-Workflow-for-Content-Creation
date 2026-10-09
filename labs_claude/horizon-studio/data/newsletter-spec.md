@@ -1,4 +1,4 @@
-# Newsletter build spec (Lab 10)
+# Newsletter build spec (Lab 11)
 
 Output folder: content/newsletter/2026-11/
 - issue.md — the approved text (frontmatter: id nl-2026-11, channel

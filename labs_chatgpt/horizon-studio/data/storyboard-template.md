@@ -1,4 +1,4 @@
-# Storyboard template — five beats (Lab 4)
+# Storyboard template — five beats (Lab 5)
 
 | Beat | Purpose | Visual | Words on screen | Voice-over | Claim | Source |
 |---|---|---|---|---|---|---|

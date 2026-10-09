@@ -10,5 +10,5 @@
  Strategist Creator     Designer      Designer    Analyst
 ```
 
-Each box is an agent with its own instructions, two skills and the
+Each box is an agent with its own instructions, its skills and the
 connectors its job needs. See role-specs.md.

@@ -1,9 +1,13 @@
 # Lab 04 — Install the Plugins Each Agent Needs
 
+> **USE: CHATGPT, THEN CODEX** — start in ChatGPT; the step that moves you to Codex says so
+
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 1 · Topic 1 · about 45 minutes · slides 52–56**\
+**Day 1 · Topic 1 · about 45 minutes · slides 57–61**\
 **Surface:** ChatGPT plugins → Codex\
-**Features:** @Google Drive · @Gmail (drafts) · @Canva · @Computer Use · $imagegen · @Sites · least privilege per agent
+**Features:** @Google Drive · @Gmail (drafts) · @Computer Use · $imagegen · @Sites · least privilege per agent
+
+> **Copy the prompts:** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/chatgpt/#lab-4 — click **Copy** next to each prompt, then paste it into the chat.
 
 ## The story so far
 
@@ -19,17 +23,20 @@ every specialist tested on its own connector, with its limits written into its i
 
 ## What is in this folder
 
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+
 - `assets/connectors-setup.md`
 - `prompts.md` / `prompts.pdf` — every prompt, ready to paste
-- `evidence/checklist.md` — what to capture as proof
+- `evidence/checklist.md` / `checklist.pdf` — what to capture as proof
 
 ## Step by step
 
-1. **Install the plugins** — Plugins: Google Drive, Gmail, Canva and Computer Use. Sites and $imagegen are built in.
-2. **Use your own account** — Connect your personal Google account — never an employer's.
-3. **Put the data on Drive** — Upload data/ to a Drive folder named Horizon Studio.
-4. **Test each agent** — Paste Prompt A — one small job per agent, each on its own plugin.
-5. **Write the limits** — Paste Prompt B.
+1. **New session** — Start a new chat in the Horizon Marketing project and name it "Lab 4". Run all of this lab's prompts in it.
+2. **Install the plugins** — Plugins: Google Drive, Gmail and Computer Use. Sites and $imagegen are built in.
+3. **Use your own account** — Connect your personal Google account — never an employer's.
+4. **Put the data on Drive** — Upload data/ to a Drive folder named Horizon Studio.
+5. **Test each agent** — Copy and paste Prompt A — one small job per agent, each on its own plugin.
+6. **Write the limits** — After the new session opens, copy and paste Prompt B.
 
 ## The prompts
 
@@ -45,7 +52,7 @@ every specialist tested on its own connector, with its limits written into its i
 > 3. content-creator: @Gmail — a DRAFT to me with the
 >    subject "Connector test". Do not send.
 > 4. creative-designer: $imagegen — a 1080x1080 test
->    image in Horizon colours; @Canva — list designs.
+>    image in Horizon colours.
 > 5. website-designer: @Computer Use — open Horizon's
 >    public site at mobile width and report any problem.
 > Report each result in one line.
@@ -59,11 +66,11 @@ every specialist tested on its own connector, with its limits written into its i
 
 ## Check your work
 
-- [ ] The four plugins are installed and connected.
+- [ ] The three plugins are installed and connected.
 - [ ] Five checks ran, each by its own agent.
 - [ ] The Gmail test is a draft in your inbox — nothing was sent.
 - [ ] The analyst read the CSV from Drive, not from the local folder.
-- [ ] Each agent's instructions list only the tools its job needs.
+- [ ] Each agent's tools line names only the connectors its job needs.
 
 ## If it goes wrong
 

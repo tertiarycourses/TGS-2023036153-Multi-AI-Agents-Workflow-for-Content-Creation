@@ -11,7 +11,7 @@ business-brief.md, research on the web, firm-metrics.csv
 research notes, campaign briefs, scored ideas, five-beat storyboards — saved in the folder the Lead names.
 
 ## Skills
-Use competitor-scan and campaign-brief for every task. Use fact-check whenever your
+Use competitor-scan and campaign-brief and content-marketing for every task. Use fact-check whenever your
 work contains a number.
 
 ## Connectors
@@ -19,7 +19,7 @@ You may use: web search, @Google Drive (read). Anything that writes to the outsi
 draft for a person — never a send or a post.
 
 ## Never
-Invent a figure, name a fee, or publish anything. Never run approve.mjs or publish --live.
+Invent a figure, name a fee, or publish anything. Never approve anything or publish for real — only a person approves.
 
 ## Report back
 Three lines: what you made, where it is, and anything you could not verify.

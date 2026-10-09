@@ -3,11 +3,11 @@
 Capture a screenshot or file for each line. Evidence beats a description.
 
 - [ ] The strategist and the analyst ran in parallel.
-- [ ] research/ has the competitor analysis and the funnel, cited.
-- [ ] strategy/ideas.md holds nine scored ideas with their authors.
+- [ ] The competitor analysis and the funnel are done, with sources.
+- [ ] Nine scored ideas, each with its author.
 - [ ] You chose the idea and recorded why.
 - [ ] The storyboard has five beats; every claim has a source.
-- [ ] The Lead's fact-check and fin-compliance report came back.
+- [ ] You confirmed two claims; after Prompt C no High issue is left.
 
 ## Notes
 

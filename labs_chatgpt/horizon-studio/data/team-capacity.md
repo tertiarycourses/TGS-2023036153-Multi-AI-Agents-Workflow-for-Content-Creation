@@ -1,4 +1,4 @@
-# Team capacity (Lab 6)
+# Team capacity (Lab 7)
 
 - Jun Wei (marketing executive): 12 hours a week for content.
 - Planners: Rachel Goh, Marcus Lee, Nur Aisyah — 1 hour a week each for subject review.

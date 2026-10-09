@@ -1,6 +1,6 @@
 # Labs — Multi AI Agents Workflow for Content Creation (ChatGPT Edition)
 
-TGS-2023036153 · 13 labs · build an AI marketing team, then run five campaigns with it.
+TGS-2023036153 · 15 labs · build an AI marketing team, then run five campaigns with it.
 
 ## The scenario
 
@@ -28,29 +28,32 @@ but consistent, and every email address resolves to your own inbox.
 
 ## The labs
 
-| # | Lab | Day | Surface | Time |
+| # | Lab | Day | Use | Time |
 |---|---|---|---|---|
-| 01 | [Set Up the Studio and Explore Horizon's Website](lab-01-studio-and-website/README.md) | 1 | ChatGPT Project → Codex | 30 min |
-| 02 | [Form the Team: Instructions for Each Agent](lab-02-agent-instructions/README.md) | 1 | Codex (role cards, subagents) | 45 min |
-| 03 | [Give Each Agent Its Skills](lab-03-agent-skills/README.md) | 1 | Codex ($skill-creator) → ChatGPT (@skill-creator) | 50 min |
-| 04 | [Install the Plugins Each Agent Needs](lab-04-agent-connectors/README.md) | 1 | ChatGPT plugins → Codex | 45 min |
-| 05 | [Campaign 1: Research to Storyboard, with Subagents](lab-05-campaign-1-research-to-storyboard/README.md) | 1 | Codex (subagents in parallel) | 50 min |
-| 06 | [Growth Analyst: Personas from Evidence](lab-06-personas-from-evidence/README.md) | 1 | Codex (analyst subagents) | 40 min |
-| 07 | [Growth Analyst and Strategist: Cadence and Calendar](lab-07-cadence-and-calendar/README.md) | 1 | Codex (subagents) | 35 min |
-| 08 | [Campaign 2: A Social Media Week](lab-08-campaign-2-social-week/README.md) | 2 | Codex (subagents) → LinkedIn, Facebook | 50 min |
-| 09 | [Campaign 3: Newsletter and a Landing Page](lab-09-campaign-3-newsletter-and-landing-page/README.md) | 2 | Codex (subagents) → @Sites → ChatGPT Work (@Gmail) | 45 min |
-| 10 | [Campaign 4: The YouTube Explainer](lab-10-campaign-4-youtube-explainer/README.md) | 2 | Codex (subagents, $imagegen, render, upload) | 45 min |
-| 11 | [Campaign 5: Always On — the Weekly Growth Report](lab-11-campaign-5-weekly-growth-report/README.md) | 2 | ChatGPT Work (skill, scheduled task, @Drive, @Gmail) | 35 min |
-| 12 | [Measure, Govern and Write the Team Playbook](lab-12-team-playbook/README.md) | 2 | Codex (subagents) | 40 min |
-| 13 | [Optional Demo: a Dot Team Lead and Workspace Agents](lab-13-optional-dot-and-workspace-agents/README.md) | 2 | ChatGPT Dots and workspace agents — trainer demo | 25 min |
+| 01 | [Build Your Marketing Agent Team](lab-01-studio-and-website/README.md) | 1 | **Codex** | 30 min |
+| 02 | [Form the Team: Instructions for Each Agent](lab-02-agent-instructions/README.md) | 1 | **Codex** | 45 min |
+| 03 | [Give Each Agent Its Skills](lab-03-agent-skills/README.md) | 1 | **Codex, then ChatGPT** | 50 min |
+| 04 | [Install the Plugins Each Agent Needs](lab-04-agent-connectors/README.md) | 1 | **ChatGPT, then Codex** | 45 min |
+| 05 | [Campaign 1: Research to Storyboard, with Subagents](lab-05-campaign-1-research-to-storyboard/README.md) | 1 | **Codex** | 50 min |
+| 06 | [Growth Analyst: Personas from Evidence](lab-06-personas-from-evidence/README.md) | 1 | **Codex** | 40 min |
+| 07 | [Growth Analyst and Strategist: Cadence and Calendar](lab-07-cadence-and-calendar/README.md) | 1 | **Codex** | 35 min |
+| 08 | [Content Creator: A Quick Blog Article](lab-08-blog-article/README.md) | 1 | **ChatGPT** | 40 min |
+| 09 | [The Lead Magnet: a Checklist and Its Welcome Emails](lab-09-lead-magnet/README.md) | 2 | **ChatGPT** | 40 min |
+| 10 | [Campaign 2: Social Media Posts (Demo)](lab-10-campaign-2-social-week/README.md) | 2 | **Codex** | 40 min |
+| 11 | [Campaign 3: Newsletter and a Landing Page](lab-11-campaign-3-newsletter-and-landing-page/README.md) | 2 | **Codex, then ChatGPT Work** | 45 min |
+| 12 | [Campaign 4: The YouTube Explainer](lab-12-campaign-4-youtube-explainer/README.md) | 2 | **Codex** | 45 min |
+| 13 | [Campaign 5: Always On — the Weekly Growth Report](lab-13-campaign-5-weekly-growth-report/README.md) | 2 | **ChatGPT Work** | 35 min |
+| 14 | [Measure, Govern and Write the Team Playbook](lab-14-team-playbook/README.md) | 2 | **Codex** | 40 min |
+| 15 | [Optional Demo: a Dot Team Lead and Workspace Agents](lab-15-optional-dot-and-workspace-agents/README.md) | 2 | **ChatGPT** | 20 min |
 
 ## Before you start
 
 - The ChatGPT desktop app on Plus or Pro (ChatGPT Work, Codex, plugins, Sites).
 - Node.js 22, Python 3 with Pillow, and ffmpeg.
-- A personal Google account for Drive and Gmail, and a Canva account; optional LinkedIn, Facebook Page and YouTube accounts for live publishing.
-- One working folder, `horizon-studio/`, from Lab 1 to Lab 12 — ready-made in this pack with every lab's data in `data/`. Choose it in Codex (a local project); do not create one.
-- Lab 13 is an optional trainer demo.
+- A personal Google account for Drive and Gmail; optional LinkedIn, Facebook Page and YouTube accounts for live publishing.
+- One working folder, `horizon-studio/`, from Lab 1 to Lab 14 — ready-made in this pack with every lab's data in `data/`. Choose it in Codex (a local project); do not create one.
+- Lab 15 is an optional trainer demo.
+- `.md` files are plain text for Claude to read; each has a `.pdf` twin with the same name for you to read.
 
 ## Safety
 

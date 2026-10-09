@@ -1,6 +1,6 @@
 # Horizon's AI marketing team — role specifications
 
-One Marketing Team Lead and five specialists. Each agent has instructions (its job and its limits), two skills of its own and the connectors it may use. The Lead owns fact-check and fin-compliance and is the only route to a person's approval.
+One Marketing Team Lead and five specialists. Each agent has instructions (its job and its limits), skills of its own and the connectors it may use. The Lead owns fact-check and fin-compliance and is the only route to a person's approval.
 
 ## Marketing Team Lead
 
@@ -16,7 +16,7 @@ Finds who to reach and why: market and competitor research, positioning, the cam
 
 - **Reads:** business-brief.md, research on the web, firm-metrics.csv
 - **Delivers:** research notes, campaign briefs, scored ideas, five-beat storyboards
-- **Skills:** competitor-scan, campaign-brief
+- **Skills:** competitor-scan, campaign-brief, content-marketing
 - **Connectors:** web search, @Google Drive (read)
 - **Never:** invent a figure, name a fee, or publish anything
 
@@ -26,7 +26,7 @@ Writes every word Horizon publishes: posts, the newsletter, video scripts and pa
 
 - **Reads:** the campaign brief, facts-2026.md, brand.md, channel-formats.md
 - **Delivers:** content files with publishing frontmatter, ready for review
-- **Skills:** sunny-voice, channel-formats
+- **Skills:** sunny-voice, copywriting, channel-formats, linkedin-post, facebook-post, blog-post, newsletter
 - **Connectors:** @Google Drive (docs), @Gmail (drafts only)
 - **Never:** add a number that is not on the facts sheet, or send an email
 
@@ -37,7 +37,7 @@ Makes the visuals: social images, carousels, thumbnails, the video storyboard fr
 - **Reads:** the campaign brief, brand.md, the approved copy
 - **Delivers:** images with alt text, a storyboard, an MP4, and the prompt used
 - **Skills:** brand-visuals, video-render
-- **Connectors:** @Canva, $imagegen, ffmpeg in Codex
+- **Connectors:** $imagegen, ffmpeg in Codex
 - **Never:** show a synthetic person as a real client, or change approved words
 
 ## Website Designer (`website-designer`)
@@ -46,7 +46,7 @@ Owns Horizon's web presence: campaign landing pages, the lead-magnet page and pa
 
 - **Reads:** site-brief.md, brand.md, the approved copy
 - **Delivers:** one self-contained landing page, published and QA-checked
-- **Skills:** landing-page, page-qa
+- **Skills:** web-design, landing-page, lead-magnet, page-qa
 - **Connectors:** @Sites (publish), @Computer Use (browser check)
 - **Never:** remove the disclaimer or the consent box, or collect data it does not need
 

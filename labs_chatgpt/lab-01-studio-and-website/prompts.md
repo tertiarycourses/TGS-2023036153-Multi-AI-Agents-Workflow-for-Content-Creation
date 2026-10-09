@@ -1,6 +1,8 @@
-# Prompts — Lab 01: Set Up the Studio and Explore Horizon's Website
+# Prompts — Lab 01: Build Your Marketing Agent Team
 
-Surface: ChatGPT Project → Codex. Paste each prompt as written; change only what the lab tells you to.
+**Use: Codex — Codex, in your horizon-studio folder.** Paste each prompt as written; change only what the lab tells you to.
+
+**Easiest:** copy each prompt from https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/chatgpt/#lab-1 (one Copy button per prompt).
 
 ## PROMPT A — ChatGPT Project: instructions
 
@@ -13,11 +15,11 @@ compliance-checklist.md before anything is shown to
 a person. Never publish or send anything.
 ```
 
-## PROMPT B — Codex: design your team
+## PROMPT B — Codex: plan your team
 
 ```
 Act as a marketing consultant. Interview me, the
-owner of Horizon Wealth Planning, to design my AI
+owner of Horizon Wealth Planning, to plan my AI
 marketing team. Ask one question at a time and wait
 for my answer: my goal, what success looks like by
 March 2027, who we want to reach, which channels we
@@ -28,7 +30,8 @@ numbered, each with a one-line job. Include the six
 roles in data/team-charter.md and mark the ones you
 recommend. Wait for me to choose.
 Save my answers and my chosen team, with each
-member's job, to data/team-design.md.
+member's job, to data/team-design.md. This is a
+plan only: do not create any agent files yet.
 ```
 
 ## PROMPT C — Codex: the charter
@@ -41,16 +44,10 @@ Rules, Files — under 60 lines. The team is the one
 I chose in data/team-design.md. Rules: every number
 comes from data/facts-2026.md; every piece passes
 fact-check and fin-compliance; nothing is published
-or sent without a person's approval.
-```
-
-## PROMPT D — Codex: know the site
-
-```
-Read web/site/index.html, the local copy of
-Horizon's public website. In five bullets: who it
-is for, the offer, the main call to action, what
-the calculator does, and the disclaimer. Then add
-this line to the Files section of AGENTS.md:
+or sent without a person's approval (the one
+exception: a review email to the approver); anything
+shown to me is in plain English for a business owner,
+with no codes, IDs, file names or line numbers.
+In Files, add:
 Public site (link in every post): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
 ```

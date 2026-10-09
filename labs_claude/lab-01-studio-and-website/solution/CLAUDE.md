@@ -9,7 +9,8 @@ Marketing Team Lead (this session) and five specialists in .claude/agents/: grow
 ## Rules
 - Every number comes from data/facts-2026.md.
 - The Lead runs fact-check and fin-compliance on every piece.
-- Nothing is published or sent without a person's approval (review/approvals.csv; approve.mjs is for people only).
+- Anything shown to a person (artifacts, Word copies) is in plain English for a business owner: no codes, IDs, file names or line numbers; it starts with what it means and what to do next.
+- Nothing is published or sent without a person's approval (review/approvals.csv; a person approves by typing "approved <id> by <name>" in the chat). The only email the Lead may send is one review request to the approver.
 
 ## Files
 research/ · strategy/ · content/<channel>/ · web/ · reports/ · review/ · data/

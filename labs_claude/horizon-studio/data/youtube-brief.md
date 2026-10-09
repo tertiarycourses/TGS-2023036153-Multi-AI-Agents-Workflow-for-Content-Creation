@@ -1,4 +1,4 @@
-# YouTube brief — episode 1 (Lab 11)
+# YouTube brief — episode 1 (Lab 12)
 
 **Series:** Money in Plain English. **Episode 1:** "Your CPF retirement sums
 in 60 seconds".

@@ -1,6 +1,8 @@
 # Prompts — Lab 02: Form the Team: Instructions for Each Agent
 
-Surface: Codex (role cards, subagents). Paste each prompt as written; change only what the lab tells you to.
+**Use: Codex — Codex, in your horizon-studio folder.** Paste each prompt as written; change only what the lab tells you to.
+
+**Easiest:** copy each prompt from https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/chatgpt/#lab-2 (one Copy button per prompt).
 
 ## PROMPT A — Codex: five role cards
 
@@ -17,7 +19,18 @@ line per agent pointing to its card, and the rule
 role — each following its card".
 ```
 
-## PROMPT B — Codex: meet the team
+## PROMPT B — Codex: see the team
+
+```
+List the role cards in agents/. For each, show
+the file name, the role and its one-line job, in a
+table. Then confirm there are five, and that
+AGENTS.md lists all five under "## The marketing
+team". If any other card is there, list it and ask
+me before moving it to _archive/.
+```
+
+## PROMPT C — Codex: meet the team
 
 ```
 Use subagents — one per role, each following its

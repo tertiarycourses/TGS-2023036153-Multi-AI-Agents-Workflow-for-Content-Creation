@@ -2,11 +2,11 @@
 
 Capture a screenshot or file for each line. Evidence beats a description.
 
-- [ ] The four plugins are installed and connected.
+- [ ] The three plugins are installed and connected.
 - [ ] Five checks ran, each by its own agent.
 - [ ] The Gmail test is a draft in your inbox — nothing was sent.
 - [ ] The analyst read the CSV from Drive, not from the local folder.
-- [ ] Each agent's instructions list only the tools its job needs.
+- [ ] Each agent's tools line names only the connectors its job needs.
 
 ## Notes
 

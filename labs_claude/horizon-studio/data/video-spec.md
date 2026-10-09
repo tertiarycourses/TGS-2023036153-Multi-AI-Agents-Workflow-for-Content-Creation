@@ -1,4 +1,4 @@
-# Video render spec (Lab 11)
+# Video render spec (Lab 12)
 
 Input: content/video/ep01/scenes.json — the APPROVED script as a list of
 scenes: {"seconds": 8, "title": "...", "text": "..."}.

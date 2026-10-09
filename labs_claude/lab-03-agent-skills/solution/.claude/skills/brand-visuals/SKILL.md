@@ -7,6 +7,6 @@ description: Use when making any Horizon image, carousel, thumbnail or video fra
    mint #A7E8C8. Fonts: Fraunces (headings), Nunito (body).
 2. Sunny the smiling sun; thick ink outlines; rounded corners.
 3. Text readable at thumbnail size: at most 8 words on an image.
-4. Every image: alt text and the prompt or Canva design used, saved next
+4. Every image: alt text and the prompt or script used, saved next
    to it.
 5. AI-made images of people are labelled; never shown as real clients.

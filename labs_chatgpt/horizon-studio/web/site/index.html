@@ -1186,6 +1186,78 @@
     .back-to-top svg { width: 22px; height: 22px; }
 
     /* =========================================================
+       14b. BLOG — like tertiarycourses.com.sg: the latest three on the
+       front page, "View all articles" for the rest. Every post is an
+       <article class="post" data-date …> below; the cards are built from
+       them by script (newest first), so a new post needs no card edits.
+       A post opens full-screen via :target, which works in an artifact.
+       ========================================================= */
+    .section-blog { background: var(--white); border-top: var(--line); }
+    .blog-head { display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: flex-end; gap: var(--space-sm); margin-bottom: var(--space-lg); }
+    .blog-eyebrow { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--ink-soft); margin-bottom: var(--space-2xs); }
+    .view-all { font-weight: 800; color: var(--ink); white-space: nowrap; }
+    .view-all:hover { text-decoration: underline; }
+    .blog-grid { list-style: none; display: grid; gap: var(--space-md); }
+    .blog-card { display: flex; flex-direction: column; background: var(--white);
+      border: var(--line); border-radius: var(--r-lg); box-shadow: var(--pop); overflow: hidden; }
+    .blog-cover { position: relative; aspect-ratio: 16 / 9; display: flex; align-items: center;
+      gap: var(--space-sm); padding: var(--space-md); border-bottom: var(--line); }
+    .blog-cover strong { flex: 1; font-family: var(--font-display); font-size: 1.15rem;
+      line-height: 1.2; color: var(--ink); }
+    .blog-cover svg { flex: none; width: 34%; max-width: 110px; height: auto; }
+    .cover-sun { background: var(--sun-light); }
+    .cover-mint { background: #DDF6EA; }
+    .cover-blush { background: var(--blush-light); }
+    .cover-sky { background: var(--sky-deep); }
+    .blog-card-body { display: flex; flex-direction: column; gap: var(--space-xs);
+      padding: var(--space-md); flex: 1; }
+    .blog-date { font-size: 0.95rem; font-weight: 700; letter-spacing: 0.08em; color: var(--ink-soft); }
+    .blog-card h3 { font-size: 1.15rem; line-height: 1.3; }
+    .blog-card p.excerpt { color: var(--ink-soft); font-size: 0.98rem; display: -webkit-box;
+      -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .blog-card .read-more { margin-top: auto; padding-top: var(--space-xs); font-weight: 800; color: var(--ink); }
+    .blog-card .read-more:hover { text-decoration: underline; }
+    .blog-meta { display: flex; flex-wrap: wrap; gap: var(--space-xs); align-items: center;
+      font-size: 0.875rem; color: var(--ink-soft); font-weight: 700; }
+    .blog-tag { background: var(--sky-deep); border: 2px solid var(--ink); border-radius: var(--r-pill);
+      padding: 0.1rem 0.7rem; color: var(--ink); }
+    .post { display: none; }
+    .post:target { display: block; position: fixed; inset: 0; z-index: 2000; overflow-y: auto;
+      background: var(--sky); padding: var(--space-md) 0 var(--space-xl); }
+    .post-bar { display: flex; justify-content: space-between; align-items: center; gap: var(--space-sm);
+      flex-wrap: wrap; margin-bottom: var(--space-md); }
+    .post-back { font-weight: 800; color: var(--ink); }
+    .post-body { max-width: 760px; margin: 0 auto; background: var(--white); border: var(--line);
+      border-radius: var(--r-lg); box-shadow: var(--pop); padding: var(--space-lg) var(--space-md); }
+    .post-body .blog-cover { margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-md)) var(--space-md);
+      border-radius: var(--r-lg) var(--r-lg) 0 0; aspect-ratio: auto; height: 130px;
+      justify-content: flex-end; }
+    .post-body .blog-cover svg { width: 90px; }
+    .post-body h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: var(--space-xs) 0 var(--space-sm); }
+    .post-body h2 { font-size: 1.35rem; margin: var(--space-md) 0 var(--space-xs); }
+    .post-body p, .post-body li { max-width: var(--measure); }
+    .post-body p + p { margin-top: var(--space-sm); }
+    .post-body ul, .post-body ol { padding-left: 1.3rem; display: grid; gap: var(--space-2xs); margin: var(--space-xs) 0; }
+    .post-body table { border-collapse: collapse; width: 100%; margin: var(--space-sm) 0; font-size: 1rem; }
+    .post-body th, .post-body td { border: 2px solid var(--ink); padding: 0.5rem 0.7rem; text-align: left; }
+    .post-body th { background: var(--sun-light); }
+    .post-lead { font-size: 1.15rem; color: var(--ink-soft); }
+    .post-cta { margin-top: var(--space-md); padding: var(--space-md); background: var(--sun-light);
+      border: var(--line); border-radius: var(--r-md); }
+    .post-cta p { margin-bottom: var(--space-sm); }
+    .post-sources { font-size: 0.9rem; color: var(--ink-soft); margin-top: var(--space-md); }
+    .post .disclaimer { font-size: 0.85rem; color: var(--ink-soft); margin-top: var(--space-sm); }
+    .blog-index-wrap { max-width: var(--container); margin: 0 auto; }
+    .blog-index-wrap h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: var(--space-md); }
+    @media (min-width: 768px) {
+      .blog-grid { grid-template-columns: repeat(3, 1fr); }
+      .post-body { padding: var(--space-xl) var(--space-lg); }
+      .post-body .blog-cover { margin: calc(-1 * var(--space-xl)) calc(-1 * var(--space-lg)) var(--space-md); }
+    }
+
+    /* =========================================================
        15. RESPONSIVE — TABLET (min-width: 768px)
        ========================================================= */
     @media (min-width: 768px) {
@@ -1302,8 +1374,8 @@
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#services">Services</a></li>
           <li><a href="#calculator">Calculator</a></li>
-          <li><a href="#checklist">Free checklist</a></li>
           <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#blog">Blog</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -1564,73 +1636,9 @@
     </section>
 
     <!-- =========================================================
-         5. FREE CHECKLIST (lead magnet)
-         ========================================================= -->
-    <section class="section" id="checklist" aria-labelledby="checklist-title">
-      <div class="container">
-        <div class="magnet">
-          <div class="magnet-copy">
-            <h2 id="checklist-title">Free: the 10-minute Money Check-up Checklist</h2>
-            <p>Ten quick questions every Singapore household should be able to answer. Tick them off and you'll know exactly where you stand, and what to fix first.</p>
-            <ul class="inside" aria-label="What's inside">
-              <li>Is your emergency fund big enough?</li>
-              <li>Are your CPF nominations and will up to date?</li>
-              <li>Do you have gaps (or overlaps) in your insurance?</li>
-              <li>Are you using SRS to cut your income tax?</li>
-              <li>Do you know your retirement number?</li>
-            </ul>
-            <p class="fine-print">Instant access, plus one friendly money tip a month. No spam, unsubscribe any time.</p>
-          </div>
-
-          <div class="capture-card">
-            <!-- Locked state: email capture -->
-            <div id="checklist-lock">
-              <h3>Get your free checklist</h3>
-              <p>Pop in your email and the checklist unlocks right here, ready to tick off or print.</p>
-              <form class="capture-form" id="checklist-form" novalidate>
-                <label for="checklist-email" class="visually-hidden">Email address</label>
-                <input class="input" type="email" id="checklist-email" name="email" placeholder="you@example.com"
-                       autocomplete="email" maxlength="254" required aria-describedby="checklist-msg">
-                <div class="hp" aria-hidden="true">
-                  <label for="checklist-website">Leave this empty</label>
-                  <input type="text" id="checklist-website" name="website" tabindex="-1" autocomplete="off">
-                </div>
-                <button type="submit" class="btn btn-sun btn-block">Unlock my free checklist</button>
-                <p class="capture-msg" id="checklist-msg" aria-live="polite"></p>
-              </form>
-            </div>
-
-            <!-- Unlocked state: the interactive checklist itself -->
-            <div class="checklist-panel" id="checklist-content" tabindex="-1" hidden>
-              <h3 id="checklist-panel-title">Your Money Check-up</h3>
-              <p class="fine-print" id="checklist-progress-text" aria-live="polite">0 of 10 done. Sunny believes in you!</p>
-              <div class="progress" aria-hidden="true"><div class="progress-bar" id="checklist-bar"></div></div>
-              <ul class="check-list" id="check-list" aria-labelledby="checklist-panel-title">
-                <li><label><input type="checkbox"><span>I have 3 to 6 months of expenses saved as an emergency fund.</span></label></li>
-                <li><label><input type="checkbox"><span>I know how much I spend each month, roughly.</span></label></li>
-                <li><label><input type="checkbox"><span>My high-interest debts (credit cards, personal loans) are paid off or have a plan.</span></label></li>
-                <li><label><input type="checkbox"><span>I have a hospitalisation plan and I know what it covers.</span></label></li>
-                <li><label><input type="checkbox"><span>My life and critical illness cover would look after my family.</span></label></li>
-                <li><label><input type="checkbox"><span>I've made my CPF nominations.</span></label></li>
-                <li><label><input type="checkbox"><span>I have a will and a Lasting Power of Attorney.</span></label></li>
-                <li><label><input type="checkbox"><span>I've considered SRS contributions to lower my income tax.</span></label></li>
-                <li><label><input type="checkbox"><span>My investments match my goals and I've reviewed them this year.</span></label></li>
-                <li><label><input type="checkbox"><span>I know my retirement number and I'm on track for it.</span></label></li>
-              </ul>
-              <div class="checklist-actions">
-                <button type="button" class="btn btn-white btn-small" id="checklist-print">Print or save as PDF</button>
-                <a href="#contact" class="btn btn-sun btn-small">Talk through my answers</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================================================
          6. TESTIMONIALS (carousel)
          ========================================================= -->
-    <section class="section section-white" id="testimonials" aria-labelledby="testimonials-title">
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
       <div class="container">
         <header class="section-intro">
           <h2 id="testimonials-title">Kind words from our clients</h2>
@@ -1757,7 +1765,7 @@
     <!-- =========================================================
          7. FAQ (mirrors the FAQPage structured data in <head>)
          ========================================================= -->
-    <section class="section" id="faq" aria-labelledby="faq-title">
+    <section class="section section-white" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <header class="section-intro">
           <h2 id="faq-title">Questions people ask us</h2>
@@ -1790,6 +1798,168 @@
             <p>It gives a rough, illustrative estimate assuming a steady return and fixed monthly savings. It does not include inflation, fees, CPF payouts or market ups and downs, and returns are not guaranteed. A planner can build a fuller picture with you.</p>
           </details>
         </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7b. BLOG — latest three on the page; "View all articles" opens
+         #blog-all. To add a post, add one <article class="post"> below
+         with data-date (YYYY-MM-DD), data-tag, data-theme (sun, mint,
+         blush, sky), data-icon (sun, chat, shield, coins, chart) and
+         data-excerpt. The cards build themselves, newest first.
+         ========================================================= -->
+    <section class="section section-blog" id="blog" aria-labelledby="blog-title">
+      <div class="container">
+        <div class="blog-head">
+          <div>
+            <p class="blog-eyebrow">[ From our blog ]</p>
+            <h2 id="blog-title">Plain-English money guides</h2>
+          </div>
+          <a class="view-all" href="#blog-all">View all articles &rarr;</a>
+        </div>
+        <ul class="blog-grid" id="blog-latest" aria-label="Latest articles"></ul>
+
+        <article class="post" id="blog-all" aria-labelledby="blog-all-title">
+          <div class="container blog-index-wrap">
+            <div class="post-bar">
+              <a class="post-back" href="#blog">&larr; Back to the home page</a>
+              <a href="#contact" class="btn btn-sun btn-small">Book a free chat</a>
+            </div>
+            <p class="blog-eyebrow">[ All articles ]</p>
+            <h1 id="blog-all-title">Plain-English money guides</h1>
+            <ul class="blog-grid" id="blog-list" aria-label="All articles"></ul>
+          </div>
+        </article>
+
+        <article class="post" id="post-retirement-sums" aria-labelledby="post-retirement-sums-title"
+                 data-date="2026-10-05" data-tag="CPF" data-theme="sun" data-icon="sun"
+                 data-excerpt="The three numbers that decide your CPF retirement account at 55, and what they mean for CPF LIFE.">
+          <div class="container">
+            <div class="post-bar">
+              <a class="post-back" href="#blog">&larr; Back to the blog</a>
+              <a href="#contact" class="btn btn-sun btn-small">Book a free chat</a>
+            </div>
+            <div class="post-body">
+              <p class="blog-meta"><span class="blog-tag">CPF</span> <span class="post-date"></span> &middot; 4 min read &middot; Horizon Wealth team</p>
+              <h1 id="post-retirement-sums-title">Know your number: the 2026 CPF retirement sums in plain English</h1>
+              <p class="post-lead">Turning 55 soon? Three numbers decide how much stays in your CPF retirement account, and how much you can expect from CPF LIFE. Here they are, without the jargon.</p>
+              <h2>The three retirement sums for 2026</h2>
+              <p>When you turn 55, CPF sets aside savings in your Retirement Account. How much depends on which retirement sum you set aside. For members turning 55 in 2026:</p>
+              <table>
+                <thead><tr><th scope="col">Retirement sum</th><th scope="col">2026 amount</th></tr></thead>
+                <tbody>
+                  <tr><td>Basic Retirement Sum (BRS)</td><td>S$110,200</td></tr>
+                  <tr><td>Full Retirement Sum (FRS)</td><td>S$220,400</td></tr>
+                  <tr><td>Enhanced Retirement Sum (ERS)</td><td>S$440,800</td></tr>
+                </tbody>
+              </table>
+              <p>Put simply: the more you set aside, the higher your monthly CPF LIFE payouts later on.</p>
+              <h2>When the payouts start</h2>
+              <p>CPF LIFE monthly payouts can start from age 65. So the years between 55 and 65 are a good time to check which sum fits the retirement you want.</p>
+              <h2>Three things to do this month</h2>
+              <ol>
+                <li>Log in to your CPF account and see how close you are to each sum.</li>
+                <li>Write down what you want your monthly retirement budget to be.</li>
+                <li>Try our retirement calculator above to see roughly where your savings could get to.</li>
+              </ol>
+              <div class="post-cta">
+                <p>Not sure which sum fits your plans? We can look at your CPF, savings and goals together, in plain English.</p>
+                <a href="#contact" class="btn btn-sun">Book a free 30-minute chat</a>
+              </div>
+              <p class="post-sources">Sources: cpf.gov.sg — CPF retirement sums, Enhanced Retirement Sum and CPF LIFE (2026 figures, checked 8 October 2026).</p>
+              <p class="disclaimer">This article is for general information only and does not constitute financial advice. Figures are 2026 figures; CPF and tax figures usually change every January. Please speak to a qualified adviser about your own situation.</p>
+            </div>
+          </div>
+        </article>
+        <article class="post" id="post-free-chat" aria-labelledby="post-free-chat-title"
+                 data-date="2026-09-21" data-tag="Getting started" data-theme="mint" data-icon="chat"
+                 data-excerpt="What to expect before, during and after your first chat with a Horizon planner.">
+          <div class="container">
+            <div class="post-bar">
+              <a class="post-back" href="#blog">&larr; Back to the blog</a>
+              <a href="#contact" class="btn btn-sun btn-small">Book a free chat</a>
+            </div>
+            <div class="post-body">
+              <p class="blog-meta"><span class="blog-tag">Getting started</span> <span class="post-date"></span> &middot; 3 min read &middot; Horizon Wealth team</p>
+              <h1 id="post-free-chat-title">Never met a financial planner? What happens in your free 30-minute chat</h1>
+              <p class="post-lead">Most people put off talking to a planner because they don&rsquo;t know what to expect. Here is exactly what happens, step by step.</p>
+              <h2>Before the chat</h2>
+              <p>You book a time that suits you. The chat is free and takes 30 minutes, by video call, phone or at our office. You don&rsquo;t need to prepare anything, but it helps to know roughly what you save each month.</p>
+              <h2>During the chat</h2>
+              <p>We ask about your goals and your worries: buying a home, a growing family, retiring on your own terms. You ask us anything. There are no silly money questions.</p>
+              <h2>After the chat</h2>
+              <ul>
+                <li>You leave with two or three practical next steps, whether or not you work with us.</li>
+                <li>If you decide to go ahead, we agree a flat planning fee with you upfront, before any work starts.</li>
+                <li>You receive a one-page plan within two weeks, with check-ins twice a year.</li>
+              </ul>
+              <div class="post-cta">
+                <p>Ready to see what a plan could look like for you?</p>
+                <a href="#contact" class="btn btn-sun">Book a free 30-minute chat</a>
+              </div>
+              <p class="post-sources">Source: Horizon Wealth Planning — how our first consultation works.</p>
+              <p class="disclaimer">This article is for general information only and does not constitute financial advice. Figures are 2026 figures; CPF and tax figures usually change every January. Please speak to a qualified adviser about your own situation.</p>
+            </div>
+          </div>
+        </article>
+        <article class="post" id="post-insurance-check" aria-labelledby="post-insurance-check-title"
+                 data-date="2026-09-07" data-tag="Insurance" data-theme="blush" data-icon="shield"
+                 data-excerpt="Spot the gaps and overlaps in policies you bought years ago and have not looked at since.">
+          <div class="container">
+            <div class="post-bar">
+              <a class="post-back" href="#blog">&larr; Back to the blog</a>
+              <a href="#contact" class="btn btn-sun btn-small">Book a free chat</a>
+            </div>
+            <div class="post-body">
+              <p class="blog-meta"><span class="blog-tag">Insurance</span> <span class="post-date"></span> &middot; 3 min read &middot; Horizon Wealth team</p>
+              <h1 id="post-insurance-check-title">Five questions to ask about your insurance cover</h1>
+              <p class="post-lead">Many people in Singapore have policies they bought years ago and have not looked at since. These five questions help you spot gaps and overlaps.</p>
+              <h2>The five questions</h2>
+              <ol>
+                <li><strong>Who depends on my income?</strong> Your cover should match the people who would need support if you could not work.</li>
+                <li><strong>What does my hospitalisation plan actually cover?</strong> Check the ward type and what you would pay yourself.</li>
+                <li><strong>Do I have critical illness cover, and is it still enough?</strong> Needs change when you marry, have children or buy a home.</li>
+                <li><strong>Am I paying twice for the same thing?</strong> Overlapping policies are common, especially after changing jobs.</li>
+                <li><strong>Are my nominations up to date?</strong> Check your policies and your CPF nominations after any big life change.</li>
+              </ol>
+              <h2>What to do next</h2>
+              <p>Gather your policy documents in one place, note the yearly premium for each, and bring the list to a review. You do not need to cancel or buy anything to get a clear picture.</p>
+              <div class="post-cta">
+                <p>Want a second pair of eyes on your cover? An insurance review is part of every Horizon plan.</p>
+                <a href="#contact" class="btn btn-sun">Book a free 30-minute chat</a>
+              </div>
+              <p class="post-sources">Written by the Horizon Wealth team for general education.</p>
+              <p class="disclaimer">This article is for general information only and does not constitute financial advice. Figures are 2026 figures; CPF and tax figures usually change every January. Please speak to a qualified adviser about your own situation.</p>
+            </div>
+          </div>
+        </article>
+        <article class="post" id="post-saving-habits" aria-labelledby="post-saving-habits-title"
+                 data-date="2026-08-24" data-tag="Saving" data-theme="sky" data-icon="coins"
+                 data-excerpt="Simple routines that make saving automatic, without a spreadsheet or a strict budget.">
+          <div class="container">
+            <div class="post-bar">
+              <a class="post-back" href="#blog">&larr; Back to the blog</a>
+              <a href="#contact" class="btn btn-sun btn-small">Book a free chat</a>
+            </div>
+            <div class="post-body">
+              <p class="blog-meta"><span class="blog-tag">Saving</span> <span class="post-date"></span> &middot; 3 min read &middot; Horizon Wealth team</p>
+              <h1 id="post-saving-habits-title">Three small saving habits that add up for young families</h1>
+              <p class="post-lead">Saving gets harder when a family grows. These three habits take a few minutes to set up and then run on their own.</p>
+              <h2>1. Pay yourself first</h2>
+              <p>Set up a standing instruction that moves a fixed amount into savings the day your salary arrives. What you never see, you rarely miss.</p>
+              <h2>2. Give every goal its own account</h2>
+              <p>A separate pot for the emergency fund, the next holiday and your child&rsquo;s education makes it easy to see progress, and harder to dip in by accident.</p>
+              <h2>3. Review once a year, not every week</h2>
+              <p>Pick one date a year, such as a birthday, to look at what you save and what you spend. Small adjustments once a year beat constant worrying.</p>
+              <div class="post-cta">
+                <p>Want help setting goals that fit your family?</p>
+                <a href="#contact" class="btn btn-sun">Book a free 30-minute chat</a>
+              </div>
+              <p class="post-sources">Written by the Horizon Wealth team for general education.</p>
+              <p class="disclaimer">This article is for general information only and does not constitute financial advice. Figures are 2026 figures; CPF and tax figures usually change every January. Please speak to a qualified adviser about your own situation.</p>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -1991,7 +2161,7 @@
           <ul class="footer-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#calculator">Retirement calculator</a></li>
-            <li><a href="#checklist">Free Money Check-up Checklist</a></li>
+            <li><a href="#blog">Blog</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Book a free chat</a></li>
           </ul>
@@ -2034,26 +2204,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Slide-in checklist offer (non-modal, shown once per session) -->
-  <aside class="nudge" id="nudge" aria-labelledby="nudge-title" hidden>
-    <button class="nudge-close" id="nudge-close" type="button" aria-label="Close checklist offer">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-    </button>
-    <h2 id="nudge-title">Psst! Want a free money check-up?</h2>
-    <p>Our 10-minute checklist shows where you stand and what to fix first.</p>
-    <form class="capture-form" id="nudge-form" novalidate>
-      <label for="nudge-email" class="visually-hidden">Email address</label>
-      <input class="input" type="email" id="nudge-email" name="email" placeholder="you@example.com"
-             autocomplete="email" maxlength="254" aria-describedby="nudge-msg">
-      <div class="hp" aria-hidden="true">
-        <label for="nudge-website">Leave this empty</label>
-        <input type="text" id="nudge-website" name="website" tabindex="-1" autocomplete="off">
-      </div>
-      <button type="submit" class="btn btn-sun btn-block">Send me the checklist</button>
-      <p class="capture-msg" id="nudge-msg" aria-live="polite"></p>
-    </form>
-  </aside>
 
   <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
@@ -2374,47 +2524,8 @@
       startAutoplay();
 
       /* =========================================================
-         5. EMAIL CAPTURE (checklist, nudge, newsletter) & CHECKLIST
+         5. EMAIL CAPTURE (newsletter)
          ========================================================= */
-      const checklistLock = document.getElementById("checklist-lock");
-      const checklistContent = document.getElementById("checklist-content");
-      const checkboxes = Array.from(document.querySelectorAll("#check-list input"));
-      const progressText = document.getElementById("checklist-progress-text");
-      const progressBar = document.getElementById("checklist-bar");
-      const UNLOCK_KEY = "hw-checklist-unlocked";
-      const TICKS_KEY = "hw-checklist-ticks";
-
-      function unlockChecklist(moveFocus) {
-        checklistLock.hidden = true;
-        checklistContent.hidden = false;
-        store.set("localStorage", UNLOCK_KEY, "1");
-        if (moveFocus) checklistContent.focus();
-      }
-
-      function updateProgress() {
-        const done = checkboxes.filter((box) => box.checked).length;
-        const cheers = ["Sunny believes in you!", "Nice start!", "You're on a roll!", "Over halfway, woohoo!", "Almost there!", "All done. You're a money superstar!"];
-        progressText.textContent = done + " of " + checkboxes.length + " done. " +
-          cheers[done === checkboxes.length ? 5 : Math.min(Math.ceil(done / 2), 4)];
-        progressBar.style.setProperty("--p", (done / checkboxes.length).toFixed(2));
-        store.set("localStorage", TICKS_KEY, checkboxes.map((box) => (box.checked ? "1" : "0")).join(""));
-      }
-
-      const savedTicks = store.get("localStorage", TICKS_KEY) || "";
-      checkboxes.forEach((box, i) => {
-        box.checked = savedTicks[i] === "1";
-        box.addEventListener("change", updateProgress);
-      });
-      updateProgress();
-
-      if (store.get("localStorage", UNLOCK_KEY) === "1") unlockChecklist(false);
-
-      document.getElementById("checklist-print").addEventListener("click", () => {
-        document.body.classList.add("print-checklist");
-        window.print();
-      });
-      window.addEventListener("afterprint", () => document.body.classList.remove("print-checklist"));
-
       // Shared handler for the single-field email forms
       function wireEmailCapture(form, onSuccess) {
         const input = form.querySelector('input[type="email"]');
@@ -2456,8 +2567,6 @@
           }
         });
       }
-
-      wireEmailCapture(document.getElementById("checklist-form"), () => unlockChecklist(true));
 
       wireEmailCapture(document.getElementById("newsletter-form"), (msg) => {
         msg.textContent = "You're in! Look out for your first Sunny Sunday email.";
@@ -2602,54 +2711,6 @@
       });
 
       /* =========================================================
-         7. NUDGE (checklist offer: once per session, after real interest)
-         ========================================================= */
-      const nudge = document.getElementById("nudge");
-      const NUDGE_KEY = "hw-nudge-seen";
-      let nudgeArmed = store.get("sessionStorage", NUDGE_KEY) !== "1" && store.get("localStorage", UNLOCK_KEY) !== "1";
-
-      function showNudge() {
-        if (!nudgeArmed) return;
-        nudgeArmed = false;
-        store.set("sessionStorage", NUDGE_KEY, "1");
-        nudge.hidden = false;
-        requestAnimationFrame(() => requestAnimationFrame(() => nudge.classList.add("show")));
-      }
-
-      function hideNudge() {
-        nudge.classList.remove("show");
-        setTimeout(() => { nudge.hidden = true; }, 450);
-      }
-
-      document.getElementById("nudge-close").addEventListener("click", hideNudge);
-      nudge.addEventListener("keydown", (e) => { if (e.key === "Escape") hideNudge(); });
-
-      wireEmailCapture(document.getElementById("nudge-form"), (msg) => {
-        unlockChecklist(false);
-        msg.textContent = "Unlocked! Your checklist is waiting in the Free checklist section.";
-        setTimeout(hideNudge, 3500);
-      });
-
-      // Show after 45 seconds or once the visitor reaches the testimonials, but never over the checklist or form
-      const nudgeTimer = setTimeout(() => {
-        if (!isNear("checklist") && !isNear("contact")) showNudge();
-      }, 45000);
-
-      function isNear(id) {
-        const rect = document.getElementById(id).getBoundingClientRect();
-        return rect.top < window.innerHeight && rect.bottom > 0;
-      }
-
-      const nudgeObserver = new IntersectionObserver((entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          clearTimeout(nudgeTimer);
-          showNudge();
-          nudgeObserver.disconnect();
-        }
-      }, { threshold: 0.4 });
-      if (nudgeArmed) nudgeObserver.observe(document.getElementById("testimonials"));
-
-      /* =========================================================
          8. FOOTER YEAR
          ========================================================= */
       document.getElementById("year").textContent = new Date().getFullYear();
@@ -2662,7 +2723,7 @@
       function onScroll() {
         const y = window.scrollY;
         header.classList.toggle("scrolled", y > 10);
-        backToTop.classList.toggle("show", y > 600 && !nudge.classList.contains("show"));
+        backToTop.classList.toggle("show", y > 600);
       }
 
       window.addEventListener("scroll", onScroll, { passive: true });
@@ -2672,6 +2733,45 @@
         window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" });
       });
     });
+  </script>
+
+  <script>
+    /* Blog: build the cards from the posts, newest first — three on the
+       front page, all of them on "View all articles". */
+    (() => {
+      const ICONS = {
+        sun: '<svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="14" fill="#FFC845" stroke="#22305B" stroke-width="3"/><path d="M32 6v8M32 50v8M6 32h8M50 32h8M13 13l6 6M45 45l6 6M13 51l6-6M45 19l6-6" stroke="#22305B" stroke-width="3" stroke-linecap="round"/></svg>',
+        chat: '<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 14h44v28H30l-12 10V42h-8z" fill="#FFFFFF" stroke="#22305B" stroke-width="3" stroke-linejoin="round"/><circle cx="24" cy="28" r="3" fill="#22305B"/><circle cx="32" cy="28" r="3" fill="#22305B"/><circle cx="40" cy="28" r="3" fill="#22305B"/></svg>',
+        shield: '<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6l20 8v14c0 14-9 24-20 28-11-4-20-14-20-28V14z" fill="#FFFFFF" stroke="#22305B" stroke-width="3" stroke-linejoin="round"/><path d="M23 32l7 7 12-13" fill="none" stroke="#22305B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+        coins: '<svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="46" rx="18" ry="6" fill="#FFC845" stroke="#22305B" stroke-width="3"/><ellipse cx="32" cy="36" rx="18" ry="6" fill="#FFC845" stroke="#22305B" stroke-width="3"/><ellipse cx="32" cy="26" rx="18" ry="6" fill="#FFC845" stroke="#22305B" stroke-width="3"/><path d="M32 6v10M27 11l5-5 5 5" fill="none" stroke="#22305B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+        chart: '<svg viewBox="0 0 64 64" aria-hidden="true"><path d="M10 54h44" stroke="#22305B" stroke-width="3" stroke-linecap="round"/><rect x="14" y="36" width="8" height="18" fill="#6FCF9F" stroke="#22305B" stroke-width="3"/><rect x="28" y="26" width="8" height="28" fill="#FFC845" stroke="#22305B" stroke-width="3"/><rect x="42" y="14" width="8" height="40" fill="#FF9DB0" stroke="#22305B" stroke-width="3"/></svg>'
+      };
+      const posts = [...document.querySelectorAll('article.post[data-date]')]
+        .sort((a, b) => b.dataset.date.localeCompare(a.dataset.date));
+      const fmt = (iso) => iso.split('-').reverse().join('-');
+      const long = (iso) => new Date(iso + 'T00:00:00').toLocaleDateString('en-SG',
+        { day: 'numeric', month: 'long', year: 'numeric' });
+      const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      const cover = (p, title) => '<div class="blog-cover cover-' + (p.dataset.theme || 'sun') + '"><strong>' +
+        esc(title) + '</strong>' + (ICONS[p.dataset.icon] || ICONS.sun) + '</div>';
+      function card(p) {
+        const title = p.querySelector('h1').textContent;
+        return '<li class="blog-card">' + cover(p, title) + '<div class="blog-card-body">' +
+          '<p class="blog-date">' + fmt(p.dataset.date) + '</p><h3>' + esc(title) + '</h3>' +
+          '<p class="excerpt">' + esc(p.dataset.excerpt || '') + '</p>' +
+          '<a class="read-more" href="#' + p.id + '">Read article &rarr;</a></div></li>';
+      }
+      posts.forEach((p) => {
+        const d = p.querySelector('.post-date');
+        if (d) d.textContent = long(p.dataset.date);
+        const body = p.querySelector('.post-body');
+        if (body && !body.querySelector('.blog-cover')) {
+          body.insertAdjacentHTML('afterbegin', cover(p, ''));
+        }
+      });
+      document.getElementById('blog-latest').innerHTML = posts.slice(0, 3).map(card).join('');
+      document.getElementById('blog-list').innerHTML = posts.map(card).join('');
+    })();
   </script>
 </body>
 </html>

@@ -11,7 +11,7 @@ the campaign brief, facts-2026.md, brand.md, channel-formats.md
 content files with publishing frontmatter, ready for review — saved in the folder the Lead names.
 
 ## Skills
-Use sunny-voice and channel-formats for every task. Use fact-check whenever your
+Use sunny-voice and copywriting and channel-formats and linkedin-post and facebook-post and blog-post and newsletter for every task. Use fact-check whenever your
 work contains a number.
 
 ## Connectors
@@ -19,7 +19,7 @@ You may use: @Google Drive (docs), @Gmail (drafts only). Anything that writes to
 draft for a person — never a send or a post.
 
 ## Never
-Add a number that is not on the facts sheet, or send an email. Never run approve.mjs or publish --live.
+Add a number that is not on the facts sheet, or send an email. Never approve anything or publish for real — only a person approves.
 
 ## Report back
 Three lines: what you made, where it is, and anything you could not verify.

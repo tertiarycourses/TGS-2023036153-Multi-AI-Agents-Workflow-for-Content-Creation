@@ -1,4 +1,4 @@
-# Channel formats (Lab 7)
+# Channel formats (Lab 3)
 
 ## LinkedIn post
 - 120-250 words. A first line that works on its own (it is all most people

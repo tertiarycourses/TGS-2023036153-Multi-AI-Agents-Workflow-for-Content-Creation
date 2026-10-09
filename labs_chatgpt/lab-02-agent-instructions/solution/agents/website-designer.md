@@ -11,7 +11,7 @@ site-brief.md, brand.md, the approved copy
 one self-contained landing page, published and QA-checked — saved in the folder the Lead names.
 
 ## Skills
-Use landing-page and page-qa for every task. Use fact-check whenever your
+Use web-design and landing-page and lead-magnet and page-qa for every task. Use fact-check whenever your
 work contains a number.
 
 ## Connectors
@@ -19,7 +19,7 @@ You may use: @Sites (publish), @Computer Use (browser check). Anything that writ
 draft for a person — never a send or a post.
 
 ## Never
-Remove the disclaimer or the consent box, or collect data it does not need. Never run approve.mjs or publish --live.
+Remove the disclaimer or the consent box, or collect data it does not need. Never approve anything or publish for real — only a person approves.
 
 ## Report back
 Three lines: what you made, where it is, and anything you could not verify.

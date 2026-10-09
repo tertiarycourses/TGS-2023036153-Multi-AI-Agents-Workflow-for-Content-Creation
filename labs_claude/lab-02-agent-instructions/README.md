@@ -1,9 +1,13 @@
 # Lab 02 — Form the Team: Instructions for Each Agent
 
+> **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
+
 **Course:** Multi AI Agents Workflow for Content Creation (Claude Edition) (TGS-2023036153)\
-**Day 1 · Topic 1 · about 45 minutes · slides 37–41**\
+**Day 1 · Topic 1 · about 45 minutes · slides 43–48**\
 **Surface:** Claude Code (subagent files)\
 **Features:** five subagent files in .claude/agents/ · name, description, tools, model · the Lead is your session
+
+> **Copy the prompts:** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/claude/#lab-2 — click **Copy** next to each prompt, then paste it into the chat.
 
 ## The story so far
 
@@ -19,19 +23,23 @@ A team is a set of clear jobs. Write each agent's instructions once — its job,
 
 ## What is in this folder
 
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+
 - `assets/role-specs.md`
 - `assets/team-org-chart.md`
-- `solution/` — reference files from the verified build
+- `solution/` — reference files from the verified build (each `.md` with its `.pdf`)
 - `prompts.md` / `prompts.pdf` — every prompt, ready to paste
-- `evidence/checklist.md` — what to capture as proof
+- `evidence/checklist.md` / `checklist.pdf` — what to capture as proof
 
 ## Step by step
 
-1. **Read the roles** — Open role-specs.md: one Lead and five specialists, each with a job, skills, connectors and limits.
-2. **Write the instructions** — Paste Prompt A.
-3. **Read one closely** — Open .claude/agents/content-creator.md. Is the "Never" section strict enough for a regulated firm?
-4. **Meet the team** — Paste Prompt B. Each agent introduces itself in one line — in its own context.
-5. **Tighten one** — Change one instruction you disagree with and save it. It is your team.
+1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 2". Run all of this lab's prompts in it.
+2. **Read the roles** — Open role-specs.md: one Lead and five specialists, each with a job, skills, connectors and limits.
+3. **Write the instructions** — Copy and paste Prompt A. It builds the five specialists from the charter; extra ideas stay in team-design.md.
+4. **See the team** — After the five files appear in .claude/agents/, copy and paste Prompt B. The Lead is not a file — it is you, in this session.
+5. **Read one closely** — Open .claude/agents/content-creator.md. Is the "Never" section strict enough for a regulated firm?
+6. **Meet the team** — After the list shows five agents, copy and paste Prompt C. Each agent introduces itself in one line — in its own context.
+7. **Tighten one** — Change one instruction you disagree with and save it. It is your team.
 
 ## The prompts
 
@@ -49,7 +57,17 @@ A team is a set of clear jobs. Write each agent's instructions once — its job,
 >   never do, and how it reports back.
 > No skills line yet — we add skills in Lab 3.
 
-### PROMPT B — Claude Code: meet the team
+### PROMPT B — Claude Code: see the team
+
+> List the subagents in .claude/agents/. For each,
+> show the file name, the name, the one-line
+> description and the model, in a table. Then confirm
+> there are five, and that none of them is the
+> Marketing Team Lead — the Lead is this session.
+> If any other file is there, list it and ask me
+> before moving it to _archive/.
+
+### PROMPT C — Claude Code: meet the team
 
 > Use each of the five subagents once, in parallel.
 > Ask each: "In one line, who are you, and what is
@@ -69,6 +87,8 @@ A team is a set of clear jobs. Write each agent's instructions once — its job,
 ## If it goes wrong
 
 - **A subagent never runs** — Name it: "use the growth-strategist subagent" or @agent-growth-strategist.
+- **There are more than five files** — Files such as marketing-team-lead, compliance-reviewer or community-manager come from an earlier run. Let Prompt B move them to _archive/: the Lead is your session, and the fin-compliance skill (Lab 3) does the compliance review.
+- **/agents says the wizard has been removed** — Expected — it only prints a reminder now. Paste Prompt B to list the team, or open .claude/agents/ in the Files panel (the folder icon, top right).
 
 ## Stretch
 
@@ -82,4 +102,4 @@ Lab 3 — Give Each Agent Its Skills. Keep what you built — the next lab start
 
 ## Safety
 
-Use only this lab's synthetic data and your own accounts. Never paste a real API key, password, token or client data into a prompt or a file — tokens live only in .env. Every email address in the data must resolve to your own inbox. Nothing is published or sent without a person approving that exact version.
+Use only this lab's synthetic data and your own accounts. Never paste a real API key, password, token or client data into a prompt or a file. Every email address in the data must resolve to your own inbox. Nothing is published or sent without a person approving that exact version.

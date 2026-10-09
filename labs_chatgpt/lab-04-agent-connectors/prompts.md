@@ -1,6 +1,8 @@
 # Prompts — Lab 04: Install the Plugins Each Agent Needs
 
-Surface: ChatGPT plugins → Codex. Paste each prompt as written; change only what the lab tells you to.
+**Use: ChatGPT, then Codex — start in ChatGPT; the step that moves you to Codex says so.** Paste each prompt as written; change only what the lab tells you to.
+
+**Easiest:** copy each prompt from https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/chatgpt/#lab-4 (one Copy button per prompt).
 
 ## PROMPT A — Codex: test each agent
 
@@ -15,7 +17,7 @@ role card:
 3. content-creator: @Gmail — a DRAFT to me with the
    subject "Connector test". Do not send.
 4. creative-designer: $imagegen — a 1080x1080 test
-   image in Horizon colours; @Canva — list designs.
+   image in Horizon colours.
 5. website-designer: @Computer Use — open Horizon's
    public site at mobile width and report any problem.
 Report each result in one line.

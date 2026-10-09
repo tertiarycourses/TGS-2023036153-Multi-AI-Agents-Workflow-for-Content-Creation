@@ -1,6 +1,8 @@
 # Prompts — Lab 02: Form the Team: Instructions for Each Agent
 
-Surface: Claude Code (subagent files). Paste each prompt as written; change only what the lab tells you to.
+**Use: Claude Code — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder.** Paste each prompt as written; change only what the lab tells you to.
+
+**Easiest:** copy each prompt from https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/claude/#lab-2 (one Copy button per prompt).
 
 ## PROMPT A — Claude Code: five subagents
 
@@ -18,7 +20,19 @@ and growth-analyst. Each file has:
 No skills line yet — we add skills in Lab 3.
 ```
 
-## PROMPT B — Claude Code: meet the team
+## PROMPT B — Claude Code: see the team
+
+```
+List the subagents in .claude/agents/. For each,
+show the file name, the name, the one-line
+description and the model, in a table. Then confirm
+there are five, and that none of them is the
+Marketing Team Lead — the Lead is this session.
+If any other file is there, list it and ask me
+before moving it to _archive/.
+```
+
+## PROMPT C — Claude Code: meet the team
 
 ```
 Use each of the five subagents once, in parallel.

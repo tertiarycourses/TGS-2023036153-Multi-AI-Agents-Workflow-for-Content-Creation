@@ -1,7 +1,7 @@
-# Landing page brief — the Money Check-up Checklist (Lab 9)
+# Landing page brief — the Money Check-up Checklist (Lab 11)
 
 Page: web/checklist/index.html. Owner: Website Designer. Copy: Content
-Creator. Skills: landing-page, page-qa.
+Creator. Skills: lead-magnet, web-design, landing-page, page-qa.
 
 - Hero: "Know where you stand in 10 minutes" and one line of promise.
 - Proof: one figure from facts-2026.md (e.g. the 2026 Full Retirement Sum).

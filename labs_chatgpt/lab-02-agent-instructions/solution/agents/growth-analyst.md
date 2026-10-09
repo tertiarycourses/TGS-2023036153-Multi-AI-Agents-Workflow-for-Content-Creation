@@ -19,7 +19,7 @@ You may use: @Google Drive and Sheets (read), Python in Codex. Anything that wri
 draft for a person — never a send or a post.
 
 ## Never
-Estimate instead of counting, or show anyone's personal data. Never run approve.mjs or publish --live.
+Estimate instead of counting, or show anyone's personal data. Never approve anything or publish for real — only a person approves.
 
 ## Report back
 Three lines: what you made, where it is, and anything you could not verify.

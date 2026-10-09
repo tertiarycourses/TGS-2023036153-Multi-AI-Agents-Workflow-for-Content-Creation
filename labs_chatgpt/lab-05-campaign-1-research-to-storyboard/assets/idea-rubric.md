@@ -1,4 +1,4 @@
-# Idea scoring rubric (Lab 4) — score each 1-5, then weight
+# Idea scoring rubric (Lab 5) — score each 1-5, then weight
 
 | Criterion | Weight | 5 means |
 |---|---|---|

@@ -1,4 +1,4 @@
-# Campaign objective — "Know Your Number" (Lab 4)
+# Campaign objective — "Know Your Number" (Lab 5)
 
 **Period:** November 2026 to January 2027.
 **Business objective:** 40 booked free chats a month by March 2027.

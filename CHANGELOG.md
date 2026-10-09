@@ -1,5 +1,34 @@
 # Changelog
 
+## v3.5 · 10 October 2026
+- Labs made for learners who are not IT people. Claude Edition: every lab runs in Claude Code's Code mode, in its own session named after the lab ("Lab 5"); the Work-mode, Customize → Skills and Canva steps are gone.
+- From Lab 5 every result opens as a plain-English artifact (Claude) with a Word copy, and each lab lists follow-up questions to ask about the result. New Lab Prompts page (docs/prompts/, GitHub Pages) with a Copy button per prompt; lab READMEs and the Learner Guide link to it.
+- Horizon's website gains a blog (latest three on the home page, View all articles, four sample posts) and loses its checklist. Each learner works on their own local copy of the site. Lab 8 is one quick-blog prompt that posts to it; Lab 9 adds the checklist (Prompt D) and creates the welcome emails as Gmail drafts. The public link is GitHub Pages; the Claude artifact copy is private.
+- Lab 5 gains Prompt C (decide on the issues as Rachel). Lab 10 is a two-post demo (1 LinkedIn + 1 Facebook), 40 min; Lab 9 is 40 min. Labs 10-11: review in the artifact (Approve / Request changes) or by one review email, then approve in the chat.
+- Canva removed from both editions. ChatGPT Edition: same plain-English results, Word copies, follow-up questions and Prompts page; Lab 9 makes the checklist as a PDF.
+- v3.4 outputs moved to archive/courseware-v3.4; older assessment papers to archive/assessment-pre-v3.5.
+
+## v3.4 · 10 October 2026
+- Claude Edition, Day 2: the optional demo (previously Hermes Agent, then "the Lead on autopilot") is replaced by **Lab 15 — Agent Teams: A Strategy Debate and a QA Loop**, a 30-minute hands-on lab in Claude Code. Part 1: an advocate (growth-strategist) and a critic (growth-analyst) argue the pros and cons of a "Turning 55: what happens to your CPF" campaign, messaging each other directly while the Lead judges and a person makes the call. Part 2: a writer, a QA Auditor and a designer; a failed audit goes straight back to the writer for a rewrite (three rounds at most), and a pass goes to the designer and then to a person for approval.
+- New slides: "Subagents vs Agent Teams" (a native diagram: main agent → subagents → results reported back, beside a Team Lead → shared task list ⇅ teammates who message each other), "A Team That Argues" and "The QA Loop".
+- New lab files: turning-55-brief.md and turning-55-draft.md (a first draft with planted errors, so round 1 of the audit fails). Both are in horizon-studio/data/. The theme deliberately differs from the PP's year-end tax campaign, so the lab does not rehearse the assessment.
+- Hermes Agent removed from the Claude Edition (history timeline, harness list, lab assets). Day 2: Lab 15 runs 15:15-15:45 and the summary 15:45-16:00; the assessment times are unchanged. The ChatGPT Edition is unchanged apart from the version number.
+- v3.3 outputs moved to archive/courseware-v3.3 and the old Lab 15 folder to archive/labs-v3.3.
+
+## v3.3 · 10 October 2026
+- No-code Claude Edition. Every lab says which app to use — Claude (Work mode) or Claude Code (Code mode) — on its brief slide (a USE badge), steps slide, README and Learner Guide page; a new "Claude or Claude Code?" slide. Labs 6–9 and 13–15 run in Claude; Labs 3, 4 and 11 use both.
+- Two new content labs: Lab 8 — a blog article from the storyboard (Day 1, 17:15–17:55; Marketing plugin, Firecrawl, fact-check, fin-compliance) and Lab 9 — the lead magnet: a Canva checklist and three welcome emails (Day 2, 09:05–09:35). Former Labs 8–13 renumbered 10–15; Day 1 review, Day 2 summary and the demo shortened to make room.
+- Lab 4 connects everything from Customize: Google Drive, Gmail, Google Calendar, Canva and Firecrawl (Connectors) and Anthropic's Marketing plugin (Plugins). Each agent's tools line now names its connectors (they were blocked before); Gmail sending is blocked for the Content Creator. Playwright removed — the browser is built in.
+- Skills: twenty, adding content-marketing, copywriting, linkedin-post, facebook-post, blog-post, newsletter, web-design and lead-magnet.
+- Approvals without a terminal: a person types "approved <id> by <name>" (or "changes <id>: why"); a UserPromptSubmit hook records it from the person's own message. The approval gate and agent teams come pre-installed in horizon-studio/.
+- The optional Hermes demo is replaced by a code-free "Lead on autopilot" scheduled brief in Claude. Setup slides and prerequisites no longer show install commands.
+- PP Task 3 cites Lab 10 and approves in the chat; Task 4 cites Labs 10, 13 and 14. v3.2 outputs moved to archive/courseware-v3.2; old-numbered lab folders to archive/labs-v3.3-old-numbering.
+
+## v3.2 · 9 October 2026
+- New overview block before the scenario (slides 8-18, Claude Edition): the Claude suite of products; what Claude is (Chat + Cowork merged); what Claude Code is; Claude for Microsoft, Chrome and Science; Claude plans and pricing (API row now lists Haiku 5.5); a brief history of AI 2023-2026; what a harness is; the agentic loop and why it matters; agentic AI vs AI agents (24/7, after Agentic AI for Video Creation); what an agent is made of (instructions, tools, skills, memory, knowledge base, guardrails). The ChatGPT Edition gets the same generic slides plus its existing tools and plans slides.
+- The Topic 1 timeline, agentic-loop, tools and pricing slides moved into the overview rather than being repeated. Lesson Plan: welcome + overview + scenario 9:00-9:45; Topic 1 9:45-10:00.
+- 142-slide Claude deck, 138-slide ChatGPT deck. v3.1 outputs moved to archive/courseware-v3.1, build sources to archive/build-v3.1.
+
 ## v3.1 · 9 October 2026
 - Horizon's website is given, not built. It is published once, publicly: a shared Claude artifact (https://claude.ai/artifact/J82VCbzFoqYps2vep8UYhL) plus a GitHub Pages backup (https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/) for learners who cannot open artifacts or Sites. The ChatGPT Edition shows the GitHub Pages link until a public Sites link is added in build/hz_data.py (SITE_SITES).
 - Lab 1 is now "Set Up the Studio and Explore Horizon's Website": open the public link, read the local copy, and record the link in the team charter. Lab 4's mobile check opens the public site.

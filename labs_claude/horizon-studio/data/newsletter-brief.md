@@ -1,4 +1,4 @@
-# Sunny Sunday email — November issue (Lab 10)
+# Sunny Sunday email — November issue (Lab 11)
 
 Send date: Sunday 8 November 2026, 8am. From: Sunny at Horizon
 <hello@horizonwealth.example>.

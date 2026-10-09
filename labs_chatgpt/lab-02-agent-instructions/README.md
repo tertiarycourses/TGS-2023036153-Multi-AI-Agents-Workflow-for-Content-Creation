@@ -1,9 +1,13 @@
 # Lab 02 — Form the Team: Instructions for Each Agent
 
+> **USE: CODEX** — Codex, in your horizon-studio folder
+
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 1 · Topic 1 · about 45 minutes · slides 38–42**\
+**Day 1 · Topic 1 · about 45 minutes · slides 41–46**\
 **Surface:** Codex (role cards, subagents)\
 **Features:** five role cards in agents/ · the roster in AGENTS.md · subagents by asking
+
+> **Copy the prompts:** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/chatgpt/#lab-2 — click **Copy** next to each prompt, then paste it into the chat.
 
 ## The story so far
 
@@ -19,19 +23,23 @@ agents/: five role cards, and the roster in AGENTS.md
 
 ## What is in this folder
 
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+
 - `assets/role-specs.md`
 - `assets/team-org-chart.md`
-- `solution/` — reference files from the verified build
+- `solution/` — reference files from the verified build (each `.md` with its `.pdf`)
 - `prompts.md` / `prompts.pdf` — every prompt, ready to paste
-- `evidence/checklist.md` — what to capture as proof
+- `evidence/checklist.md` / `checklist.pdf` — what to capture as proof
 
 ## Step by step
 
-1. **Read the roles** — Open role-specs.md: one Lead and five specialists, each with a job, skills, connectors and limits.
-2. **Write the instructions** — Paste Prompt A.
-3. **Read one closely** — Open agents/content-creator.md. Is the "Never" section strict enough for a regulated firm?
-4. **Meet the team** — Paste Prompt B. Each agent introduces itself in one line — in its own context.
-5. **Tighten one** — Change one instruction you disagree with and save it. It is your team.
+1. **New session** — In Codex start a new thread in horizon-studio and name it "Lab 2". Run all of this lab's prompts in it.
+2. **Read the roles** — Open role-specs.md: one Lead and five specialists, each with a job, skills, connectors and limits.
+3. **Write the instructions** — Copy and paste Prompt A. It builds the five specialists from the charter; extra ideas stay in team-design.md.
+4. **See the team** — After the five files appear in agents/, copy and paste Prompt B. The Lead is not a file — it is you, in this session.
+5. **Read one closely** — Open agents/content-creator.md. Is the "Never" section strict enough for a regulated firm?
+6. **Meet the team** — After the list shows five agents, copy and paste Prompt C. Each agent introduces itself in one line — in its own context.
+7. **Tighten one** — Change one instruction you disagree with and save it. It is your team.
 
 ## The prompts
 
@@ -48,7 +56,16 @@ agents/: five role cards, and the roster in AGENTS.md
 > "when I ask for the team, use subagents — one per
 > role — each following its card".
 
-### PROMPT B — Codex: meet the team
+### PROMPT B — Codex: see the team
+
+> List the role cards in agents/. For each, show
+> the file name, the role and its one-line job, in a
+> table. Then confirm there are five, and that
+> AGENTS.md lists all five under "## The marketing
+> team". If any other card is there, list it and ask
+> me before moving it to _archive/.
+
+### PROMPT C — Codex: meet the team
 
 > Use subagents — one per role, each following its
 > card in agents/. Ask each: "In one line, who are

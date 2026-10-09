@@ -2,12 +2,11 @@
 
 Capture a screenshot or file for each line. Evidence beats a description.
 
-- [ ] Twelve folders in .claude/skills/, each with a SKILL.md.
+- [ ] Twenty folders in .claude/skills/, each with a SKILL.md.
 - [ ] Every description starts "Use when…".
-- [ ] Each specialist lists its own two skills.
-- [ ] The untold test picked sunny-voice and channel-formats.
+- [ ] Each specialist lists its own skills from the spec.
+- [ ] The untold test picked sunny-voice and facebook-post.
 - [ ] fin-compliance flagged "guaranteed 8%" as Critical.
-- [ ] Three skills also appear in Claude under Customize → Skills.
 
 ## Notes
 
