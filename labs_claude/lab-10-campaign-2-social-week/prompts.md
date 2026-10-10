@@ -29,8 +29,11 @@ Before you start, ask me how I will review: in the
 artifact, or by email (then ask for the approver's
 address). When a post passes, submit it for review
 with scripts/submit.mjs. Publish the two posts as
-an artifact, each as it will look in the feed, with
-its image and alt text; under each post put two
+an artifact. At the top, a Team chat: the messages
+the teammates and you sent each other, in order,
+each with who sent it. Then each post as it will
+look in the feed, with its image and alt text;
+under each post put two
 working buttons (JavaScript): Approve turns the
 card green; Request changes opens a box for my
 note. A bar at the bottom asks my name once, builds

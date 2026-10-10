@@ -2,10 +2,14 @@
 // PEOPLE ONLY. Approves the CURRENT version of an item (records name, time
 // and hash) or sends it back. Refuses to run without an interactive
 // terminal, so an agent's tool call cannot approve anything.
-import { readRows, writeRows, hashOf } from './lib.mjs';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { ROOT, readRows, writeRows, hashOf } from './lib.mjs';
 
 if (!process.stdin.isTTY || !process.stdout.isTTY) {
-  console.error('approve.mjs must be run by a person in their own terminal — not by an agent.');
+  console.error(existsSync(join(ROOT, 'scripts', 'approve-chat.mjs'))
+    ? 'Only a person can approve. Ask them to type in the chat: approved <id> by <their name> — never ask them to run a command.'
+    : 'approve.mjs must be run by a person in their own terminal — not by an agent.');
   process.exit(2);
 }
 const [id, ...rest] = process.argv.slice(2);

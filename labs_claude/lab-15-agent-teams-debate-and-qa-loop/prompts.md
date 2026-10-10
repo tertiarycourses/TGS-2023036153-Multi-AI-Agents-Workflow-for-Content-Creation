@@ -23,8 +23,10 @@ Spawn two teammates:
   the pros, the cons, your verdict (go / go with
   conditions / no-go) and the conditions.
 Publish the decision as an artifact with the verdict
-on top, the pros and cons in two columns, and what
-I do next. Then wait for my decision.
+on top, the pros and cons in two columns, the debate
+(the messages the advocate and critic sent each
+other, in order) and what I do next. Then wait for
+my decision.
 Write for a business owner, in plain English: no
 codes, IDs, file names or line numbers; start with
 what it means and what I do next. Save a Word copy

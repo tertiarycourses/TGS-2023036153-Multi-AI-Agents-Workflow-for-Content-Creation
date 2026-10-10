@@ -3,8 +3,8 @@
 Capture a screenshot or file for each line. Evidence beats a description.
 
 - [ ] The gate stopped Claude from approving.
-- [ ] Two teammates ran; the task list showed their tasks.
-- [ ] The designer and the creator messaged each other.
+- [ ] Two teammates ran; the Lead said when each started and finished.
+- [ ] The Team chat shows the designer and the creator messaging each other.
 - [ ] Two posts with images from the designer, alt text and UTM links.
 - [ ] You reviewed in the artifact or by email and pasted the approval in the chat; the rows show your name and a hash.
 - [ ] You posted the approved text and image yourself (or, optionally, through the API after you said go).

@@ -33,7 +33,7 @@ the decision (pros, cons, verdict), then an email, a video script and a thumbnai
 ## Step by step
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 15". Run all of this lab's prompts in it.
-2. **Part 1: the debate** — Copy and paste Prompt A. The advocate and the critic message each other; Ctrl+T shows the task list.
+2. **Part 1: the debate** — Copy and paste Prompt A. The advocate and the critic message each other; the decision page shows their debate.
 3. **Decide** — Read the decision artifact. Reply "go", "go with conditions" or "no-go" — the call is yours.
 4. **Part 2: the QA loop** — After you have made the call, copy and paste Prompt B. The audit fails on round 1; watch the auditor message the writer directly.
 5. **Approve as a person** — Read the pieces and the QA artifact, then type in the chat: approved <id> by <your name> (or: changes <id>: what to fix).
@@ -59,8 +59,10 @@ the decision (pros, cons, verdict), then an email, a video script and a thumbnai
 >   the pros, the cons, your verdict (go / go with
 >   conditions / no-go) and the conditions.
 > Publish the decision as an artifact with the verdict
-> on top, the pros and cons in two columns, and what
-> I do next. Then wait for my decision.
+> on top, the pros and cons in two columns, the debate
+> (the messages the advocate and critic sent each
+> other, in order) and what I do next. Then wait for
+> my decision.
 > Write for a business owner, in plain English: no
 > codes, IDs, file names or line numbers; start with
 > what it means and what I do next. Save a Word copy

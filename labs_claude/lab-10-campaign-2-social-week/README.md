@@ -41,8 +41,8 @@ two posts with images, reviewed, approved by you and posted by you (or, optional
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 10". Run all of this lab's prompts in it.
 2. **The gate is on** — Your studio folder came with the approval gate and agent teams switched on — nothing to install.
 3. **Test the gate** — Ask Claude to approve a post itself. The gate must block it.
-4. **Start the team** — Copy and paste Prompt A. Teammates appear in the panel; ↑ ↓ and Enter open one; Ctrl+T shows the task list.
-5. **Watch them talk** — The designer asks the creator for each post's hook; the Lead sends fixes back.
+4. **Start the team** — Copy and paste Prompt A. The Lead starts two teammates and tells you as each one starts and finishes.
+5. **Watch them talk** — The review page opens with a Team chat: the designer asking the creator for each hook, and the Lead's fixes.
 6. **Approve as a person** — Review in the artifact (or open the review email and click its link). Click Approve or Request changes on each post, then Copy in the bottom bar and paste into the chat.
 7. **Get ready to post** — After you have approved the posts, copy and paste Prompt B. Each post appears with a Copy button for its text, and the folder with the two images opens on your computer.
 8. **Post it yourself** — Paste the text, add the image, Post — on LinkedIn and a test Facebook Page. Or stop at the preview.
@@ -74,8 +74,11 @@ two posts with images, reviewed, approved by you and posted by you (or, optional
 > artifact, or by email (then ask for the approver's
 > address). When a post passes, submit it for review
 > with scripts/submit.mjs. Publish the two posts as
-> an artifact, each as it will look in the feed, with
-> its image and alt text; under each post put two
+> an artifact. At the top, a Team chat: the messages
+> the teammates and you sent each other, in order,
+> each with who sent it. Then each post as it will
+> look in the feed, with its image and alt text;
+> under each post put two
 > working buttons (JavaScript): Approve turns the
 > card green; Request changes opens a box for my
 > note. A bar at the bottom asks my name once, builds
@@ -116,15 +119,15 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 ## Check your work
 
 - [ ] The gate stopped Claude from approving.
-- [ ] Two teammates ran; the task list showed their tasks.
-- [ ] The designer and the creator messaged each other.
+- [ ] Two teammates ran; the Lead said when each started and finished.
+- [ ] The Team chat shows the designer and the creator messaging each other.
 - [ ] Two posts with images from the designer, alt text and UTM links.
 - [ ] You reviewed in the artifact or by email and pasted the approval in the chat; the rows show your name and a hash.
 - [ ] You posted the approved text and image yourself (or, optionally, through the API after you said go).
 
 ## If it goes wrong
 
-- **You got subagents, not a team** — Start a new session in your studio folder and ask for "an agent team" by name.
+- **You got subagents, not a team** — Check you are in the current horizon-studio folder from the course, start a new session and ask for "an agent team" by name.
 - **LinkedIn returns 426** — LINKEDIN_VERSION must be a recent YYYYMM.
 
 ## Stretch
