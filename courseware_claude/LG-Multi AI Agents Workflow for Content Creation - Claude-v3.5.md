@@ -623,7 +623,7 @@ A regulated firm gives each agent only what its job needs.
 1. **Add the connectors** — Desktop app: Customize → Connectors → Discover. Add (+) Google Drive, Gmail, Google Calendar and Firecrawl; sign in to each.
 1. **Add the plugin** — In the chat type /plugin marketplace add anthropics/knowledge-work-plugins, then /plugin install marketing@knowledge-work-plugins.
 1. **Check** — Start a new session. Type /mcp: the four connectors are listed. Type /plugin: Marketing is installed.
-1. **Put the data on Drive** — Upload data/ to a Drive folder named Horizon Studio.
+1. **Put the data on Drive** — Ask: "Create a Google Drive folder named Horizon Studio and upload every file in data/ to it as plain files — do not convert them."
 1. **Give each agent its connectors** — Copy and paste Prompt A, then start a new session so the agents reload.
 1. **Test each agent** — After the new session opens, copy and paste Prompt B — one small job per agent, each on its own connector.
 
@@ -651,6 +651,7 @@ A regulated firm gives each agent only what its job needs.
 **If it goes wrong**
 
 - **Insufficient scope** — Reconnect and grant read access to the Horizon Studio folder.
+- **Claude cannot upload to Drive** — Check Google Drive is in /mcp. Or upload the files yourself: drive.google.com → New → New folder "Horizon Studio", open it → New → File upload.
 - **An agent says it has no Drive or Gmail tools** — Its tools line does not name the connector, or the session is old. Paste Prompt A again, then start a new session.
 - **A connector is missing from /mcp** — Customize → Connectors → Yours: it must be there and signed in — if not, find it under Discover and click +. Then start a new session.
 - **/mcp shows no connectors at all** — Type /status: you must be signed in with your claude.ai account, not an API key.
@@ -1512,7 +1513,7 @@ What a scheduled agent should and should not do for a regulated firm.
 **Step-by-step**
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 13". Run all of this lab's prompts in it.
-1. **Put the data on Drive** — Upload campaign-results.csv to the Horizon Studio folder.
+1. **Put the data on Drive** — Ask: "Upload data/campaign-results.csv to my Google Drive folder Horizon Studio as a plain file, replacing any old copy."
 1. **Do it once** — Copy and paste Prompt A. Refine the report until it is right.
 1. **Schedule it** — After the report is right, copy and paste Prompt B into the instructions of a new routine: Routines → New routine → Local, Mondays at 8am.
 1. **Run it now** — Click Run now once, approve any permission prompts, then open the Gmail draft.
@@ -1546,6 +1547,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 **If it goes wrong**
 
 - **It sent the email** — Write "draft only — never send" in both the skill and the task instructions.
+- **Claude cannot upload to Drive** — Upload it yourself: drive.google.com → New → New folder "Horizon Studio" (if missing), open it → New → File upload.
 
 **Stretch**
 

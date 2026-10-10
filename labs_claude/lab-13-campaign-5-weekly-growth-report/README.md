@@ -34,7 +34,7 @@ a scheduled task that drafts the weekly growth report every Monday at 8am, and o
 ## Step by step
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 13". Run all of this lab's prompts in it.
-2. **Put the data on Drive** — Upload campaign-results.csv to the Horizon Studio folder.
+2. **Put the data on Drive** — Ask: "Upload data/campaign-results.csv to my Google Drive folder Horizon Studio as a plain file, replacing any old copy."
 3. **Do it once** — Copy and paste Prompt A. Refine the report until it is right.
 4. **Schedule it** — After the report is right, copy and paste Prompt B into the instructions of a new routine: Routines → New routine → Local, Mondays at 8am.
 5. **Run it now** — Click Run now once, approve any permission prompts, then open the Gmail draft.
@@ -87,6 +87,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 ## If it goes wrong
 
 - **It sent the email** — Write "draft only — never send" in both the skill and the task instructions.
+- **Claude cannot upload to Drive** — Upload it yourself: drive.google.com → New → New folder "Horizon Studio" (if missing), open it → New → File upload.
 
 ## Stretch
 

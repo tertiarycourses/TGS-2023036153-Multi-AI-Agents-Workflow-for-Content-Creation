@@ -35,7 +35,7 @@ every specialist tested on its own connector, with its limits written into its i
 2. **Add the connectors** — Desktop app: Customize → Connectors → Discover. Add (+) Google Drive, Gmail, Google Calendar and Firecrawl; sign in to each.
 3. **Add the plugin** — In the chat type /plugin marketplace add anthropics/knowledge-work-plugins, then /plugin install marketing@knowledge-work-plugins.
 4. **Check** — Start a new session. Type /mcp: the four connectors are listed. Type /plugin: Marketing is installed.
-5. **Put the data on Drive** — Upload data/ to a Drive folder named Horizon Studio.
+5. **Put the data on Drive** — Ask: "Create a Google Drive folder named Horizon Studio and upload every file in data/ to it as plain files — do not convert them."
 6. **Give each agent its connectors** — Copy and paste Prompt A, then start a new session so the agents reload.
 7. **Test each agent** — After the new session opens, copy and paste Prompt B — one small job per agent, each on its own connector.
 
@@ -82,6 +82,7 @@ every specialist tested on its own connector, with its limits written into its i
 ## If it goes wrong
 
 - **Insufficient scope** — Reconnect and grant read access to the Horizon Studio folder.
+- **Claude cannot upload to Drive** — Check Google Drive is in /mcp. Or upload the files yourself: drive.google.com → New → New folder "Horizon Studio", open it → New → File upload.
 - **An agent says it has no Drive or Gmail tools** — Its tools line does not name the connector, or the session is old. Paste Prompt A again, then start a new session.
 - **A connector is missing from /mcp** — Customize → Connectors → Yours: it must be there and signed in — if not, find it under Discover and click +. Then start a new session.
 - **/mcp shows no connectors at all** — Type /status: you must be signed in with your claude.ai account, not an API key.
