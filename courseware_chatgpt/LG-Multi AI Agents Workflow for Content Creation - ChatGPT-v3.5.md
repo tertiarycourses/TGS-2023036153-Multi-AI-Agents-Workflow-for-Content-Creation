@@ -129,10 +129,10 @@ Tip: This edition builds the team with skills and Codex subagents, so it works o
 
 #### A Brief History of AI, 2023–2026
 
-- **2023 · Chatbots** — ChatGPT goes mainstream; Anthropic launches Claude (March). The skill: prompt engineering.
-- **2024 · Tools and MCP** — Models call tools. Anthropic open-sources the Model Context Protocol (Nov). The skill: context engineering.
-- **2025 · Agentic AI** — Claude Code and Codex: agents plan, act and check their own work. The skill: harness engineering.
-- **2026 · Agent Teams** — ChatGPT Work and Codex subagents; workspace agents and always-on Dots.
+- **2023 · Prompt Engineering** — ChatGPT goes mainstream; Anthropic launches Claude (March). Results depend on how you word the prompt.
+- **2024 · Context Engineering** — Models call tools. Anthropic open-sources the Model Context Protocol (Nov). Results depend on what the model can see.
+- **2025 · Harness Engineering** — Claude Code and Codex: agents plan, act and check their own work. Results depend on the system around the model.
+- **2026 · AI Agents** — ChatGPT Work and Codex subagents; workspace agents and always-on Dots.
 
 From wording one prompt, to curating context, to engineering the whole system around the model — and now, teams of agents.
 
