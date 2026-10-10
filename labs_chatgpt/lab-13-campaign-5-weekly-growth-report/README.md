@@ -3,7 +3,7 @@
 > **USE: CHATGPT WORK** — ChatGPT Work
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 2 · Topic 4 · about 35 minutes · slides 136–140**\
+**Day 2 · Topic 4 · about 35 minutes · slides 137–141**\
 **Surface:** ChatGPT Work (skill, scheduled task, @Drive, @Gmail)\
 **Features:** the Growth Analyst's campaign-report skill · do · verify · schedule · draft-only delivery
 

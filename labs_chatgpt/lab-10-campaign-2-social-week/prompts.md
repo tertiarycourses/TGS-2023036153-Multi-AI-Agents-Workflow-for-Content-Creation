@@ -4,7 +4,26 @@
 
 **Easiest:** copy each prompt from https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/chatgpt/#lab-10 (one Copy button per prompt).
 
-## PROMPT A — Codex: the social team
+## PROMPT A — Codex: get the latest kit
+
+```
+Bring this studio up to date with the course kit.
+From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/
+download scripts/serve-site.mjs and
+data/publishing-spec.md, channel-formats.md,
+connect-accounts.md and env.example into the same
+places here. From
+https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/
+download approve.mjs, gate-hook.mjs, lib.mjs,
+publish.mjs and submit.mjs into scripts/. Replace
+old copies; touch nothing else.
+Then add this rule to AGENTS.md if it is missing:
+every post links to http://localhost:8080/ with UTM tags.
+Then start my website and tell me in one line that
+the kit is up to date.
+```
+
+## PROMPT B — Codex: the social team
 
 ```
 You are the Lead. Plan Week 1 social from
@@ -13,7 +32,8 @@ Use subagents in parallel, each following its card:
 - content-creator: 1 LinkedIn + 1 Facebook post with
   linkedin-post, facebook-post and copywriting, one
   file each in content/social/week-01/, with the
-  frontmatter in data/publishing-spec.md.
+  frontmatter in data/publishing-spec.md. Each post
+  links to my website, http://localhost:8080/, with UTM tags.
 - creative-designer: one image per post with
   $imagegen and alt text, from the brief. Save each
   as a PNG beside its post and fill in the post's
@@ -28,7 +48,7 @@ what it means and what I do next. Save a Word copy
 (.docx) of each result.
 ```
 
-## PROMPT B — Codex: publish
+## PROMPT C — Codex: publish
 
 ```
 For every Week 1 post approved in

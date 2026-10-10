@@ -4,7 +4,28 @@
 
 **Easiest:** copy each prompt from https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/claude/#lab-10 (one Copy button per prompt).
 
-## PROMPT A — Claude Code: the social team
+## PROMPT A — Claude Code: get the latest kit
+
+```
+Bring this studio up to date with the course kit.
+Download each file below from
+https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_claude/horizon-studio/
+into the same place here, replacing the old copy:
+.claude/settings.json; scripts/approve-chat.mjs,
+gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs
+and submit.mjs; data/publishing-spec.md,
+channel-formats.md, connect-accounts.md and
+env.example. Touch nothing else.
+Then add these rules to CLAUDE.md if they are
+missing: every post links to http://localhost:8080/ with
+UTM tags, never a claude.ai artifact link; a person
+approves by typing "approved <id> by <name>" in the
+chat; never ask me to run a command.
+Then start my website and tell me in one line that
+the kit is up to date.
+```
+
+## PROMPT B — Claude Code: the social team
 
 ```
 Create an agent team for Week 1 social from
@@ -15,7 +36,9 @@ Lead.
 - content-creator: 1 LinkedIn + 1 Facebook post
   with linkedin-post, facebook-post and copywriting,
   one file each in content/social/week-01/, with the
-  frontmatter in data/publishing-spec.md.
+  frontmatter in data/publishing-spec.md. Each post
+  links to my website, http://localhost:8080/, with
+  UTM tags.
 - creative-designer: one image per post (a rendered
   card in Horizon colours: LinkedIn 1200 x 627,
   Facebook 1080 x 1080) with alt text; message the
@@ -51,7 +74,7 @@ what it means and what I do next. Save a Word copy
 (.docx) of each result.
 ```
 
-## PROMPT B — Claude Code: ready to post
+## PROMPT C — Claude Code: ready to post
 
 ```
 For each Week 1 post approved in

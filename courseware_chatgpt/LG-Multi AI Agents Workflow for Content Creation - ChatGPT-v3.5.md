@@ -296,13 +296,14 @@ Before you hire agents, give them shared rules, shared facts and a website to po
 
 **The story so far:** October 2026. Rachel has a website and a goal: 40 booked chats a month by March. She has no marketing team. Before you hire one made of agents, give it a home — shared rules, shared facts — and open your own copy of Horizon's website.
 
-**Goal:** Before anyone builds a team, the team needs a home: one folder of shared facts and rules, your own copy of Horizon's website to work on, and the one public link every post points to.
+**Goal:** Before anyone builds a team, the team needs a home: one folder of shared facts and rules, and your own copy of Horizon's website — the one every post links to.
 
-**You'll build:** the Horizon Marketing project, horizon-studio/ with AGENTS.md, and the public site link in the charter
+**You'll build:** the Horizon Marketing project, horizon-studio/ with AGENTS.md, and your own copy of the site running at http://localhost:8080/
 
 **Horizon's website**
 
-- **Public site (the link in every post):** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
+- **Your website (the link in every post):** http://localhost:8080/
+- **Public site (to look at only):** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
 
 **Folder structure**
 
@@ -335,7 +336,7 @@ labs_chatgpt/
 1. **Make the Project** — In ChatGPT create the Project "Horizon Marketing" with the charter, brand, facts and compliance files. Copy and paste Prompt A as its instructions.
 1. **Plan your team** — In Codex, copy and paste Prompt B. Answer as Horizon's owner and pick your team — keep the six charter roles. It is a plan only: Lab 2 builds the agents.
 1. **Write the charter** — After Codex saves data/team-design.md, copy and paste Prompt C. Open AGENTS.md — every agent reads it.
-1. **Open the website** — Ask: "Open web/site/index.html in my web browser." This is your own copy of Horizon's website; the public site never changes. Check the calculator shows S$693,138.
+1. **Open the website** — Ask: "Start my website." It opens at http://localhost:8080/ — your own copy of Horizon's website; every post links to it. Check the calculator shows S$693,138.
 
 **PROMPT A — ChatGPT Project: instructions**
 
@@ -348,9 +349,8 @@ labs_chatgpt/
 **PROMPT C — Codex: the charter**
 
 > Read data/team-charter.md, data/team-design.md and data/business-brief.md. Write AGENTS.md for this studio in four sections — What this is, The team, Rules, Files — under 60 lines. The team is the one I chose in data/team-design.md. Rules: every number comes from data/facts-2026.md; every piece passes fact-check and fin-compliance; nothing is published or sent without a person's approval (the one exception: a review email to the approver); anything shown to me is in plain English for a business owner, with no codes, IDs, file names or line numbers. In Files, add two lines:
-> - Our copy of the site, which we edit and preview:
->   web/site/index.html
-> - Public site, the link every post points to (it never changes): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
+> - Our copy of the site, which we edit: web/site/. "Start my website" runs scripts/serve-site.mjs in the background and opens http://localhost:8080/
+> - Every post links to http://localhost:8080/ with UTM tags, never to a claude.ai artifact link.
 
 **Check your work**
 
@@ -358,12 +358,12 @@ labs_chatgpt/
 - ☐  data/team-design.md holds your answers and the team you chose, with the six charter roles in it — and no agent files yet.
 - ☐  AGENTS.md has the four sections and is under 60 lines.
 - ☐  Its rules name the facts sheet, the two checks and the human approval.
-- ☐  AGENTS.md names your copy of the site and the public link every post points to.
-- ☐  Your own copy of the website opens in your browser; the calculator shows S$693,138.
+- ☐  AGENTS.md names your copy of the site and the link every post points to.
+- ☐  Your website opens at http://localhost:8080/; the calculator shows S$693,138.
 
 **If it goes wrong**
 
-- **The website does not open** — In your horizon-studio folder, open web/site and double-click index.html.
+- **The website does not open** — Say: "Start my website again." If the page still does not load, say: "Open web/site/index.html in my web browser."
 - **It created agent files already** — Not yet — say "Move everything in agents/ to _archive/. We build the team in Lab 2." The plan in data/team-design.md is all Lab 1 needs.
 
 **Stretch**
@@ -1011,7 +1011,7 @@ Everything the campaigns need tomorrow is in place.
 
 ## Topic 3 — Multi-Channel Content Creation and Agent Workflow Coordination
 
-Slides 96–132. In this topic you will:
+Slides 96–133. In this topic you will:
 
 - Subagents and the Lead's review
 - The lead magnet: a checklist people want, and its emails
@@ -1174,7 +1174,7 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (subagents) → LinkedIn, Facebook  ·  **Time:** 40 min  ·  **Slides:** 111–116
+**Surface:** Codex (subagents) → LinkedIn, Facebook  ·  **Time:** 40 min  ·  **Slides:** 111–117
 
 **Lab folder:** labs_chatgpt/lab-10-campaign-2-social-week/ — assets: social-brief.md, publisher-kit/, publishing-spec.md, approvals-format.csv, connect-accounts.md, env.example, sample-calendar.csv
 
@@ -1183,20 +1183,26 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 **Step-by-step**
 
 1. **New session** — In Codex start a new thread in horizon-studio and name it "Lab 10". Run all of this lab's prompts in it.
-1. **Install the kit** — Copy publisher-kit/scripts into scripts/. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.
+1. **Get the latest kit** — Copy and paste Prompt A. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.
 1. **Test the gate** — Ask Codex to approve anything. approve.mjs refuses without a person at a terminal.
-1. **Run the team** — Copy and paste Prompt A. Watch the Subagents panel: Active, then Done.
+1. **Run the team** — After Codex says the kit is up to date, copy and paste Prompt B. Watch the Subagents panel: Active, then Done.
 1. **Read the review** — The Lead's fact-check and fin-compliance table — at least one fix.
 1. **Approve as a person** — In your own terminal: node scripts/approve.mjs <id> --by "Your Name".
-1. **Publish** — After you have approved the posts, copy and paste Prompt B. Dry run first; --live only if your accounts are connected.
+1. **Publish** — After you have approved the posts, copy and paste Prompt C. A dry run only: it shows what would be sent.
+1. **Optional: post through the apps** — Follow "Optional: post through LinkedIn and Facebook" in this lab's README.
 
-**PROMPT A — Codex: the social team**
+**PROMPT A — Codex: get the latest kit**
+
+> Bring this studio up to date with the course kit. From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/ download scripts/serve-site.mjs and data/publishing-spec.md, channel-formats.md, connect-accounts.md and env.example into the same places here. From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/ download approve.mjs, gate-hook.mjs, lib.mjs, publish.mjs and submit.mjs into scripts/. Replace old copies; touch nothing else. Then add this rule to AGENTS.md if it is missing:
+> every post links to http://localhost:8080/ with UTM tags. Then start my website and tell me in one line that the kit is up to date.
+
+**PROMPT B — Codex: the social team**
 
 > You are the Lead. Plan Week 1 social from data/social-brief.md and strategy/calendar.csv. Use subagents in parallel, each following its card:
-> - content-creator: 1 LinkedIn + 1 Facebook post with linkedin-post, facebook-post and copywriting, one file each in content/social/week-01/, with the frontmatter in data/publishing-spec.md.
+> - content-creator: 1 LinkedIn + 1 Facebook post with linkedin-post, facebook-post and copywriting, one file each in content/social/week-01/, with the frontmatter in data/publishing-spec.md. Each post links to my website, http://localhost:8080/, with UTM tags.
 > - creative-designer: one image per post with $imagegen and alt text, from the brief. Save each as a PNG beside its post and fill in the post's image and alt lines, so the image is posted with it. Then run fact-check and fin-compliance on every post and send each fix back to the right subagent. When a post passes, run node scripts/submit.mjs on it. Publish nothing. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
 
-**PROMPT B — Codex: publish**
+**PROMPT C — Codex: publish**
 
 > For every Week 1 post approved in review/approvals.csv, run node scripts/publish.mjs <id> as a dry run and show me each request. Wait for me to say "go" before any --live run.
 
@@ -1207,6 +1213,19 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 - "Which post do you expect to do best, and why?"
 - "What did the Lead send back to the writer, and why?"
 - "Is anything here not ready to post? Explain in plain English."
+
+**Optional: post through LinkedIn and Facebook**
+
+About 20 minutes, after you have approved the posts. Use test accounts only: your own LinkedIn profile and a test Facebook Page you manage. Skip any post you already posted by hand. The link in each post opens your own website, so it works only on your computer.
+
+1. **Make your key file** — Ask Codex: "Make my .env file from data/env.example and open it in a text editor." Your keys go only in this file — never in the chat.
+1. **LinkedIn app** — Go to linkedin.com/developers → Create app (link it to a LinkedIn Page; a test Page is fine). Under Products add Share on LinkedIn and Sign In with LinkedIn using OpenID Connect.
+1. **LinkedIn key** — Auth → OAuth 2.0 tools → create a token with openid, profile and w_member_social. Paste it after LINKEDIN_ACCESS_TOKEN= in .env and save.
+1. **Your LinkedIn ID** — Ask Codex: "Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token."
+1. **Facebook app** — Go to developers.facebook.com → Create app → Business. Open Tools → Graph API Explorer and pick your app. Add pages_manage_posts, pages_read_engagement and pages_show_list, then Generate token and choose your test Page.
+1. **Facebook key** — Click Get Page Access Token. Paste it after FB_PAGE_TOKEN= in .env, and your Page ID (Page → About → Page transparency) after FB_PAGE_ID=. Save. This key lasts about an hour, so do it just before you post.
+1. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each card should show your key partly hidden (like LITO…), not "missing".
+1. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and the artifact shows its link.
 
 **Check your work**
 
@@ -1259,7 +1278,7 @@ The PDPA, applied by an agent that counts.
 
 **USE: CODEX, THEN CHATGPT WORK** — start in Codex; the step that moves you to ChatGPT Work says so
 
-**Surface:** Codex (subagents) → @Sites → ChatGPT Work (@Gmail)  ·  **Time:** 45 min  ·  **Slides:** 119–124
+**Surface:** Codex (subagents) → @Sites → ChatGPT Work (@Gmail)  ·  **Time:** 45 min  ·  **Slides:** 120–125
 
 **Lab folder:** labs_chatgpt/lab-11-campaign-3-newsletter-and-landing-page/ — assets: newsletter-brief.md, newsletter-spec.md, landing-page-brief.md, site-brief.md, checklist-items.md, subscribers.csv
 
@@ -1333,7 +1352,7 @@ Lab 12: the team writes and designs; you approve twice.
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (subagents, $imagegen, render, upload)  ·  **Time:** 45 min  ·  **Slides:** 126–131
+**Surface:** Codex (subagents, $imagegen, render, upload)  ·  **Time:** 45 min  ·  **Slides:** 127–132
 
 **Lab folder:** labs_chatgpt/lab-12-campaign-4-youtube-explainer/ — assets: youtube-brief.md, video-spec.md, sample-explainer.mp4
 
@@ -1401,7 +1420,7 @@ Three campaigns, every piece checked by the Lead and approved by a person. But t
 
 ## Topic 4 — Content Distribution, Strategy Guidelines and Responsible AI Practices
 
-Slides 133–162. In this topic you will:
+Slides 134–163. In this topic you will:
 
 - Campaign 5: always on, with a scheduled task
 - Responsible AI for financial content
@@ -1440,7 +1459,7 @@ What a scheduled agent should and should not do for a regulated firm.
 
 **USE: CHATGPT WORK** — ChatGPT Work
 
-**Surface:** ChatGPT Work (skill, scheduled task, @Drive, @Gmail)  ·  **Time:** 35 min  ·  **Slides:** 136–140
+**Surface:** ChatGPT Work (skill, scheduled task, @Drive, @Gmail)  ·  **Time:** 35 min  ·  **Slides:** 137–141
 
 **Lab folder:** labs_chatgpt/lab-13-campaign-5-weekly-growth-report/ — assets: campaign-results.csv, weekly-report-brief.md, scheduled-task-instructions.md
 
@@ -1526,7 +1545,7 @@ Lab 14: the numbers decide next month — and which patterns earn their tokens.
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (subagents)  ·  **Time:** 40 min  ·  **Slides:** 143–148
+**Surface:** Codex (subagents)  ·  **Time:** 40 min  ·  **Slides:** 144–149
 
 **Lab folder:** labs_chatgpt/lab-14-team-playbook/ — assets: run-log.csv, playbook-outline.md, responsible-ai-checklist.md
 
@@ -1606,7 +1625,7 @@ Tip: Same rule: draft, a person approves, then publish.
 
 **USE: CHATGPT** — the ChatGPT desktop app
 
-**Surface:** ChatGPT Dots and workspace agents — trainer demo  ·  **Time:** 20 min  ·  **Slides:** 151–154
+**Surface:** ChatGPT Dots and workspace agents — trainer demo  ·  **Time:** 20 min  ·  **Slides:** 152–155
 
 **Lab folder:** labs_chatgpt/lab-15-optional-dot-and-workspace-agents/ — assets: dot-and-workspace-agents.md
 

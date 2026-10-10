@@ -3,7 +3,7 @@
 > **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (Claude Edition) (TGS-2023036153)\
-**Day 2 · Topic 3 · about 40 minutes · slides 115–121**\
+**Day 2 · Topic 3 · about 40 minutes · slides 115–122**\
 **Surface:** Claude Code (agent team) → LinkedIn, Facebook\
 **Features:** the publisher kit and its hook · an agent team: creator, designer, Lead · teammates message each other · human approval → you post
 
@@ -39,18 +39,37 @@ two posts with images, reviewed, approved by you and posted by you (or, optional
 ## Step by step
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 10". Run all of this lab's prompts in it.
-2. **The gate is on** — Your studio folder came with the approval gate and agent teams switched on — nothing to install.
+2. **Get the latest kit** — Copy and paste Prompt A. Claude downloads the newest course files into your folder and starts your website. Your own work stays as it is.
 3. **Test the gate** — Ask Claude to approve a post itself. The gate must block it.
-4. **Start the team** — Copy and paste Prompt A. The Lead starts two teammates and tells you as each one starts and finishes.
+4. **Start the team** — After Claude says the kit is up to date, copy and paste Prompt B. The Lead starts two teammates and tells you as each one starts and finishes.
 5. **Watch them talk** — The review page opens with a Team chat: the designer asking the creator for each hook, and the Lead's fixes.
 6. **Approve as a person** — Review in the artifact (or open the review email and click its link). Click Approve or Request changes on each post, then Copy in the bottom bar and paste into the chat.
-7. **Get ready to post** — After you have approved the posts, copy and paste Prompt B. Each post appears with a Copy button for its text, and the folder with the two images opens on your computer.
+7. **Get ready to post** — After you have approved the posts, copy and paste Prompt C. Each post appears with a Copy button for its text, and the folder with the two images opens on your computer.
 8. **Post it yourself** — Paste the text, add the image, Post — on LinkedIn and a test Facebook Page. Or stop at the preview.
-9. **Optional: post via the API** — Connect test accounts (connect-accounts.pdf). Dry run, then say go — not for posts you posted by hand.
+9. **Optional: post through the apps** — Follow "Optional: post through LinkedIn and Facebook" in this lab's README.
 
 ## The prompts
 
-### PROMPT A — Claude Code: the social team
+### PROMPT A — Claude Code: get the latest kit
+
+> Bring this studio up to date with the course kit.
+> Download each file below from
+> https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_claude/horizon-studio/
+> into the same place here, replacing the old copy:
+> .claude/settings.json; scripts/approve-chat.mjs,
+> gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs
+> and submit.mjs; data/publishing-spec.md,
+> channel-formats.md, connect-accounts.md and
+> env.example. Touch nothing else.
+> Then add these rules to CLAUDE.md if they are
+> missing: every post links to http://localhost:8080/ with
+> UTM tags, never a claude.ai artifact link; a person
+> approves by typing "approved <id> by <name>" in the
+> chat; never ask me to run a command.
+> Then start my website and tell me in one line that
+> the kit is up to date.
+
+### PROMPT B — Claude Code: the social team
 
 > Create an agent team for Week 1 social from
 > data/social-brief.md and strategy/calendar.csv.
@@ -60,7 +79,9 @@ two posts with images, reviewed, approved by you and posted by you (or, optional
 > - content-creator: 1 LinkedIn + 1 Facebook post
 >   with linkedin-post, facebook-post and copywriting,
 >   one file each in content/social/week-01/, with the
->   frontmatter in data/publishing-spec.md.
+>   frontmatter in data/publishing-spec.md. Each post
+>   links to my website, http://localhost:8080/, with
+>   UTM tags.
 > - creative-designer: one image per post (a rendered
 >   card in Horizon colours: LinkedIn 1200 x 627,
 >   Facebook 1080 x 1080) with alt text; message the
@@ -95,7 +116,7 @@ two posts with images, reviewed, approved by you and posted by you (or, optional
 > what it means and what I do next. Save a Word copy
 > (.docx) of each result.
 
-### PROMPT B — Claude Code: ready to post
+### PROMPT C — Claude Code: ready to post
 
 > For each Week 1 post approved in
 > review/approvals.csv, publish a "ready to post"
@@ -115,6 +136,19 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 - "Which post do you expect to do best, and why?"
 - "What did the Lead send back to the writer, and why?"
 - "Is anything here not ready to post? Explain in plain English."
+
+## Optional: post through LinkedIn and Facebook
+
+About 20 minutes, after you have approved the posts. Use test accounts only: your own LinkedIn profile and a test Facebook Page you manage. Skip any post you already posted by hand. The link in each post opens your own website, so it works only on your computer.
+
+1. **Make your key file** — Ask Claude Code: "Make my .env file from data/env.example and open it in a text editor." Your keys go only in this file — never in the chat.
+2. **LinkedIn app** — Go to linkedin.com/developers → Create app (link it to a LinkedIn Page; a test Page is fine). Under Products add Share on LinkedIn and Sign In with LinkedIn using OpenID Connect.
+3. **LinkedIn key** — Auth → OAuth 2.0 tools → create a token with openid, profile and w_member_social. Paste it after LINKEDIN_ACCESS_TOKEN= in .env and save.
+4. **Your LinkedIn ID** — Ask Claude Code: "Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token."
+5. **Facebook app** — Go to developers.facebook.com → Create app → Business. Open Tools → Graph API Explorer and pick your app. Add pages_manage_posts, pages_read_engagement and pages_show_list, then Generate token and choose your test Page.
+6. **Facebook key** — Click Get Page Access Token. Paste it after FB_PAGE_TOKEN= in .env, and your Page ID (Page → About → Page transparency) after FB_PAGE_ID=. Save. This key lasts about an hour, so do it just before you post.
+7. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each card should show your key partly hidden (like LITO…), not "missing".
+8. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and the artifact shows its link.
 
 ## Check your work
 

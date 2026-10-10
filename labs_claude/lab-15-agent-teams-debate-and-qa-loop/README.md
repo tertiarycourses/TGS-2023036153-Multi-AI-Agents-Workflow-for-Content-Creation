@@ -3,7 +3,7 @@
 > **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (Claude Edition) (TGS-2023036153)\
-**Day 2 · Topic 4 · about 30 minutes · slides 158–164**\
+**Day 2 · Topic 4 · about 30 minutes · slides 159–165**\
 **Surface:** Claude Code (agent teams: Lead, teammates, shared task list, direct messages)\
 **Features:** an advocate and a critic argue the pros and cons · the Lead judges · a writer and a QA Auditor loop until PASS · FAIL goes straight back to the writer · human approval
 

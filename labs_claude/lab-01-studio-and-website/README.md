@@ -15,17 +15,18 @@ October 2026. Rachel has a website and a goal: 40 booked chats a month by March.
 
 ## Your goal
 
-Before anyone builds a team, the team needs a home: one folder of shared facts and rules, your own copy of Horizon's website to work on, and the one public link every post points to.
+Before anyone builds a team, the team needs a home: one folder of shared facts and rules, and your own copy of Horizon's website — the one every post links to.
 
 ## You'll build
 
-horizon-studio/ with CLAUDE.md, the shared data, a local copy of the site, and the public site link in the charter
+horizon-studio/ with CLAUDE.md, the shared data, and your own copy of the site running at http://localhost:8080/
 
 ## Horizon's website
 
-You work on your own copy, `web/site/index.html` in your folder; Labs 8 and 9 add to it. The public site below never changes: it is only the link every post points to.
+You work on your own copy in `web/site/` of your folder; Labs 8 and 9 add to it. Ask "Start my website" to open it at http://localhost:8080/ — every post links there. The public site is only for looking at; nobody changes it.
 
-- **Public site (the link in every post):** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
+- **Your website (the link in every post):** http://localhost:8080/
+- **Public site (to look at only):** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
 
 ## Folder structure
 
@@ -64,7 +65,7 @@ labs_claude/
 2. **Trust it** — Sign in with your claude.ai account and trust the folder. Click the session title at the top and rename it "Lab 1" — every lab gets its own session.
 3. **Plan your team** — Copy and paste Prompt A. Answer as Horizon's owner and pick your team — keep the six charter roles. It is a plan only: Lab 2 builds the agents.
 4. **Write the charter** — After Claude saves data/team-design.md, copy and paste Prompt B. Open CLAUDE.md — every agent reads it.
-5. **Open the website** — Ask: "Open web/site/index.html in my web browser." This is your own copy of Horizon's website; Labs 8 and 9 add to it, and the public site never changes. Check the calculator shows S$693,138.
+5. **Open the website** — Ask: "Start my website." It opens at http://localhost:8080/ — your own copy of Horizon's website; Labs 8 and 9 add to it, and every post links to it. Check the calculator shows S$693,138.
 
 ## The prompts
 
@@ -99,10 +100,11 @@ labs_claude/
 > shown to me is in plain English for a business owner,
 > with no codes, IDs, file names or line numbers.
 > In Files, add two lines:
-> - Our copy of the site, which we edit and preview:
->   web/site/index.html
-> - Public site, the link every post points to (it
->   never changes): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
+> - Our copy of the site, which we edit: web/site/.
+>   "Start my website" runs scripts/serve-site.mjs in
+>   the background and opens http://localhost:8080/
+> - Every post links to http://localhost:8080/ with
+>   UTM tags, never to a claude.ai artifact link.
 
 ## Check your work
 
@@ -110,12 +112,12 @@ labs_claude/
 - [ ] data/team-design.md holds your answers and the team you chose, with the six charter roles in it — and no agent files yet.
 - [ ] CLAUDE.md has the four sections and is under 60 lines.
 - [ ] Its rules name the facts sheet, the two checks and the human approval.
-- [ ] CLAUDE.md names your copy of the site and the public link every post points to.
-- [ ] Your own copy of the website opens in your browser; the calculator shows S$693,138.
+- [ ] CLAUDE.md names your copy of the site and the link every post points to.
+- [ ] Your website opens at http://localhost:8080/; the calculator shows S$693,138.
 
 ## If it goes wrong
 
-- **The website does not open** — In your horizon-studio folder, open web/site and double-click index.html.
+- **The website does not open** — Say: "Start my website again." If the page still does not load, say: "Open web/site/index.html in my web browser."
 - **It created agent files already** — Not yet — say "Move everything in .claude/agents/ to _archive/. We build the team in Lab 2." The plan in data/team-design.md is all Lab 1 needs.
 
 ## Stretch

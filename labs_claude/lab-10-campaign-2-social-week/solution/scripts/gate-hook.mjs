@@ -2,7 +2,9 @@
 // (.codex/hooks.json). Reads the tool call as JSON on stdin; exit 2 blocks
 // the call and shows the reason to the agent. It matches on the whole tool
 // input, so it works whatever shape the shell tool's input takes.
-import { liveBlocker } from './lib.mjs';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { ROOT, liveBlocker } from './lib.mjs';
 
 let raw = '';
 for await (const chunk of process.stdin) raw += chunk;
@@ -12,7 +14,11 @@ const input = JSON.stringify(call.tool_input ?? call.input ?? call.arguments ?? 
 const block = (why) => { console.error(`BLOCKED by the approval gate: ${why}`); process.exit(2); };
 
 // Only people approve.
-if (/approve\.mjs/.test(input)) block('only a person approves content — they type "approved <id> by <name>" in the chat (or run approve.mjs in their own terminal).');
+// Claude studios approve in the chat only: never point a learner to a terminal.
+const chat = existsSync(join(ROOT, 'scripts', 'approve-chat.mjs'));
+if (/approve\.mjs/.test(input)) block(chat
+  ? 'only a person approves content — ask them to type "approved <id> by <name>" in the chat. Never ask them to run a command.'
+  : 'only a person approves content — they run approve.mjs in their own terminal.');
 
 // Live publishing needs an approved, unchanged item.
 const m = input.match(/publish\.mjs\s+([\w.-]+)/);

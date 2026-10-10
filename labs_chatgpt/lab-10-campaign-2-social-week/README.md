@@ -3,7 +3,7 @@
 > **USE: CODEX** — Codex, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 2 · Topic 3 · about 40 minutes · slides 111–116**\
+**Day 2 · Topic 3 · about 40 minutes · slides 111–117**\
 **Surface:** Codex (subagents) → LinkedIn, Facebook\
 **Features:** the publisher kit · creator and designer subagents in parallel · the Lead's review · human approval → post
 
@@ -39,16 +39,34 @@ two posts with images, reviewed, approved by you and posted (or dry-run) — wit
 ## Step by step
 
 1. **New session** — In Codex start a new thread in horizon-studio and name it "Lab 10". Run all of this lab's prompts in it.
-2. **Install the kit** — Copy publisher-kit/scripts into scripts/. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.
+2. **Get the latest kit** — Copy and paste Prompt A. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.
 3. **Test the gate** — Ask Codex to approve anything. approve.mjs refuses without a person at a terminal.
-4. **Run the team** — Copy and paste Prompt A. Watch the Subagents panel: Active, then Done.
+4. **Run the team** — After Codex says the kit is up to date, copy and paste Prompt B. Watch the Subagents panel: Active, then Done.
 5. **Read the review** — The Lead's fact-check and fin-compliance table — at least one fix.
 6. **Approve as a person** — In your own terminal: node scripts/approve.mjs <id> --by "Your Name".
-7. **Publish** — After you have approved the posts, copy and paste Prompt B. Dry run first; --live only if your accounts are connected.
+7. **Publish** — After you have approved the posts, copy and paste Prompt C. A dry run only: it shows what would be sent.
+8. **Optional: post through the apps** — Follow "Optional: post through LinkedIn and Facebook" in this lab's README.
 
 ## The prompts
 
-### PROMPT A — Codex: the social team
+### PROMPT A — Codex: get the latest kit
+
+> Bring this studio up to date with the course kit.
+> From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/
+> download scripts/serve-site.mjs and
+> data/publishing-spec.md, channel-formats.md,
+> connect-accounts.md and env.example into the same
+> places here. From
+> https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/
+> download approve.mjs, gate-hook.mjs, lib.mjs,
+> publish.mjs and submit.mjs into scripts/. Replace
+> old copies; touch nothing else.
+> Then add this rule to AGENTS.md if it is missing:
+> every post links to http://localhost:8080/ with UTM tags.
+> Then start my website and tell me in one line that
+> the kit is up to date.
+
+### PROMPT B — Codex: the social team
 
 > You are the Lead. Plan Week 1 social from
 > data/social-brief.md and strategy/calendar.csv.
@@ -56,7 +74,8 @@ two posts with images, reviewed, approved by you and posted (or dry-run) — wit
 > - content-creator: 1 LinkedIn + 1 Facebook post with
 >   linkedin-post, facebook-post and copywriting, one
 >   file each in content/social/week-01/, with the
->   frontmatter in data/publishing-spec.md.
+>   frontmatter in data/publishing-spec.md. Each post
+>   links to my website, http://localhost:8080/, with UTM tags.
 > - creative-designer: one image per post with
 >   $imagegen and alt text, from the brief. Save each
 >   as a PNG beside its post and fill in the post's
@@ -70,7 +89,7 @@ two posts with images, reviewed, approved by you and posted (or dry-run) — wit
 > what it means and what I do next. Save a Word copy
 > (.docx) of each result.
 
-### PROMPT B — Codex: publish
+### PROMPT C — Codex: publish
 
 > For every Week 1 post approved in
 > review/approvals.csv, run node scripts/publish.mjs
@@ -84,6 +103,19 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 - "Which post do you expect to do best, and why?"
 - "What did the Lead send back to the writer, and why?"
 - "Is anything here not ready to post? Explain in plain English."
+
+## Optional: post through LinkedIn and Facebook
+
+About 20 minutes, after you have approved the posts. Use test accounts only: your own LinkedIn profile and a test Facebook Page you manage. Skip any post you already posted by hand. The link in each post opens your own website, so it works only on your computer.
+
+1. **Make your key file** — Ask Codex: "Make my .env file from data/env.example and open it in a text editor." Your keys go only in this file — never in the chat.
+2. **LinkedIn app** — Go to linkedin.com/developers → Create app (link it to a LinkedIn Page; a test Page is fine). Under Products add Share on LinkedIn and Sign In with LinkedIn using OpenID Connect.
+3. **LinkedIn key** — Auth → OAuth 2.0 tools → create a token with openid, profile and w_member_social. Paste it after LINKEDIN_ACCESS_TOKEN= in .env and save.
+4. **Your LinkedIn ID** — Ask Codex: "Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token."
+5. **Facebook app** — Go to developers.facebook.com → Create app → Business. Open Tools → Graph API Explorer and pick your app. Add pages_manage_posts, pages_read_engagement and pages_show_list, then Generate token and choose your test Page.
+6. **Facebook key** — Click Get Page Access Token. Paste it after FB_PAGE_TOKEN= in .env, and your Page ID (Page → About → Page transparency) after FB_PAGE_ID=. Save. This key lasts about an hour, so do it just before you post.
+7. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each card should show your key partly hidden (like LITO…), not "missing".
+8. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and the artifact shows its link.
 
 ## Check your work
 

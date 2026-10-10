@@ -11,7 +11,7 @@ One file per item: `content/<channel>/<week-or-issue>/<id>.md`
 id: li-w01-01
 channel: linkedin            # linkedin | facebook | youtube | newsletter
 title: Know your number in 30 minutes
-link: https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/?utm_source=linkedin&utm_medium=social&utm_campaign=know-your-number
+link: http://localhost:8080/?utm_source=linkedin&utm_medium=social&utm_campaign=know-your-number
 image: content/social/week-01/li-w01-01.png   # linkedin, facebook: PNG, JPG or GIF
 alt: Sunny the sun beside the words Know your number   # the image's alt text
 video: content/video/ep01/ep01.mp4   # youtube only

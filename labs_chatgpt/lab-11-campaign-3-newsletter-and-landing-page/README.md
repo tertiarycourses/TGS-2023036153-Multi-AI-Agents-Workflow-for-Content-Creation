@@ -3,7 +3,7 @@
 > **USE: CODEX, THEN CHATGPT WORK** — start in Codex; the step that moves you to ChatGPT Work says so
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 2 · Topic 3 · about 45 minutes · slides 119–124**\
+**Day 2 · Topic 3 · about 45 minutes · slides 120–125**\
 **Surface:** Codex (subagents) → @Sites → ChatGPT Work (@Gmail)\
 **Features:** creator writes, website designer builds the lead-magnet page, analyst filters by consent, the Lead checks · drafts only
 

@@ -23,8 +23,8 @@ fact-check and fin-compliance skills.
    issue and list each fix in one line.
 4. Add it to the blog in web/site/index.html as one
    new post, built like the posts already there.
-   Change nothing else on the site. Then open
-   web/site/index.html in my web browser.
+   Change nothing else on the site. Then start my
+   website if it is not running, and open it.
 Write for a business owner, in plain English. Save
 a Word copy (.docx) of the article.
 ```

@@ -21,5 +21,7 @@
 - Title under 60 characters; description with chapters, the site link with
   UTM tags and the short disclaimer; 5-8 tags.
 
-## UTM tags
-?utm_source=<linkedin|facebook|newsletter|youtube>&utm_medium=<social|email|video>&utm_campaign=know-your-number
+## Links and UTM tags
+Every link goes to our own website, http://localhost:8080/ (start it with
+"start my website"), never to a claude.ai artifact link or the public site:
+http://localhost:8080/?utm_source=<linkedin|facebook|newsletter|youtube>&utm_medium=<social|email|video>&utm_campaign=know-your-number

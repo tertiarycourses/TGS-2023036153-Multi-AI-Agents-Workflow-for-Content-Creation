@@ -3,7 +3,7 @@
 > **USE: CHATGPT** — the ChatGPT desktop app
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 2 · Topic 4 · about 20 minutes · slides 151–154**\
+**Day 2 · Topic 4 · about 20 minutes · slides 152–155**\
 **Surface:** ChatGPT Dots and workspace agents — trainer demo\
 **Features:** a Dot as an always-on Team Lead · Custom Rules · Activity View · workspace agents with apps and triggers
 

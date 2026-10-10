@@ -56,8 +56,8 @@ a 500-700-word blog article with dated sources, checked and fixed and posted on 
 >    issue and list each fix in one line.
 > 4. Add it to the blog in web/site/index.html as one
 >    new post, built like the posts already there.
->    Change nothing else on the site. Then open
->    web/site/index.html in my web browser.
+>    Change nothing else on the site. Then start my
+>    website if it is not running, and open it.
 > Write for a business owner, in plain English. Save
 > a Word copy (.docx) of the article.
 
@@ -81,8 +81,8 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 ## If it goes wrong
 
 - **Firecrawl finds nothing** — Type /mcp: Firecrawl must be connected — or say "use web search instead".
-- **The site looks unchanged** — Refresh the browser page. Or say: "open web/site/index.html in my browser again".
-- **The browser does not open** — In your horizon-studio folder, open web/site and double-click index.html.
+- **The site looks unchanged** — Refresh the browser page. Or say: "open my website again".
+- **The browser does not open** — Say: "Start my website again."
 
 ## Stretch
 

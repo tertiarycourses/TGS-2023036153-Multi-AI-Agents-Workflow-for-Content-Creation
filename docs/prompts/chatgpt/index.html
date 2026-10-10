@@ -72,7 +72,7 @@ Claude? <a href="../claude/">Switch edition</a>.</span></p>
 <nav aria-label="Labs"><a href="#lab-1">1</a><a href="#lab-2">2</a><a href="#lab-3">3</a><a href="#lab-4">4</a><a href="#lab-5">5</a><a href="#lab-6">6</a><a href="#lab-7">7</a><a href="#lab-8">8</a><a href="#lab-9">9</a><a href="#lab-10">10</a><a href="#lab-11">11</a><a href="#lab-12">12</a><a href="#lab-13">13</a><a href="#lab-14">14</a><a href="#lab-15">15</a></nav>
 <p id="pick" class="pick">Which lab are you on? Click its number above — every
 prompt is labelled with its lab, so check it before you copy.</p>
-<section class="lab" data-lab="1"><p class="eyebrow">Lab 1 · Day 1 · 30 min</p><h2>Build Your Marketing Agent Team</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>Choose the folder</b> In Codex create a local project and choose labs_chatgpt/horizon-studio. It is ready-made — do not create one.</li><li><b>Make the Project</b> In ChatGPT create the Project &quot;Horizon Marketing&quot; with the charter, brand, facts and compliance files. Copy and paste Prompt A as its instructions.</li><li><b>Plan your team</b> In Codex, copy and paste Prompt B. Answer as Horizon&#x27;s owner and pick your team — keep the six charter roles. It is a plan only: Lab 2 builds the agents.</li><li><b>Write the charter</b> After Codex saves data/team-design.md, copy and paste Prompt C. Open AGENTS.md — every agent reads it.</li><li><b>Open the website</b> Ask: &quot;Open web/site/index.html in my web browser.&quot; This is your own copy of Horizon&#x27;s website; the public site never changes. Check the calculator shows S$693,138.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 1 · Prompt A</span><span class="ptool">ChatGPT Project: instructions</span></div><button class="copy" type="button" data-copy="You support Horizon Wealth Planning&#x27;s AI marketing
+<section class="lab" data-lab="1"><p class="eyebrow">Lab 1 · Day 1 · 30 min</p><h2>Build Your Marketing Agent Team</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>Choose the folder</b> In Codex create a local project and choose labs_chatgpt/horizon-studio. It is ready-made — do not create one.</li><li><b>Make the Project</b> In ChatGPT create the Project &quot;Horizon Marketing&quot; with the charter, brand, facts and compliance files. Copy and paste Prompt A as its instructions.</li><li><b>Plan your team</b> In Codex, copy and paste Prompt B. Answer as Horizon&#x27;s owner and pick your team — keep the six charter roles. It is a plan only: Lab 2 builds the agents.</li><li><b>Write the charter</b> After Codex saves data/team-design.md, copy and paste Prompt C. Open AGENTS.md — every agent reads it.</li><li><b>Open the website</b> Ask: &quot;Start my website.&quot; It opens at http://localhost:8080/ — your own copy of Horizon&#x27;s website; every post links to it. Check the calculator shows S$693,138.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 1 · Prompt A</span><span class="ptool">ChatGPT Project: instructions</span></div><button class="copy" type="button" data-copy="You support Horizon Wealth Planning&#x27;s AI marketing
 team. Use the project files: team-charter.md for who
 does what, brand.md for the voice and look,
 facts-2026.md for every number, and
@@ -120,10 +120,11 @@ exception: a review email to the approver); anything
 shown to me is in plain English for a business owner,
 with no codes, IDs, file names or line numbers.
 In Files, add two lines:
-- Our copy of the site, which we edit and preview:
-  web/site/index.html
-- Public site, the link every post points to (it
-  never changes): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/">Copy</button></header><pre>Read data/team-charter.md, data/team-design.md
+- Our copy of the site, which we edit: web/site/.
+  &quot;Start my website&quot; runs scripts/serve-site.mjs in
+  the background and opens http://localhost:8080/
+- Every post links to http://localhost:8080/ with
+  UTM tags, never to a claude.ai artifact link.">Copy</button></header><pre>Read data/team-charter.md, data/team-design.md
 and data/business-brief.md. Write AGENTS.md for this
 studio in four sections — What this is, The team,
 Rules, Files — under 60 lines. The team is the one
@@ -135,10 +136,11 @@ exception: a review email to the approver); anything
 shown to me is in plain English for a business owner,
 with no codes, IDs, file names or line numbers.
 In Files, add two lines:
-- Our copy of the site, which we edit and preview:
-  web/site/index.html
-- Public site, the link every post points to (it
-  never changes): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/</pre></article></section><section class="lab" data-lab="2"><p class="eyebrow">Lab 2 · Day 1 · 45 min</p><h2>Form the Team: Instructions for Each Agent</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> In Codex start a new thread in horizon-studio and name it &quot;Lab 2&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Read the roles</b> Open role-specs.md: one Lead and five specialists, each with a job, skills, connectors and limits.</li><li><b>Write the instructions</b> Copy and paste Prompt A. It builds the five specialists from the charter; extra ideas stay in team-design.md.</li><li><b>See the team</b> After the five files appear in agents/, copy and paste Prompt B. The Lead is not a file — it is you, in this session.</li><li><b>Read one closely</b> Open agents/content-creator.md. Is the &quot;Never&quot; section strict enough for a regulated firm?</li><li><b>Meet the team</b> After the list shows five agents, copy and paste Prompt C. Each agent introduces itself in one line — in its own context.</li><li><b>Tighten one</b> Change one instruction you disagree with and save it. It is your team.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 2 · Prompt A</span><span class="ptool">Codex: five role cards</span></div><button class="copy" type="button" data-copy="Read data/role-specs.md. Create five role cards
+- Our copy of the site, which we edit: web/site/.
+  &quot;Start my website&quot; runs scripts/serve-site.mjs in
+  the background and opens http://localhost:8080/
+- Every post links to http://localhost:8080/ with
+  UTM tags, never to a claude.ai artifact link.</pre></article></section><section class="lab" data-lab="2"><p class="eyebrow">Lab 2 · Day 1 · 45 min</p><h2>Form the Team: Instructions for Each Agent</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> In Codex start a new thread in horizon-studio and name it &quot;Lab 2&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Read the roles</b> Open role-specs.md: one Lead and five specialists, each with a job, skills, connectors and limits.</li><li><b>Write the instructions</b> Copy and paste Prompt A. It builds the five specialists from the charter; extra ideas stay in team-design.md.</li><li><b>See the team</b> After the five files appear in agents/, copy and paste Prompt B. The Lead is not a file — it is you, in this session.</li><li><b>Read one closely</b> Open agents/content-creator.md. Is the &quot;Never&quot; section strict enough for a regulated firm?</li><li><b>Meet the team</b> After the list shows five agents, copy and paste Prompt C. Each agent introduces itself in one line — in its own context.</li><li><b>Tighten one</b> Change one instruction you disagree with and save it. It is your team.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 2 · Prompt A</span><span class="ptool">Codex: five role cards</span></div><button class="copy" type="button" data-copy="Read data/role-specs.md. Create five role cards
 in agents/ — growth-strategist.md, content-creator.md,
 creative-designer.md, website-designer.md and
 growth-analyst.md. Each has: the job, what it reads,
@@ -490,13 +492,40 @@ fixes in the files and in the Gmail drafts.
 Write for a business owner, in plain English: no
 codes, IDs, file names or line numbers; start with
 what it means and what I do next. Save a Word copy
-(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Which checklist item do people most often miss, and why does it matter?</span><button class="copy small" type="button" data-copy="Which checklist item do people most often miss, and why does it matter?">Copy</button></li><li><span class="q">Read the day 3 email as a 55-year-old. Is anything unclear?</span><button class="copy small" type="button" data-copy="Read the day 3 email as a 55-year-old. Is anything unclear?">Copy</button></li><li><span class="q">Explain each issue in one line: what is wrong, and the fix.</span><button class="copy small" type="button" data-copy="Explain each issue in one line: what is wrong, and the fix.">Copy</button></li></ul></section></section><section class="lab" data-lab="10"><p class="eyebrow">Lab 10 · Day 2 · 40 min</p><h2>Campaign 2: Social Media Posts (Demo)</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> In Codex start a new thread in horizon-studio and name it &quot;Lab 10&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Install the kit</b> Copy publisher-kit/scripts into scripts/. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.</li><li><b>Test the gate</b> Ask Codex to approve anything. approve.mjs refuses without a person at a terminal.</li><li><b>Run the team</b> Copy and paste Prompt A. Watch the Subagents panel: Active, then Done.</li><li><b>Read the review</b> The Lead&#x27;s fact-check and fin-compliance table — at least one fix.</li><li><b>Approve as a person</b> In your own terminal: node scripts/approve.mjs &lt;id&gt; --by &quot;Your Name&quot;.</li><li><b>Publish</b> After you have approved the posts, copy and paste Prompt B. Dry run first; --live only if your accounts are connected.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt A</span><span class="ptool">Codex: the social team</span></div><button class="copy" type="button" data-copy="You are the Lead. Plan Week 1 social from
+(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Which checklist item do people most often miss, and why does it matter?</span><button class="copy small" type="button" data-copy="Which checklist item do people most often miss, and why does it matter?">Copy</button></li><li><span class="q">Read the day 3 email as a 55-year-old. Is anything unclear?</span><button class="copy small" type="button" data-copy="Read the day 3 email as a 55-year-old. Is anything unclear?">Copy</button></li><li><span class="q">Explain each issue in one line: what is wrong, and the fix.</span><button class="copy small" type="button" data-copy="Explain each issue in one line: what is wrong, and the fix.">Copy</button></li></ul></section></section><section class="lab" data-lab="10"><p class="eyebrow">Lab 10 · Day 2 · 40 min</p><h2>Campaign 2: Social Media Posts (Demo)</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> In Codex start a new thread in horizon-studio and name it &quot;Lab 10&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Get the latest kit</b> Copy and paste Prompt A. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.</li><li><b>Test the gate</b> Ask Codex to approve anything. approve.mjs refuses without a person at a terminal.</li><li><b>Run the team</b> After Codex says the kit is up to date, copy and paste Prompt B. Watch the Subagents panel: Active, then Done.</li><li><b>Read the review</b> The Lead&#x27;s fact-check and fin-compliance table — at least one fix.</li><li><b>Approve as a person</b> In your own terminal: node scripts/approve.mjs &lt;id&gt; --by &quot;Your Name&quot;.</li><li><b>Publish</b> After you have approved the posts, copy and paste Prompt C. A dry run only: it shows what would be sent.</li><li><b>Optional: post through the apps</b> Follow &quot;Optional: post through LinkedIn and Facebook&quot; in this lab&#x27;s README.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt A</span><span class="ptool">Codex: get the latest kit</span></div><button class="copy" type="button" data-copy="Bring this studio up to date with the course kit.
+From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/
+download scripts/serve-site.mjs and
+data/publishing-spec.md, channel-formats.md,
+connect-accounts.md and env.example into the same
+places here. From
+https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/
+download approve.mjs, gate-hook.mjs, lib.mjs,
+publish.mjs and submit.mjs into scripts/. Replace
+old copies; touch nothing else.
+Then add this rule to AGENTS.md if it is missing:
+every post links to http://localhost:8080/ with UTM tags.
+Then start my website and tell me in one line that
+the kit is up to date.">Copy</button></header><pre>Bring this studio up to date with the course kit.
+From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/
+download scripts/serve-site.mjs and
+data/publishing-spec.md, channel-formats.md,
+connect-accounts.md and env.example into the same
+places here. From
+https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/
+download approve.mjs, gate-hook.mjs, lib.mjs,
+publish.mjs and submit.mjs into scripts/. Replace
+old copies; touch nothing else.
+Then add this rule to AGENTS.md if it is missing:
+every post links to http://localhost:8080/ with UTM tags.
+Then start my website and tell me in one line that
+the kit is up to date.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt B</span><span class="ptool">Codex: the social team</span></div><button class="copy" type="button" data-copy="You are the Lead. Plan Week 1 social from
 data/social-brief.md and strategy/calendar.csv.
 Use subagents in parallel, each following its card:
 - content-creator: 1 LinkedIn + 1 Facebook post with
   linkedin-post, facebook-post and copywriting, one
   file each in content/social/week-01/, with the
-  frontmatter in data/publishing-spec.md.
+  frontmatter in data/publishing-spec.md. Each post
+  links to my website, http://localhost:8080/, with UTM tags.
 - creative-designer: one image per post with
   $imagegen and alt text, from the brief. Save each
   as a PNG beside its post and fill in the post&#x27;s
@@ -514,7 +543,8 @@ Use subagents in parallel, each following its card:
 - content-creator: 1 LinkedIn + 1 Facebook post with
   linkedin-post, facebook-post and copywriting, one
   file each in content/social/week-01/, with the
-  frontmatter in data/publishing-spec.md.
+  frontmatter in data/publishing-spec.md. Each post
+  links to my website, http://localhost:8080/, with UTM tags.
 - creative-designer: one image per post with
   $imagegen and alt text, from the brief. Save each
   as a PNG beside its post and fill in the post&#x27;s
@@ -526,7 +556,7 @@ Publish nothing.
 Write for a business owner, in plain English: no
 codes, IDs, file names or line numbers; start with
 what it means and what I do next. Save a Word copy
-(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt B</span><span class="ptool">Codex: publish</span></div><button class="copy" type="button" data-copy="For every Week 1 post approved in
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt C</span><span class="ptool">Codex: publish</span></div><button class="copy" type="button" data-copy="For every Week 1 post approved in
 review/approvals.csv, run node scripts/publish.mjs
 &lt;id&gt; as a dry run and show me each request. Wait for
 me to say &quot;go&quot; before any --live run.">Copy</button></header><pre>For every Week 1 post approved in

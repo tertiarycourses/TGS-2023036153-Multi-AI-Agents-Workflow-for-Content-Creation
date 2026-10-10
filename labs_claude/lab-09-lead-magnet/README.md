@@ -97,8 +97,8 @@ the Money Check-up Checklist as a printable A4 page (artifact and PDF) and on yo
 > email is entered, show the ten items as tick boxes
 > and a "Print or save as PDF" button. Add "Free
 > checklist" to the menu. Change nothing else on the
-> site. Then open web/site/index.html in my web
-> browser.
+> site. Then start my website if it is not running,
+> and open it.
 
 ## Ask about the result
 
