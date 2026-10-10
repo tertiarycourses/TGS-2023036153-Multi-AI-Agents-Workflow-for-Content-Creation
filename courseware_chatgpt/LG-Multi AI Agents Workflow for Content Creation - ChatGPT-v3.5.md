@@ -41,6 +41,57 @@ By the end of the two days you will be able to:
 - **LO3 · Determine** — Determine content types and styles, and the modes and processes for distributing content.
 - **LO4 · Develop** — Develop guidelines for executing the content strategy, with suitable delivery modes and responsible AI practices.
 
+#### Course Outline
+
+Four topics over two days. Day 1 forms the team; Day 2 runs its campaigns.
+
+1. **T1 · Ideation and Storyboarding** — The studio, the team's instructions, skills and connectors; Campaign 1. Labs 1–5.
+1. **T2 · Audience and Requirements** — Personas from evidence; cadence and calendar; the first blog article. Labs 6–8.
+1. **T3 · Creation and Coordination** — Lead magnet, social week, newsletter + landing page, video — behind a human gate. Labs 9–12.
+1. **T4 · Distribution and Responsible AI** — The weekly report on a schedule; the playbook; optional demo. Labs 13–15.
+
+#### Lab Materials
+
+Fifteen labs, each in its own folder with a README, prompts (MD and PDF), assets, an evidence checklist and, where useful, a solution.
+
+| Day | Labs | Topic |
+|---|---|---|
+| 1 | 1 Agent team · 2 Instructions · 3 Skills · 4 Connectors | T1 · form the team |
+| 1 | 5 Campaign 1: research to storyboard | T1 · Campaign 1 |
+| 1 | 6 Personas · 7 Cadence and calendar · 8 Blog article | T2 · audience, content |
+| 2 | 9 Lead magnet · 10 Social week · 11 Newsletter + landing page · 12 Video | T3 · Campaigns 2–4 |
+| 2 | 13 Weekly report · 14 Playbook · 15 Optional demo | T4 · Campaign 5 |
+
+Tip: One horizon-studio folder from Lab 1 to Lab 14 — the team keeps what it learns.
+
+#### ChatGPT or Codex?
+
+Every lab says which to use. The rule: ChatGPT to create and schedule; Codex when the agents work on files.
+
+| Use | Labs | What it is for |
+|---|---|---|
+| ChatGPT | 8, 9, 15 | One person creating or designing. |
+| Codex | 1, 2, 5, 6, 7, 10, 12, 14 | The team's files: role cards, skills, subagents, scripts, the video. |
+| Codex, then ChatGPT | 3 | Build in Codex, then share in ChatGPT. |
+| ChatGPT, then Codex | 4 | Install plugins, then test the agents. |
+| Codex, then ChatGPT Work | 11 | Build in Codex; Gmail drafts in ChatGPT Work. |
+| ChatGPT Work | 13 | Scheduled tasks and plugins. |
+
+Tip: Both work on the same horizon-studio folder, so whatever one makes, the other can open.
+
+#### Lesson Plan (9:00 AM – 6:00 PM)
+
+Tea breaks 10 min, lunch 45 min. Full timings and slide numbers are in the Lesson Plan.
+
+| Block | Day 1 — Form the Team | Day 2 — Run the Campaigns |
+|---|---|---|
+| Morning 1 | 9:00–10:30  Welcome · Topic 1 · Lab 1 | 9:00–10:40  Topic 3 · Labs 9–10 |
+| Morning 2 | 10:40–12:40  Labs 2–3 | 10:50–12:35  Labs 11–12 · recap |
+| Afternoon 1 | 13:25–15:20  Labs 4–5 | 13:20–15:00  Topic 4 · Labs 13–14 |
+| Afternoon 2 | 15:30–18:00  Topic 2 · Labs 6–8 · review | 15:10–16:00 Demo · summary · 16:00–18:00 Assessment |
+
+Tip: Day 2 assessment: Written Assessment 4:00–5:00 PM, Practical Performance 5:00–6:00 PM.
+
 #### ChatGPT, ChatGPT Work and Codex
 
 One desktop app. The toggle above the composer picks Chat or Work; the sidebar holds Codex.
@@ -196,57 +247,6 @@ The ChatGPT Edition: ChatGPT, ChatGPT Work and Codex in one app.
 | Dots · workspace agents | Optional demo: an always-on Lead and shared agents | Lab 15 (optional) |
 
 Tip: Every external post, email and video passes one gate: a person approves the exact version.
-
-#### Course Outline
-
-Four topics over two days. Day 1 forms the team; Day 2 runs its campaigns.
-
-1. **T1 · Ideation and Storyboarding** — The studio, the team's instructions, skills and connectors; Campaign 1. Labs 1–5.
-1. **T2 · Audience and Requirements** — Personas from evidence; cadence and calendar; the first blog article. Labs 6–8.
-1. **T3 · Creation and Coordination** — Lead magnet, social week, newsletter + landing page, video — behind a human gate. Labs 9–12.
-1. **T4 · Distribution and Responsible AI** — The weekly report on a schedule; the playbook; optional demo. Labs 13–15.
-
-#### Lab Materials
-
-Fifteen labs, each in its own folder with a README, prompts (MD and PDF), assets, an evidence checklist and, where useful, a solution.
-
-| Day | Labs | Topic |
-|---|---|---|
-| 1 | 1 Agent team · 2 Instructions · 3 Skills · 4 Connectors | T1 · form the team |
-| 1 | 5 Campaign 1: research to storyboard | T1 · Campaign 1 |
-| 1 | 6 Personas · 7 Cadence and calendar · 8 Blog article | T2 · audience, content |
-| 2 | 9 Lead magnet · 10 Social week · 11 Newsletter + landing page · 12 Video | T3 · Campaigns 2–4 |
-| 2 | 13 Weekly report · 14 Playbook · 15 Optional demo | T4 · Campaign 5 |
-
-Tip: One horizon-studio folder from Lab 1 to Lab 14 — the team keeps what it learns.
-
-#### ChatGPT or Codex?
-
-Every lab says which to use. The rule: ChatGPT to create and schedule; Codex when the agents work on files.
-
-| Use | Labs | What it is for |
-|---|---|---|
-| ChatGPT | 8, 9, 15 | One person creating or designing. |
-| Codex | 1, 2, 5, 6, 7, 10, 12, 14 | The team's files: role cards, skills, subagents, scripts, the video. |
-| Codex, then ChatGPT | 3 | Build in Codex, then share in ChatGPT. |
-| ChatGPT, then Codex | 4 | Install plugins, then test the agents. |
-| Codex, then ChatGPT Work | 11 | Build in Codex; Gmail drafts in ChatGPT Work. |
-| ChatGPT Work | 13 | Scheduled tasks and plugins. |
-
-Tip: Both work on the same horizon-studio folder, so whatever one makes, the other can open.
-
-#### Lesson Plan (9:00 AM – 6:00 PM)
-
-Tea breaks 10 min, lunch 45 min. Full timings and slide numbers are in the Lesson Plan.
-
-| Block | Day 1 — Form the Team | Day 2 — Run the Campaigns |
-|---|---|---|
-| Morning 1 | 9:00–10:30  Welcome · Topic 1 · Lab 1 | 9:00–10:40  Topic 3 · Labs 9–10 |
-| Morning 2 | 10:40–12:40  Labs 2–3 | 10:50–12:35  Labs 11–12 · recap |
-| Afternoon 1 | 13:25–15:20  Labs 4–5 | 13:20–15:00  Topic 4 · Labs 13–14 |
-| Afternoon 2 | 15:30–18:00  Topic 2 · Labs 6–8 · review | 15:10–16:00 Demo · summary · 16:00–18:00 Assessment |
-
-Tip: Day 2 assessment: Written Assessment 4:00–5:00 PM, Practical Performance 5:00–6:00 PM.
 
 ## Topic 1 — Multi-AI-Agent Content Ideation and Digital Storyboarding
 
