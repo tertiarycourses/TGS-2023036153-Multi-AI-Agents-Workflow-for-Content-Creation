@@ -37,6 +37,9 @@ or sent without a person's approval (the one
 exception: a review email to the approver); anything
 shown to me is in plain English for a business owner,
 with no codes, IDs, file names or line numbers.
-In Files, add:
-Public site (link in every post): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
+In Files, add two lines:
+- Our copy of the site, which we edit and preview:
+  web/site/index.html
+- Public site, the link every post points to (it
+  never changes): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
 ```

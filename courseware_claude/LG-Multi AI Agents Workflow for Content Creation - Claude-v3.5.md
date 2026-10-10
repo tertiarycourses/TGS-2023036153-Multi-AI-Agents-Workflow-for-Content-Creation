@@ -300,15 +300,15 @@ Before you hire agents, give them shared rules, shared facts and a website to po
 
 ### Lab 1 — Build Your Marketing Agent Team
 
-**The story so far:** October 2026. Rachel has a website and a goal: 40 booked chats a month by March. She has no marketing team. Before you hire one made of agents, give it a home — shared rules, shared facts — and put the website online.
+**The story so far:** October 2026. Rachel has a website and a goal: 40 booked chats a month by March. She has no marketing team. Before you hire one made of agents, give it a home — shared rules, shared facts — and open your own copy of Horizon's website.
 
-**Goal:** Before anyone builds a team, the team needs a home: one folder of shared facts and rules, and Horizon's website — already live at one public link every post points to.
+**Goal:** Before anyone builds a team, the team needs a home: one folder of shared facts and rules, your own copy of Horizon's website to work on, and the one public link every post points to.
 
 **You'll build:** horizon-studio/ with CLAUDE.md, the shared data, a local copy of the site, and the public site link in the charter
 
 **Horizon's website**
 
-- **Website:** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
+- **Public site (the link in every post):** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
 
 **Folder structure**
 
@@ -349,8 +349,10 @@ labs_claude/
 
 **PROMPT B — Claude Code: the charter**
 
-> Read data/team-charter.md, data/team-design.md and data/business-brief.md. Write CLAUDE.md for this studio in four sections — What this is, The team, Rules, Files — under 60 lines. The team is the one I chose in data/team-design.md. Rules: every number comes from data/facts-2026.md; every piece passes fact-check and fin-compliance; nothing is published or sent without a person's approval (the one exception: a review email to the approver); anything shown to me is in plain English for a business owner, with no codes, IDs, file names or line numbers. In Files, add:
-> Public site (link in every post): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
+> Read data/team-charter.md, data/team-design.md and data/business-brief.md. Write CLAUDE.md for this studio in four sections — What this is, The team, Rules, Files — under 60 lines. The team is the one I chose in data/team-design.md. Rules: every number comes from data/facts-2026.md; every piece passes fact-check and fin-compliance; nothing is published or sent without a person's approval (the one exception: a review email to the approver); anything shown to me is in plain English for a business owner, with no codes, IDs, file names or line numbers. In Files, add two lines:
+> - Our copy of the site, which we edit and preview:
+>   web/site/index.html
+> - Public site, the link every post points to (it never changes): https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/
 
 **Check your work**
 
@@ -358,7 +360,7 @@ labs_claude/
 - ☐  data/team-design.md holds your answers and the team you chose, with the six charter roles in it — and no agent files yet.
 - ☐  CLAUDE.md has the four sections and is under 60 lines.
 - ☐  Its rules name the facts sheet, the two checks and the human approval.
-- ☐  CLAUDE.md names the public site link every post points to.
+- ☐  CLAUDE.md names your copy of the site and the public link every post points to.
 - ☐  Your own copy of the website opens in your browser; the calculator shows S$693,138.
 
 **If it goes wrong**
@@ -635,7 +637,7 @@ A regulated firm gives each agent only what its job needs.
 > 2. growth-analyst: Google Drive — read firm-metrics.csv from Horizon Studio; report average monthly enquiries.
 > 3. content-creator: Gmail — a DRAFT to me with the subject "Connector test". Do not send.
 > 4. creative-designer: render a 1080x1080 test card in Horizon colours and save it in content/test/.
-> 5. website-designer: built-in browser — open Horizon's public site at 375px wide and report any problem. Report each result in one line. If a check fails, say which tool was missing.
+> 5. website-designer: built-in browser — open our own copy of the site (web/site/index.html) at 375px wide and report any problem. Report each result in one line. If a check fails, say which tool was missing.
 
 **Check your work**
 

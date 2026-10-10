@@ -18,8 +18,9 @@ role card:
    subject "Connector test". Do not send.
 4. creative-designer: $imagegen — a 1080x1080 test
    image in Horizon colours.
-5. website-designer: @Computer Use — open Horizon's
-   public site at mobile width and report any problem.
+5. website-designer: @Computer Use — open our own
+   copy of the site (web/site/index.html) at mobile
+   width and report any problem.
 Report each result in one line.
 ```
 

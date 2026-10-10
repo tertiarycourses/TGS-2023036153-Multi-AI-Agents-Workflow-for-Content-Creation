@@ -65,9 +65,9 @@ every specialist tested on its own connector, with its limits written into its i
 >    subject "Connector test". Do not send.
 > 4. creative-designer: render a 1080x1080 test card
 >    in Horizon colours and save it in content/test/.
-> 5. website-designer: built-in browser — open
->    Horizon's public site at 375px wide and report
->    any problem.
+> 5. website-designer: built-in browser — open our
+>    own copy of the site (web/site/index.html) at
+>    375px wide and report any problem.
 > Report each result in one line. If a check fails,
 > say which tool was missing.
 
