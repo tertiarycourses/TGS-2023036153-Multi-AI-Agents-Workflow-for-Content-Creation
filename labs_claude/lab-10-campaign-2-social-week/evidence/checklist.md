@@ -5,9 +5,9 @@ Capture a screenshot or file for each line. Evidence beats a description.
 - [ ] The gate stopped Claude from approving.
 - [ ] Two teammates ran; the task list showed their tasks.
 - [ ] The designer and the creator messaged each other.
-- [ ] Two posts with images, alt text, frontmatter and UTM links.
+- [ ] Two posts with images from the designer, alt text and UTM links.
 - [ ] You reviewed in the artifact or by email and pasted the approval in the chat; the rows show your name and a hash.
-- [ ] Dry runs printed every request; nothing went live unless you said go.
+- [ ] You posted the approved text and image yourself (or, optionally, through the API after you said go).
 
 ## Notes
 

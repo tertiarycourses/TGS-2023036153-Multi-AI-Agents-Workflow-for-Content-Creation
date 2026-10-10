@@ -24,11 +24,17 @@ artifact, or by email (then ask for the approver's
 address). You check everything, then submit
 nl-2026-11 and publish the issue as an artifact,
 laid out as the email, with the counts of
-recipients and excluded, an Approve button and a
-Request changes box that copy the exact line for me
-to paste in the chat. If I chose email, send ONE
-review email to the approver with Gmail: the
-artifact link and what passed the checks. Only
+recipients and excluded, and two working buttons
+(JavaScript): Approve turns the page green; Request
+changes opens a box for my note. A bar at the
+bottom asks my name once, builds the exact line to
+paste in the chat ("approved <id> by <name>" or
+"changes <id>: <note>") and has a Copy button that
+says "Copied - now paste it in the chat". Keep the
+line on screen in case copying is blocked. If I
+chose email, send ONE review email to the approver
+with Gmail: the artifact link and what passed the
+checks. Only
 after I approve, build newsletter.html and .txt and
 publish the page as an artifact.
 Write for a business owner, in plain English: no

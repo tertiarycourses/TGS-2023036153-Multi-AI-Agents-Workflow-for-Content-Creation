@@ -1033,7 +1033,7 @@ Everything the campaigns need tomorrow is in place.
 
 ## Topic 3 — Multi-Channel Content Creation and Agent Workflow Coordination
 
-Slides 98–136. In this topic you will:
+Slides 98–137. In this topic you will:
 
 - Subagents or an agent team?
 - The lead magnet: a checklist people want, and its emails
@@ -1211,11 +1211,11 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 
 **Goal:** A demo of Week 1: one LinkedIn and one Facebook post, each with a visual. Copy and design must agree, the Lead must check every claim — and only a person can approve.
 
-**You'll build:** two posts with images, reviewed, approved by you and posted (or dry-run) — shown as artifacts, with a Word copy of each
+**You'll build:** two posts with images, reviewed, approved by you and posted by you (or, optionally, through the API) — shown as artifacts, with a Word copy of each
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (agent team) → LinkedIn, Facebook  ·  **Time:** 40 min  ·  **Slides:** 115–120
+**Surface:** Claude Code (agent team) → LinkedIn, Facebook  ·  **Time:** 40 min  ·  **Slides:** 115–121
 
 **Lab folder:** labs_claude/lab-10-campaign-2-social-week/ — assets: social-brief.md, publisher-kit/, publishing-spec.md, approvals-format.csv, connect-accounts.md, env.example, sample-calendar.csv
 
@@ -1228,19 +1228,21 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 1. **Test the gate** — Ask Claude to approve a post itself. The gate must block it.
 1. **Start the team** — Copy and paste Prompt A. Teammates appear in the panel; ↑ ↓ and Enter open one; Ctrl+T shows the task list.
 1. **Watch them talk** — The designer asks the creator for each post's hook; the Lead sends fixes back.
-1. **Approve as a person** — Review in the artifact (or open the review email and click its link). Click Approve or Request changes, then paste the copied line into the chat.
-1. **Publish** — After you have approved the posts, copy and paste Prompt B. A dry run first; real posting only if your accounts are connected.
+1. **Approve as a person** — Review in the artifact (or open the review email and click its link). Click Approve or Request changes on each post, then Copy in the bottom bar and paste into the chat.
+1. **Get ready to post** — After you have approved the posts, copy and paste Prompt B. Each post appears with a Copy button for its text, and the folder with the two images opens on your computer.
+1. **Post it yourself** — Paste the text, add the image, Post — on LinkedIn and a test Facebook Page. Or stop at the preview.
+1. **Optional: post via the API** — Connect test accounts (connect-accounts.pdf). Dry run, then say go — not for posts you posted by hand.
 
 **PROMPT A — Claude Code: the social team**
 
 > Create an agent team for Week 1 social from data/social-brief.md and strategy/calendar.csv. Spawn two teammates using the agent types content-creator and creative-designer; you are the Lead.
 > - content-creator: 1 LinkedIn + 1 Facebook post with linkedin-post, facebook-post and copywriting, one file each in content/social/week-01/, with the frontmatter in data/publishing-spec.md.
-> - creative-designer: one image per post (a rendered card in Horizon colours) with alt text; message the creator for each post's hook before designing.
-> - You: fact-check and fin-compliance on every post; message fixes to the teammate who owns it. Before you start, ask me how I will review: in the artifact, or by email (then ask for the approver's address). When a post passes, submit it for review with scripts/submit.mjs. Publish the two posts as an artifact, each as it will look in the feed, with its image and alt text; under each post put an Approve button and a Request changes box that copy the exact line for me to paste in the chat. If I chose email, send ONE review email to the approver with Gmail: the artifact link and what passed the checks. Send nothing else; publish nothing. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
+> - creative-designer: one image per post (a rendered card in Horizon colours: LinkedIn 1200 x 627, Facebook 1080 x 1080) with alt text; message the creator for each post's hook before designing. Save each as a PNG beside its post and fill in the post's image and alt lines.
+> - You: fact-check and fin-compliance on every post and image; message fixes to the teammate who owns it. Before you start, ask me how I will review: in the artifact, or by email (then ask for the approver's address). When a post passes, submit it for review with scripts/submit.mjs. Publish the two posts as an artifact, each as it will look in the feed, with its image and alt text; under each post put two working buttons (JavaScript): Approve turns the card green; Request changes opens a box for my note. A bar at the bottom asks my name once, builds the exact lines to paste in the chat ("approved <id> by <name>", "changes <id>: <note>") and has a Copy button that says "Copied - now paste it in the chat". Keep the lines on screen in case copying is blocked. If I chose email, send ONE review email to the approver with Gmail: the artifact link and what passed the checks. Send nothing else; publish nothing. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
 
-**PROMPT B — Claude Code: publish**
+**PROMPT B — Claude Code: ready to post**
 
-> For every Week 1 post approved in review/approvals.csv, do a dry run of publishing it (scripts/publish.mjs) and publish each request as an artifact: one card per post with channel, time and link. Wait for me to say "go" before anything goes live.
+> For each Week 1 post approved in review/approvals.csv, publish a "ready to post" artifact: the post text with a Copy button, its image, and the steps to post it by hand on LinkedIn or our Facebook Page. Then open the folder with the two images on my computer. Publish nothing yourself. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
 
 **Ask about the result**
 
@@ -1255,9 +1257,9 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 - ☐  The gate stopped Claude from approving.
 - ☐  Two teammates ran; the task list showed their tasks.
 - ☐  The designer and the creator messaged each other.
-- ☐  Two posts with images, alt text, frontmatter and UTM links.
+- ☐  Two posts with images from the designer, alt text and UTM links.
 - ☐  You reviewed in the artifact or by email and pasted the approval in the chat; the rows show your name and a hash.
-- ☐  Dry runs printed every request; nothing went live unless you said go.
+- ☐  You posted the approved text and image yourself (or, optionally, through the API after you said go).
 
 **If it goes wrong**
 
@@ -1301,7 +1303,7 @@ The PDPA, applied by an agent that counts.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (agent team) → Claude artifact, Gmail  ·  **Time:** 45 min  ·  **Slides:** 123–128
+**Surface:** Claude Code (agent team) → Claude artifact, Gmail  ·  **Time:** 45 min  ·  **Slides:** 124–129
 
 **Lab folder:** labs_claude/lab-11-campaign-3-newsletter-and-landing-page/ — assets: newsletter-brief.md, newsletter-spec.md, landing-page-brief.md, site-brief.md, checklist-items.md, subscribers.csv
 
@@ -1311,7 +1313,7 @@ The PDPA, applied by an agent that counts.
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 11". Run all of this lab's prompts in it.
 1. **Start the campaign** — Copy and paste Prompt A.
-1. **Approve the words** — Review the issue in the artifact (or open the review email and click its link). Click Approve or Request changes, then paste the copied line into the chat.
+1. **Approve the words** — Review the issue in the artifact (or the review email's link). Click Approve or Request changes, then Copy and paste into the chat.
 1. **Publish the page** — The website designer runs page-qa and publishes web/checklist/ as a Claude artifact.
 1. **Check the list** — Only people with consent = yes and unsubscribed = no are on the recipient list.
 1. **Create the drafts** — After the page is published and the list checked, copy and paste Prompt B.
@@ -1323,7 +1325,7 @@ The PDPA, applied by an agent that counts.
 > content-creator, website-designer and growth-analyst.
 > - content-creator: issue.md (id nl-2026-11) with newsletter, and the landing-page copy.
 > - website-designer: web/checklist/index.html with lead-magnet, web-design and landing-page from the approved copy; page-qa.
-> - growth-analyst: recipients.csv and excluded.csv from data/subscribers.csv. Before you start, ask me how I will review: in the artifact, or by email (then ask for the approver's address). You check everything, then submit nl-2026-11 and publish the issue as an artifact, laid out as the email, with the counts of recipients and excluded, an Approve button and a Request changes box that copy the exact line for me to paste in the chat. If I chose email, send ONE review email to the approver with Gmail: the artifact link and what passed the checks. Only after I approve, build newsletter.html and .txt and publish the page as an artifact. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
+> - growth-analyst: recipients.csv and excluded.csv from data/subscribers.csv. Before you start, ask me how I will review: in the artifact, or by email (then ask for the approver's address). You check everything, then submit nl-2026-11 and publish the issue as an artifact, laid out as the email, with the counts of recipients and excluded, and two working buttons (JavaScript): Approve turns the page green; Request changes opens a box for my note. A bar at the bottom asks my name once, builds the exact line to paste in the chat ("approved <id> by <name>" or "changes <id>: <note>") and has a Copy button that says "Copied - now paste it in the chat". Keep the line on screen in case copying is blocked. If I chose email, send ONE review email to the approver with Gmail: the artifact link and what passed the checks. Only after I approve, build newsletter.html and .txt and publish the page as an artifact. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
 
 **PROMPT B — Claude Code: Gmail drafts**
 
@@ -1376,7 +1378,7 @@ Lab 12: the team writes and designs; you approve twice.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (agent team, render, upload)  ·  **Time:** 45 min  ·  **Slides:** 130–135
+**Surface:** Claude Code (agent team, render, upload)  ·  **Time:** 45 min  ·  **Slides:** 131–136
 
 **Lab folder:** labs_claude/lab-12-campaign-4-youtube-explainer/ — assets: youtube-brief.md, video-spec.md, sample-explainer.mp4
 
@@ -1444,7 +1446,7 @@ Three campaigns, every piece checked by the Lead and approved by a person. But t
 
 ## Topic 4 — Content Distribution, Strategy Guidelines and Responsible AI Practices
 
-Slides 137–172. In this topic you will:
+Slides 138–173. In this topic you will:
 
 - Campaign 5: always on, with a scheduled task
 - Responsible AI for financial content
@@ -1483,7 +1485,7 @@ What a scheduled agent should and should not do for a regulated firm.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (skill, routine, Drive, Gmail)  ·  **Time:** 35 min  ·  **Slides:** 140–145
+**Surface:** Claude Code (skill, routine, Drive, Gmail)  ·  **Time:** 35 min  ·  **Slides:** 141–146
 
 **Lab folder:** labs_claude/lab-13-campaign-5-weekly-growth-report/ — assets: campaign-results.csv, weekly-report-brief.md, scheduled-task-instructions.md
 
@@ -1568,7 +1570,7 @@ Lab 14: the numbers decide next month — and which patterns earn their tokens.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (subagents)  ·  **Time:** 40 min  ·  **Slides:** 148–153
+**Surface:** Claude Code (subagents)  ·  **Time:** 40 min  ·  **Slides:** 149–154
 
 **Lab folder:** labs_claude/lab-14-team-playbook/ — assets: run-log.csv, playbook-outline.md, responsible-ai-checklist.md
 
@@ -1671,7 +1673,7 @@ Three rounds at most — then the Lead escalates to a person.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (agent teams: Lead, teammates, shared task list, direct messages)  ·  **Time:** 30 min  ·  **Slides:** 157–163
+**Surface:** Claude Code (agent teams: Lead, teammates, shared task list, direct messages)  ·  **Time:** 30 min  ·  **Slides:** 158–164
 
 **Lab folder:** labs_claude/lab-15-agent-teams-debate-and-qa-loop/ — assets: turning-55-brief.md, turning-55-draft.md
 

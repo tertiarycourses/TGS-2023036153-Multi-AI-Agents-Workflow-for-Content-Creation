@@ -3,9 +3,9 @@
 > **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (Claude Edition) (TGS-2023036153)\
-**Day 2 · Topic 3 · about 40 minutes · slides 115–120**\
+**Day 2 · Topic 3 · about 40 minutes · slides 115–121**\
 **Surface:** Claude Code (agent team) → LinkedIn, Facebook\
-**Features:** the publisher kit and its hook · an agent team: creator, designer, Lead · teammates message each other · human approval → post
+**Features:** the publisher kit and its hook · an agent team: creator, designer, Lead · teammates message each other · human approval → you post
 
 > **Copy the prompts:** https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/claude/#lab-10 — click **Copy** next to each prompt, then paste it into the chat.
 
@@ -19,7 +19,7 @@ A demo of Week 1: one LinkedIn and one Facebook post, each with a visual. Copy a
 
 ## You'll build
 
-two posts with images, reviewed, approved by you and posted (or dry-run) — shown as artifacts, with a Word copy of each
+two posts with images, reviewed, approved by you and posted by you (or, optionally, through the API) — shown as artifacts, with a Word copy of each
 
 ## What is in this folder
 
@@ -43,8 +43,10 @@ two posts with images, reviewed, approved by you and posted (or dry-run) — sho
 3. **Test the gate** — Ask Claude to approve a post itself. The gate must block it.
 4. **Start the team** — Copy and paste Prompt A. Teammates appear in the panel; ↑ ↓ and Enter open one; Ctrl+T shows the task list.
 5. **Watch them talk** — The designer asks the creator for each post's hook; the Lead sends fixes back.
-6. **Approve as a person** — Review in the artifact (or open the review email and click its link). Click Approve or Request changes, then paste the copied line into the chat.
-7. **Publish** — After you have approved the posts, copy and paste Prompt B. A dry run first; real posting only if your accounts are connected.
+6. **Approve as a person** — Review in the artifact (or open the review email and click its link). Click Approve or Request changes on each post, then Copy in the bottom bar and paste into the chat.
+7. **Get ready to post** — After you have approved the posts, copy and paste Prompt B. Each post appears with a Copy button for its text, and the folder with the two images opens on your computer.
+8. **Post it yourself** — Paste the text, add the image, Post — on LinkedIn and a test Facebook Page. Or stop at the preview.
+9. **Optional: post via the API** — Connect test accounts (connect-accounts.pdf). Dry run, then say go — not for posts you posted by hand.
 
 ## The prompts
 
@@ -60,34 +62,48 @@ two posts with images, reviewed, approved by you and posted (or dry-run) — sho
 >   one file each in content/social/week-01/, with the
 >   frontmatter in data/publishing-spec.md.
 > - creative-designer: one image per post (a rendered
->   card in Horizon colours) with alt text; message the creator
->   for each post's hook before designing.
-> - You: fact-check and fin-compliance on every post;
->   message fixes to the teammate who owns it.
+>   card in Horizon colours: LinkedIn 1200 x 627,
+>   Facebook 1080 x 1080) with alt text; message the
+>   creator for each post's hook before designing. Save
+>   each as a PNG beside its post and fill in the
+>   post's image and alt lines.
+> - You: fact-check and fin-compliance on every post
+>   and image; message fixes to the teammate who owns
+>   it.
 > Before you start, ask me how I will review: in the
 > artifact, or by email (then ask for the approver's
 > address). When a post passes, submit it for review
 > with scripts/submit.mjs. Publish the two posts as
 > an artifact, each as it will look in the feed, with
-> its image and alt text; under each post put an
-> Approve button and a Request changes box that copy
-> the exact line for me to paste in the chat. If I
-> chose email, send ONE review email to the approver
-> with Gmail: the artifact link and what passed the
-> checks. Send nothing else; publish nothing.
+> its image and alt text; under each post put two
+> working buttons (JavaScript): Approve turns the
+> card green; Request changes opens a box for my
+> note. A bar at the bottom asks my name once, builds
+> the exact lines to paste in the chat ("approved
+> <id> by <name>", "changes <id>: <note>") and has a
+> Copy button that says "Copied - now paste it in the
+> chat". Keep the lines on screen in case copying is
+> blocked. If I chose email, send ONE review email to
+> the approver with Gmail: the artifact link and what
+> passed the checks. Send nothing else; publish
+> nothing.
 > Write for a business owner, in plain English: no
 > codes, IDs, file names or line numbers; start with
 > what it means and what I do next. Save a Word copy
 > (.docx) of each result.
 
-### PROMPT B — Claude Code: publish
+### PROMPT B — Claude Code: ready to post
 
-> For every Week 1 post approved in
-> review/approvals.csv, do a dry run of publishing it
-> (scripts/publish.mjs) and publish each request as an
-> artifact: one card per post with channel, time and
-> link. Wait for me to say "go" before anything goes
-> live.
+> For each Week 1 post approved in
+> review/approvals.csv, publish a "ready to post"
+> artifact: the post text with a Copy button, its
+> image, and the steps to post it by hand on LinkedIn
+> or our Facebook Page. Then open the folder with the
+> two images on my computer. Publish nothing yourself.
+> Write for a business owner, in plain English: no
+> codes, IDs, file names or line numbers; start with
+> what it means and what I do next. Save a Word copy
+> (.docx) of each result.
 
 ## Ask about the result
 
@@ -102,9 +118,9 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 - [ ] The gate stopped Claude from approving.
 - [ ] Two teammates ran; the task list showed their tasks.
 - [ ] The designer and the creator messaged each other.
-- [ ] Two posts with images, alt text, frontmatter and UTM links.
+- [ ] Two posts with images from the designer, alt text and UTM links.
 - [ ] You reviewed in the artifact or by email and pasted the approval in the chat; the rows show your name and a hash.
-- [ ] Dry runs printed every request; nothing went live unless you said go.
+- [ ] You posted the approved text and image yourself (or, optionally, through the API after you said go).
 
 ## If it goes wrong
 

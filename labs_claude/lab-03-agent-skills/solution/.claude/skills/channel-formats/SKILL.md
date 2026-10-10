@@ -13,3 +13,11 @@ description: Use when writing a LinkedIn post, Facebook post, newsletter issue, 
   &utm_campaign=<campaign>.
 - One file per piece with the frontmatter in data/publishing-spec.md.
 - Short disclaimer last: "General information only, not financial advice."
+- Images: a PNG or JPG beside its post, named after the post id; fill in
+  the post's image: and alt: lines. LinkedIn 1200 x 627, Facebook
+  1080 x 1080; at most 8 words, disclaimer readable on a phone.
+- A post and its image are approved together: a new image after approval
+  needs a new approval.
+- Going out: a person posts the approved text and image by hand, or
+  scripts/publish.mjs posts both (dry run first, live only after a
+  person says go). Never both for the same post.

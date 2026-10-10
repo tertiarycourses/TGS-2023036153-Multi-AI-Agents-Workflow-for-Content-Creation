@@ -11,3 +11,5 @@ description: Use when writing a Horizon LinkedIn post. A first line that stands 
 5. Three relevant hashtags; tag no one without their consent.
 6. Short disclaimer last; save with the frontmatter in
    data/publishing-spec.md.
+7. One image from the Creative Designer (1200 x 627 PNG beside the
+   post) with the image: and alt: lines filled in.

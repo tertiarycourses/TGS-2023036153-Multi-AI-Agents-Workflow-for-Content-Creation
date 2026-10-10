@@ -150,7 +150,11 @@ Re-verify before changing; do not "correct" from memory.
   YYYYMM`, `X-Restli-Protocol-Version: 2.0.0`, `w_member_social`; commentary
   uses "little text" (escape reserved characters, not URLs). Facebook Graph
   `POST /<version>/<page-id>/feed` with a Page token (`pages_manage_posts`);
-  check the version in Meta's changelog. YouTube resumable upload; unaudited
+  check the version in Meta's changelog. Images (verified 10 Oct 2026):
+  LinkedIn `POST /rest/images?action=initializeUpload` → PUT bytes to
+  `uploadUrl` with the Bearer token → post `content.media {id, altText}`;
+  Facebook `POST /<page-id>/photos` multipart `source`, `caption`,
+  `alt_text_custom` → `post_id` (Graph v26.0). YouTube resumable upload; unaudited
   API projects' uploads stay private.
 - **Singapore figures** (facts sheet, `hz_data.FACTS`): BRS S$110,200, FRS
   S$220,400 (turning 55 in 2026), ERS S$440,800; CPF LIFE from 65; SRS cap

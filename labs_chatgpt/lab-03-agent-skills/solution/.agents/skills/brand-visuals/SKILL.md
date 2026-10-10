@@ -10,3 +10,6 @@ description: Use when making any Horizon image, carousel, thumbnail or video fra
 4. Every image: alt text and the prompt or script used, saved next
    to it.
 5. AI-made images of people are labelled; never shown as real clients.
+6. A social image is a PNG beside its post, named after the post id,
+   with the post's image: and alt: lines filled in. LinkedIn 1200 x 627,
+   Facebook 1080 x 1080.

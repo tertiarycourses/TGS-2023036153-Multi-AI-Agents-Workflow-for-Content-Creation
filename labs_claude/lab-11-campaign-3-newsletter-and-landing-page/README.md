@@ -3,7 +3,7 @@
 > **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (Claude Edition) (TGS-2023036153)\
-**Day 2 · Topic 3 · about 45 minutes · slides 123–128**\
+**Day 2 · Topic 3 · about 45 minutes · slides 124–129**\
 **Surface:** Claude Code (agent team) → Claude artifact, Gmail\
 **Features:** creator writes, website designer builds the lead-magnet page, analyst filters by consent, the Lead checks · drafts only
 
@@ -38,7 +38,7 @@ the November newsletter, its recipient list, the landing page published, and Gma
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 11". Run all of this lab's prompts in it.
 2. **Start the campaign** — Copy and paste Prompt A.
-3. **Approve the words** — Review the issue in the artifact (or open the review email and click its link). Click Approve or Request changes, then paste the copied line into the chat.
+3. **Approve the words** — Review the issue in the artifact (or the review email's link). Click Approve or Request changes, then Copy and paste into the chat.
 4. **Publish the page** — The website designer runs page-qa and publishes web/checklist/ as a Claude artifact.
 5. **Check the list** — Only people with consent = yes and unsubscribed = no are on the recipient list.
 6. **Create the drafts** — After the page is published and the list checked, copy and paste Prompt B.
@@ -65,11 +65,17 @@ the November newsletter, its recipient list, the landing page published, and Gma
 > address). You check everything, then submit
 > nl-2026-11 and publish the issue as an artifact,
 > laid out as the email, with the counts of
-> recipients and excluded, an Approve button and a
-> Request changes box that copy the exact line for me
-> to paste in the chat. If I chose email, send ONE
-> review email to the approver with Gmail: the
-> artifact link and what passed the checks. Only
+> recipients and excluded, and two working buttons
+> (JavaScript): Approve turns the page green; Request
+> changes opens a box for my note. A bar at the
+> bottom asks my name once, builds the exact line to
+> paste in the chat ("approved <id> by <name>" or
+> "changes <id>: <note>") and has a Copy button that
+> says "Copied - now paste it in the chat". Keep the
+> line on screen in case copying is blocked. If I
+> chose email, send ONE review email to the approver
+> with Gmail: the artifact link and what passed the
+> checks. Only
 > after I approve, build newsletter.html and .txt and
 > publish the page as an artifact.
 > Write for a business owner, in plain English: no

@@ -1194,7 +1194,7 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 
 > You are the Lead. Plan Week 1 social from data/social-brief.md and strategy/calendar.csv. Use subagents in parallel, each following its card:
 > - content-creator: 1 LinkedIn + 1 Facebook post with linkedin-post, facebook-post and copywriting, one file each in content/social/week-01/, with the frontmatter in data/publishing-spec.md.
-> - creative-designer: one image per post with $imagegen and alt text, from the brief. Then run fact-check and fin-compliance on every post and send each fix back to the right subagent. When a post passes, run node scripts/submit.mjs on it. Publish nothing. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
+> - creative-designer: one image per post with $imagegen and alt text, from the brief. Save each as a PNG beside its post and fill in the post's image and alt lines, so the image is posted with it. Then run fact-check and fin-compliance on every post and send each fix back to the right subagent. When a post passes, run node scripts/submit.mjs on it. Publish nothing. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
 
 **PROMPT B — Codex: publish**
 
@@ -1213,7 +1213,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 - ☐  The hook (or approve.mjs) stopped the agent from approving.
 - ☐  Two subagents ran in parallel; both reached Done.
 - ☐  The Lead sent at least one fix back to a subagent.
-- ☐  Two posts with images, alt text, frontmatter and UTM links.
+- ☐  Two posts with images, alt text, frontmatter and UTM links; each dry run shows its image being uploaded.
 - ☐  You approved in your own terminal; the rows show your name and a hash.
 - ☐  Dry runs printed every request; nothing went live unless you said go.
 

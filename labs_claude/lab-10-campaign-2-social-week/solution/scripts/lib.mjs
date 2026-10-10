@@ -53,16 +53,27 @@ export function readContent(file) {
   return { meta, body: m[2].trim() };
 }
 
-// The approved version = the content file, plus the video for YouTube.
+// The approved version = the content file, plus its image (social) or video
+// (YouTube) — so swapping the picture after approval needs a new approval.
 export function hashOf(file) {
   const h = createHash('sha256').update(readFileSync(join(ROOT, file)));
   const { meta } = readContent(file);
-  if (meta.channel === 'youtube' && meta.video) {
-    const v = join(ROOT, meta.video);
-    if (!existsSync(v)) throw new Error(`video not found: ${meta.video}`);
-    h.update(readFileSync(v));
+  const media = meta.channel === 'youtube' ? meta.video
+    : ['linkedin', 'facebook'].includes(meta.channel) ? meta.image : '';
+  if (media) {
+    const m = join(ROOT, media);
+    if (!existsSync(m)) throw new Error(`${meta.channel === 'youtube' ? 'video' : 'image'} not found: ${media}`);
+    h.update(readFileSync(m));
   }
   return h.digest('hex');
+}
+
+// PNG, JPG or GIF only (LinkedIn's and Facebook's photo formats).
+export function imageType(path) {
+  const ext = path.toLowerCase().split('.').pop();
+  const type = { png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif' }[ext];
+  if (!type) throw new Error(`image must be .png, .jpg or .gif: ${path}`);
+  return type;
 }
 
 // Why an id may NOT go live, or null when it may.
