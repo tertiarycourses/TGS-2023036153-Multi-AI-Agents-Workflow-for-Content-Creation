@@ -92,6 +92,18 @@ Tea breaks 10 min, lunch 45 min. Full timings and slide numbers are in the Lesso
 
 Tip: Day 2 assessment: Written Assessment 4:00–5:00 PM, Practical Performance 5:00–6:00 PM.
 
+## Topic 1 — Multi-AI-Agent Content Ideation and Digital Storyboarding
+
+Slides 16–72. In this topic you will:
+
+- AI agents, the tools, and Horizon's story
+- Why a team of agents
+- A home for the team; Horizon's public website
+- Form the team: instructions, skills, connectors
+- Campaign 1: research, ideas and a storyboard
+
+### Key ideas for Lab 1
+
 #### ChatGPT, ChatGPT Work and Codex
 
 One desktop app. The toggle above the composer picks Chat or Work; the sidebar holds Codex.
@@ -247,17 +259,6 @@ The ChatGPT Edition: ChatGPT, ChatGPT Work and Codex in one app.
 | Dots · workspace agents | Optional demo: an always-on Lead and shared agents | Lab 15 (optional) |
 
 Tip: Every external post, email and video passes one gate: a person approves the exact version.
-
-## Topic 1 — Multi-AI-Agent Content Ideation and Digital Storyboarding
-
-Slides 29–72. In this topic you will:
-
-- Why a team of agents
-- A home for the team; Horizon's public website
-- Form the team: instructions, skills, connectors
-- Campaign 1: research, ideas and a storyboard
-
-### Key ideas for Lab 1
 
 #### Why a Team of Agents?
 

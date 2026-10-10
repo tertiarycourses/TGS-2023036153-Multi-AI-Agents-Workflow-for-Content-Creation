@@ -87,6 +87,18 @@ Tea breaks 10 min, lunch 45 min. Full timings and slide numbers are in the Lesso
 
 Tip: Day 2 assessment: Written Assessment 4:00–5:00 PM, Practical Performance 5:00–6:00 PM.
 
+## Topic 1 — Multi-AI-Agent Content Ideation and Digital Storyboarding
+
+Slides 16–74. In this topic you will:
+
+- AI agents, the tools, and Horizon's story
+- Why a team of agents
+- A home for the team; Horizon's public website
+- Form the team: instructions, skills, connectors
+- Campaign 1: research, ideas and a storyboard
+
+### Key ideas for Lab 1
+
 #### The Claude Suite of Products
 
 Anthropic's products all run on the same Claude models — they differ in where they run and who they are for.
@@ -254,17 +266,6 @@ The Claude Edition: two Claude products, one studio.
 | Customize | Connectors (Drive, Gmail, Calendar, Firecrawl) and the Marketing plugin — added once, used by both | Lab 4 |
 
 Tip: Every external post, email and video passes one gate: a person approves the exact version.
-
-## Topic 1 — Multi-AI-Agent Content Ideation and Digital Storyboarding
-
-Slides 32–74. In this topic you will:
-
-- Why a team of agents
-- A home for the team; Horizon's public website
-- Form the team: instructions, skills, connectors
-- Campaign 1: research, ideas and a storyboard
-
-### Key ideas for Lab 1
 
 #### Why a Team of Agents?
 
