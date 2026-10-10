@@ -23,7 +23,7 @@ a 500-700-word blog article with dated sources, checked and fixed, with a Word c
 
 ## What is in this folder
 
-> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Codex reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
 
 - `assets/facts-2026.md`
 - `assets/brand.md`

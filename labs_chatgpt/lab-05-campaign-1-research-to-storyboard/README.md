@@ -23,7 +23,7 @@ competitor research, the funnel, nine scored ideas, the campaign brief and a fiv
 
 ## What is in this folder
 
-> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Codex reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
 
 - `assets/campaign-objective.md`
 - `assets/idea-rubric.md`

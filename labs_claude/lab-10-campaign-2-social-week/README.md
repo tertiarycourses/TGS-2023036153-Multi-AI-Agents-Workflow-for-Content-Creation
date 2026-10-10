@@ -148,7 +148,7 @@ About 20 minutes, after you have approved the posts. Use test accounts only: you
 4. **Your LinkedIn ID** — Ask Claude Code: "Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token."
 5. **Facebook app** — Go to developers.facebook.com → Create app → Business. Open Tools → Graph API Explorer and pick your app. Add pages_manage_posts, pages_read_engagement and pages_show_list, then Generate token and choose your test Page.
 6. **Facebook key** — Click Get Page Access Token. Paste it after FB_PAGE_TOKEN= in .env, and your Page ID (Page → About → Page transparency) after FB_PAGE_ID=. Save. This key lasts about an hour, so do it just before you post.
-7. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each card should show your key partly hidden (like LITO…), not "missing".
+7. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each one should show your key partly hidden (like LITO…), not "missing".
 8. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and the artifact shows its link.
 
 ## Check your work

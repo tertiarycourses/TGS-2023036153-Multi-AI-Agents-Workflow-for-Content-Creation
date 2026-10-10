@@ -23,7 +23,7 @@ two posts with images, reviewed, approved by you and posted (or dry-run) — wit
 
 ## What is in this folder
 
-> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Codex reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
 
 - `assets/social-brief.md`
 - `assets/publisher-kit/`
@@ -106,7 +106,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 
 ## Optional: post through LinkedIn and Facebook
 
-About 20 minutes, after you have approved the posts. Use test accounts only: your own LinkedIn profile and a test Facebook Page you manage. Skip any post you already posted by hand. The link in each post opens your own website, so it works only on your computer.
+About 20 minutes, after you have approved the posts. Use test accounts only: your own LinkedIn profile and a test Facebook Page you manage. The link in each post opens your own website, so it works only on your computer.
 
 1. **Make your key file** — Ask Codex: "Make my .env file from data/env.example and open it in a text editor." Your keys go only in this file — never in the chat.
 2. **LinkedIn app** — Go to linkedin.com/developers → Create app (link it to a LinkedIn Page; a test Page is fine). Under Products add Share on LinkedIn and Sign In with LinkedIn using OpenID Connect.
@@ -114,8 +114,8 @@ About 20 minutes, after you have approved the posts. Use test accounts only: you
 4. **Your LinkedIn ID** — Ask Codex: "Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token."
 5. **Facebook app** — Go to developers.facebook.com → Create app → Business. Open Tools → Graph API Explorer and pick your app. Add pages_manage_posts, pages_read_engagement and pages_show_list, then Generate token and choose your test Page.
 6. **Facebook key** — Click Get Page Access Token. Paste it after FB_PAGE_TOKEN= in .env, and your Page ID (Page → About → Page transparency) after FB_PAGE_ID=. Save. This key lasts about an hour, so do it just before you post.
-7. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each card should show your key partly hidden (like LITO…), not "missing".
-8. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and the artifact shows its link.
+7. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show me each request. Wait for my go." Each one should show your key partly hidden (like LITO…), not "missing".
+8. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and Codex shows its link.
 
 ## Check your work
 

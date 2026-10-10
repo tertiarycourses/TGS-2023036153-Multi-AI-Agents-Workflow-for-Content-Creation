@@ -47,7 +47,7 @@ labs_chatgpt/
 
 ## What is in this folder
 
-> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Codex reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
 
 - `assets/horizon-site.html`
 - `assets/team-charter.md`
@@ -113,7 +113,7 @@ labs_chatgpt/
 >   "Start my website" runs scripts/serve-site.mjs in
 >   the background and opens http://localhost:8080/
 > - Every post links to http://localhost:8080/ with
->   UTM tags, never to a claude.ai artifact link.
+>   UTM tags, never to the public site.
 
 ## Check your work
 

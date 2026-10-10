@@ -53,7 +53,7 @@ but consistent, and every email address resolves to your own inbox.
 - A personal Google account for Drive and Gmail; optional LinkedIn, Facebook Page and YouTube accounts for live publishing.
 - One working folder, `horizon-studio/`, from Lab 1 to Lab 14 — ready-made in this pack with every lab's data in `data/`. Choose it in Codex (a local project); do not create one.
 - Lab 15 is an optional trainer demo.
-- `.md` files are plain text for Claude to read; each has a `.pdf` twin with the same name for you to read.
+- `.md` files are plain text for Codex to read; each has a `.pdf` twin with the same name for you to read.
 
 ## Safety
 

@@ -6,6 +6,7 @@ A demo week: one post per channel.
   mid-career professionals.
 - **Facebook x1** (Wed): the free Money Check-up Checklist, for young
   families.
-- Every post links to the live site with UTM tags (channel-formats.md).
+- Every post links to your own website, http://localhost:8080/, with UTM
+  tags (channel-formats.md).
 - Use only facts-2026.md. No fee amounts, returns or new testimonials.
 - If you have your Lab 7 calendar, use its ids and dates instead.

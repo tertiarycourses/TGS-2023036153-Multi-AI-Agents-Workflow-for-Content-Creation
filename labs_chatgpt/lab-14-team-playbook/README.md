@@ -23,7 +23,7 @@ the agent-pattern comparison and the team playbook — with a Word copy of each
 
 ## What is in this folder
 
-> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Codex reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
 
 - `assets/run-log.csv`
 - `assets/playbook-outline.md`

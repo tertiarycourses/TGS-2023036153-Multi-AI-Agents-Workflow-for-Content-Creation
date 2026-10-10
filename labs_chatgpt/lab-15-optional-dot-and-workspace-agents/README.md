@@ -23,7 +23,7 @@ a demo Dot with Custom Rules that block sending, and one workspace agent (Growth
 
 ## What is in this folder
 
-> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Codex reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
 
 - `assets/dot-and-workspace-agents.md`
 - `prompts.md` / `prompts.pdf` — every prompt, ready to paste

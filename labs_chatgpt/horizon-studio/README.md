@@ -7,5 +7,6 @@ Open this folder in Codex as a local project and keep it from Lab 1 to Lab 14.
 - `research/` `strategy/` `content/` `reports/` `review/` — empty; the agents fill them
 
 
+- `scripts/serve-site.mjs` — "Start my website" runs it to open your copy at http://localhost:8080/
 
-Media (`env.example`, the sample video) stay in their lab's `assets/` — the lab tells you when you need them.
+The sample video stays in Lab 12's `assets/` — the lab tells you when you need it.

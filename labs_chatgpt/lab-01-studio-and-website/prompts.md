@@ -53,5 +53,5 @@ In Files, add two lines:
   "Start my website" runs scripts/serve-site.mjs in
   the background and opens http://localhost:8080/
 - Every post links to http://localhost:8080/ with
-  UTM tags, never to a claude.ai artifact link.
+  UTM tags, never to the public site.
 ```

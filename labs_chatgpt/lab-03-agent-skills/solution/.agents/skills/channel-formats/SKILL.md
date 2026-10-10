@@ -11,8 +11,8 @@ description: Use when writing a LinkedIn post, Facebook post, newsletter issue, 
   chapters, link, disclaimer, AI disclosure; 5-8 tags.
 - Links go to our own website, http://localhost:8080/<page>, and carry
   ?utm_source=<channel>&utm_medium=<social|email|video>
-  &utm_campaign=<campaign>. Never a claude.ai artifact link or the
-  public site.
+  &utm_campaign=<campaign>. Never a private share link or the public
+  site.
 - One file per piece with the frontmatter in data/publishing-spec.md.
 - Short disclaimer last: "General information only, not financial advice."
 - Images: a PNG or JPG beside its post, named after the post id; fill in

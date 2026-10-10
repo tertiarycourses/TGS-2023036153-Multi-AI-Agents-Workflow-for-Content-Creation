@@ -23,7 +23,7 @@ a scheduled task that drafts the weekly growth report every Monday at 8am, and o
 
 ## What is in this folder
 
-> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Codex reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
 
 - `assets/campaign-results.csv`
 - `assets/weekly-report-brief.md`

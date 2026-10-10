@@ -1,6 +1,6 @@
 # Multi AI Agents Workflow for Content Creation — Learner Guide
 
-TGS-2023036153 · Version 3.5 · Tertiary Infotech Academy Pte Ltd (UEN 201200696W)
+TGS-2023036153 · Version 3.6 · Tertiary Infotech Academy Pte Ltd (UEN 201200696W)
 
 ## How to Use This Guide
 
@@ -350,7 +350,7 @@ labs_chatgpt/
 
 > Read data/team-charter.md, data/team-design.md and data/business-brief.md. Write AGENTS.md for this studio in four sections — What this is, The team, Rules, Files — under 60 lines. The team is the one I chose in data/team-design.md. Rules: every number comes from data/facts-2026.md; every piece passes fact-check and fin-compliance; nothing is published or sent without a person's approval (the one exception: a review email to the approver); anything shown to me is in plain English for a business owner, with no codes, IDs, file names or line numbers. In Files, add two lines:
 > - Our copy of the site, which we edit: web/site/. "Start my website" runs scripts/serve-site.mjs in the background and opens http://localhost:8080/
-> - Every post links to http://localhost:8080/ with UTM tags, never to a claude.ai artifact link.
+> - Every post links to http://localhost:8080/ with UTM tags, never to the public site.
 
 **Check your work**
 
@@ -610,8 +610,9 @@ A regulated firm gives each agent only what its job needs.
 1. **Install the plugins** — Plugins: Google Drive, Gmail and Computer Use. Sites and $imagegen are built in.
 1. **Use your own account** — Connect your personal Google account — never an employer's.
 1. **Put the data on Drive** — Upload data/ to a Drive folder named Horizon Studio.
+1. **Open Codex** — In Codex, start a new thread in horizon-studio named "Lab 4" for the next two prompts.
 1. **Test each agent** — Copy and paste Prompt A — one small job per agent, each on its own plugin.
-1. **Write the limits** — After the new session opens, copy and paste Prompt B.
+1. **Write the limits** — After the five results are reported, copy and paste Prompt B.
 
 **PROMPT A — Codex: test each agent**
 
@@ -1216,7 +1217,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 
 **Optional: post through LinkedIn and Facebook**
 
-About 20 minutes, after you have approved the posts. Use test accounts only: your own LinkedIn profile and a test Facebook Page you manage. Skip any post you already posted by hand. The link in each post opens your own website, so it works only on your computer.
+About 20 minutes, after you have approved the posts. Use test accounts only: your own LinkedIn profile and a test Facebook Page you manage. The link in each post opens your own website, so it works only on your computer.
 
 1. **Make your key file** — Ask Codex: "Make my .env file from data/env.example and open it in a text editor." Your keys go only in this file — never in the chat.
 1. **LinkedIn app** — Go to linkedin.com/developers → Create app (link it to a LinkedIn Page; a test Page is fine). Under Products add Share on LinkedIn and Sign In with LinkedIn using OpenID Connect.
@@ -1224,8 +1225,8 @@ About 20 minutes, after you have approved the posts. Use test accounts only: you
 1. **Your LinkedIn ID** — Ask Codex: "Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token."
 1. **Facebook app** — Go to developers.facebook.com → Create app → Business. Open Tools → Graph API Explorer and pick your app. Add pages_manage_posts, pages_read_engagement and pages_show_list, then Generate token and choose your test Page.
 1. **Facebook key** — Click Get Page Access Token. Paste it after FB_PAGE_TOKEN= in .env, and your Page ID (Page → About → Page transparency) after FB_PAGE_ID=. Save. This key lasts about an hour, so do it just before you post.
-1. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each card should show your key partly hidden (like LITO…), not "missing".
-1. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and the artifact shows its link.
+1. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show me each request. Wait for my go." Each one should show your key partly hidden (like LITO…), not "missing".
+1. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and Codex shows its link.
 
 **Check your work**
 

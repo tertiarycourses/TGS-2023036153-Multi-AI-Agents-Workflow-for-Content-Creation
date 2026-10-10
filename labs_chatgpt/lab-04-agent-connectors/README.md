@@ -23,7 +23,7 @@ every specialist tested on its own connector, with its limits written into its i
 
 ## What is in this folder
 
-> **.md or .pdf?** A `.md` file (Markdown) is plain text that Claude reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
+> **.md or .pdf?** A `.md` file (Markdown) is plain text that Codex reads. Every `.md` here has a `.pdf` twin with the same name — open the PDF to read it yourself.
 
 - `assets/connectors-setup.md`
 - `prompts.md` / `prompts.pdf` — every prompt, ready to paste
@@ -35,8 +35,9 @@ every specialist tested on its own connector, with its limits written into its i
 2. **Install the plugins** — Plugins: Google Drive, Gmail and Computer Use. Sites and $imagegen are built in.
 3. **Use your own account** — Connect your personal Google account — never an employer's.
 4. **Put the data on Drive** — Upload data/ to a Drive folder named Horizon Studio.
-5. **Test each agent** — Copy and paste Prompt A — one small job per agent, each on its own plugin.
-6. **Write the limits** — After the new session opens, copy and paste Prompt B.
+5. **Open Codex** — In Codex, start a new thread in horizon-studio named "Lab 4" for the next two prompts.
+6. **Test each agent** — Copy and paste Prompt A — one small job per agent, each on its own plugin.
+7. **Write the limits** — After the five results are reported, copy and paste Prompt B.
 
 ## The prompts
 

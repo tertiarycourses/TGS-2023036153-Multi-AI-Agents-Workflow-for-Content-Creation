@@ -1,6 +1,6 @@
 # Multi AI Agents Workflow for Content Creation — Learner Guide
 
-TGS-2023036153 · Version 3.5 · Tertiary Infotech Academy Pte Ltd (UEN 201200696W)
+TGS-2023036153 · Version 3.6 · Tertiary Infotech Academy Pte Ltd (UEN 201200696W)
 
 ## How to Use This Guide
 
@@ -1204,7 +1204,7 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 1. **Content Creator** — Two posts with hooks, UTM links, disclaimers.
 1. **Creative Designer** — One image per post, with alt text.
 1. **Lead review** — fact-check and fin-compliance; fixes go back.
-1. **You** — Type "approved <id> by <name>"; dry run, then go.
+1. **You** — Approve on the review page and paste the line in the chat; then post it yourself (or, optionally, through the API).
 
 ### Lab 10 — Campaign 2: Social Media Posts (Demo)
 
@@ -1268,7 +1268,7 @@ About 20 minutes, after you have approved the posts. Use test accounts only: you
 1. **Your LinkedIn ID** — Ask Claude Code: "Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token."
 1. **Facebook app** — Go to developers.facebook.com → Create app → Business. Open Tools → Graph API Explorer and pick your app. Add pages_manage_posts, pages_read_engagement and pages_show_list, then Generate token and choose your test Page.
 1. **Facebook key** — Click Get Page Access Token. Paste it after FB_PAGE_TOKEN= in .env, and your Page ID (Page → About → Page transparency) after FB_PAGE_ID=. Save. This key lasts about an hour, so do it just before you post.
-1. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each card should show your key partly hidden (like LITO…), not "missing".
+1. **Dry run** — Type: "Do a dry run of publishing the approved Week 1 posts and show each one as an artifact. Wait for my go." Each one should show your key partly hidden (like LITO…), not "missing".
 1. **Go** — Type "go" for each post you want live. It appears on LinkedIn or your Facebook Page with its image, and the artifact shows its link.
 
 **Check your work**

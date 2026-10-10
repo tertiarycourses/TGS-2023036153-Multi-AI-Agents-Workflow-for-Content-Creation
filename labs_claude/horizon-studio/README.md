@@ -7,5 +7,6 @@ Open this folder in the Claude desktop app — in Claude or in Claude Code, as e
 - `research/` `strategy/` `content/` `reports/` `review/` — empty; the agents fill them
 
 - `scripts/` and `.claude/settings.json` — the approval gate and agent teams, already switched on. You never run them yourself; you approve by typing "approved <id> by <your name>".
+- `scripts/serve-site.mjs` — "Start my website" runs it to open your copy at http://localhost:8080/
 
-Media (`env.example`, the sample video) stay in their lab's `assets/` — the lab tells you when you need them.
+The sample video stays in Lab 12's `assets/` — the lab tells you when you need it.
