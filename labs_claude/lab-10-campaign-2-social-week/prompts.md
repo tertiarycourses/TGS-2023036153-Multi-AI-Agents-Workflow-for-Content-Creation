@@ -14,8 +14,9 @@ into the same place here, replacing the old copy:
 .claude/settings.json; scripts/approve-chat.mjs,
 gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs
 and submit.mjs; data/publishing-spec.md,
-channel-formats.md, connect-accounts.md and
-env.example. Touch nothing else.
+channel-formats.md, connect-accounts.md,
+env.example, turning-55-brief.md and
+turning-55-draft.md. Touch nothing else.
 Then add these rules to CLAUDE.md if they are
 missing: every post links to http://localhost:8080/ with
 UTM tags, never a claude.ai artifact link; a person

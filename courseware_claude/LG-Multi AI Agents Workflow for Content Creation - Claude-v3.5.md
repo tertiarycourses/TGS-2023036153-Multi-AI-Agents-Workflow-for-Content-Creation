@@ -1237,7 +1237,7 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 **PROMPT A — Claude Code: get the latest kit**
 
 > Bring this studio up to date with the course kit. Download each file below from https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_claude/horizon-studio/ into the same place here, replacing the old copy:
-> .claude/settings.json; scripts/approve-chat.mjs, gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs and submit.mjs; data/publishing-spec.md, channel-formats.md, connect-accounts.md and env.example. Touch nothing else. Then add these rules to CLAUDE.md if they are missing: every post links to http://localhost:8080/ with UTM tags, never a claude.ai artifact link; a person approves by typing "approved <id> by <name>" in the chat; never ask me to run a command. Then start my website and tell me in one line that the kit is up to date.
+> .claude/settings.json; scripts/approve-chat.mjs, gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs and submit.mjs; data/publishing-spec.md, channel-formats.md, connect-accounts.md, env.example, turning-55-brief.md and turning-55-draft.md. Touch nothing else. Then add these rules to CLAUDE.md if they are missing: every post links to http://localhost:8080/ with UTM tags, never a claude.ai artifact link; a person approves by typing "approved <id> by <name>" in the chat; never ask me to run a command. Then start my website and tell me in one line that the kit is up to date.
 
 **PROMPT B — Claude Code: the social team**
 
@@ -1749,6 +1749,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 
 **If it goes wrong**
 
+- **Claude cannot find turning-55-brief.md** — Your folder is an older download. Ask: "Download turning-55-brief.md and turning-55-draft.md from https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_claude/horizon-studio/data/ into data/." Then paste Prompt A again.
 - **You got subagents, not a team** — Ask for "an agent team" by name in a new session.
 - **The loop never ends** — Remind the Lead: three rounds at most, then escalate to me.
 - **A task stays blocked** — Tell the Lead to check the task list and nudge the teammate who owns it.
