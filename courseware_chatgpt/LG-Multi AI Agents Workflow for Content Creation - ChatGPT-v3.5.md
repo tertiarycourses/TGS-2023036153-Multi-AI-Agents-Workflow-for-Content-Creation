@@ -131,10 +131,10 @@ Tip: This edition builds the team with skills and Codex subagents, so it works o
 
 - **2023 · Prompt Engineering** — ChatGPT goes mainstream; Anthropic launches Claude (March). Results depend on how you word the prompt.
 - **2024 · Context Engineering** — Models call tools. Anthropic open-sources the Model Context Protocol (Nov). Results depend on what the model can see.
-- **2025 · Harness Engineering** — Claude Code and Codex: agents plan, act and check their own work. Results depend on the system around the model.
-- **2026 · AI Agents** — ChatGPT Work and Codex subagents; workspace agents and always-on Dots.
+- **2025 · Harness Engineering** — E.g. Claude Code and Codex. The system around the model gives rise to agentic AI: task-oriented agents that plan, act and check their work.
+- **2026 · AI Agents** — Always-on agents that work 24/7 on their own, e.g. OpenClaw, Hermes Agent and ChatGPT Dots.
 
-From wording one prompt, to curating context, to engineering the whole system around the model — and now, teams of agents.
+From wording one prompt, to curating context, to engineering the system around the model — and now, agents that work around the clock.
 
 #### What Is a Harness?
 
