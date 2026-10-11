@@ -3,7 +3,7 @@
 > **USE: CODEX** — Codex, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 1 · Topic 1 · about 30 minutes · slides 33–38**\
+**Day 1 · Topic 1 · about 30 minutes · slides 36–41**\
 **Surface:** ChatGPT Project → Codex\
 **Features:** a ChatGPT Project with shared files · AGENTS.md · your own copy of Horizon's website
 

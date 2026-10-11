@@ -99,6 +99,9 @@ labs_claude/
 > exception: a review email to the approver); anything
 > shown to me is in plain English for a business owner,
 > with no codes, IDs, file names or line numbers.
+> A person approves by typing "approved <id> by
+> <name>" in the chat; never ask me to run a command,
+> open a terminal or edit a file.
 > In Files, add two lines:
 > - Our copy of the site, which we edit: web/site/.
 >   "Start my website" runs scripts/serve-site.mjs in

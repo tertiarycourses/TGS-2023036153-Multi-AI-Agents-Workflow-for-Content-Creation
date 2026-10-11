@@ -3,7 +3,7 @@
 > **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (Claude Edition) (TGS-2023036153)\
-**Day 2 · Topic 4 · about 35 minutes · slides 142–147**\
+**Day 2 · Topic 4 · about 35 minutes · slides 140–145**\
 **Surface:** Claude Code (skill, routine, Drive, Gmail)\
 **Features:** the Growth Analyst's campaign-report skill · do · verify · schedule · draft-only delivery
 
@@ -34,11 +34,10 @@ a scheduled task that drafts the weekly growth report every Monday at 8am, and o
 ## Step by step
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 13". Run all of this lab's prompts in it.
-2. **Put the data on Drive** — Ask: "Upload data/campaign-results.csv to my Google Drive folder Horizon Studio as a plain file, replacing any old copy."
-3. **Do it once** — Copy and paste Prompt A. Refine the report until it is right.
-4. **Schedule it** — After the report is right, copy and paste Prompt B into the instructions of a new routine: Routines → New routine → Local, Mondays at 8am.
-5. **Run it now** — Click Run now once, approve any permission prompts, then open the Gmail draft.
-6. **Pause it** — After class, pause the routine.
+2. **Do it once** — Copy and paste Prompt A. Refine the report until it is right.
+3. **Schedule it** — After the report is right, copy and paste Prompt B into the instructions of a new routine: Routines → New routine → Local, Mondays at 8am.
+4. **Run it now** — Click Run now once, approve any permission prompts, then open the Gmail draft.
+5. **Pause it** — After class, pause the routine.
 
 ## The prompts
 
@@ -87,7 +86,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 ## If it goes wrong
 
 - **It sent the email** — Write "draft only — never send" in both the skill and the task instructions.
-- **Claude cannot upload to Drive** — Upload it yourself: drive.google.com → New → New folder "Horizon Studio" (if missing), open it → New → File upload.
+- **campaign-results.csv is not on Drive** — It went to the Horizon Studio folder in Lab 4. Open drive.google.com, open Horizon Studio → New → File upload, and choose it from your data/ folder.
 
 ## Stretch
 

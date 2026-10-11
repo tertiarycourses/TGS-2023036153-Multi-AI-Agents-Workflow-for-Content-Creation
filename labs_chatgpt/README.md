@@ -44,15 +44,14 @@ but consistent, and every email address resolves to your own inbox.
 | 12 | [Campaign 4: The YouTube Explainer](lab-12-campaign-4-youtube-explainer/README.md) | 2 | **Codex** | 45 min |
 | 13 | [Campaign 5: Always On — the Weekly Growth Report](lab-13-campaign-5-weekly-growth-report/README.md) | 2 | **ChatGPT Work** | 35 min |
 | 14 | [Measure, Govern and Write the Team Playbook](lab-14-team-playbook/README.md) | 2 | **Codex** | 40 min |
-| 15 | [Optional Demo: a Dot Team Lead and Workspace Agents](lab-15-optional-dot-and-workspace-agents/README.md) | 2 | **ChatGPT** | 20 min |
+| 15 | [Subagents at Work: A Strategy Debate and a QA Loop](lab-15-subagents-debate-and-qa-loop/README.md) | 2 | **Codex** | 30 min |
 
 ## Before you start
 
 - The ChatGPT desktop app on Plus or Pro (ChatGPT Work, Codex, plugins, Sites).
 - Node.js 22, Python 3 with Pillow, and ffmpeg.
 - A personal Google account for Drive and Gmail; optional LinkedIn, Facebook Page and YouTube accounts for live publishing.
-- One working folder, `horizon-studio/`, from Lab 1 to Lab 14 — ready-made in this pack with every lab's data in `data/`. Choose it in Codex (a local project); do not create one.
-- Lab 15 is an optional trainer demo.
+- One working folder, `horizon-studio/`, from Lab 1 to Lab 15 — ready-made in this pack with every lab's data in `data/`. Choose it in Codex (a local project); do not create one.
 - `.md` files are plain text for Codex to read; each has a `.pdf` twin with the same name for you to read.
 
 ## Safety

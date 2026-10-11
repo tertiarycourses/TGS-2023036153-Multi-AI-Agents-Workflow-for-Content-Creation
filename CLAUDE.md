@@ -56,9 +56,14 @@ instructions, two skills each (fact-check and fin-compliance for the Lead)
 and least-privilege connectors. Labs 5-11 are campaigns: research to
 storyboard, personas, cadence, social week, newsletter + landing page,
 YouTube explainer, weekly report on a schedule. Lab 14 the playbook;
-Lab 15 (Claude: agent teams at work — a strategy debate, then a QA loop
-that sends failed drafts back to the writer; ChatGPT: optional Dot +
-workspace agents demo).
+Lab 15 a strategy debate, then a QA loop (Claude: an agent team whose
+auditor messages the writer; ChatGPT, since v3.7: Codex subagents with the
+Lead relaying). The ChatGPT deck mirrors the Claude deck slide for slide
+where the products allow (owner request 11 Oct 2026).
+- No catch-up prompts (v3.7): every file a lab needs ships in
+  horizon-studio/ from Lab 1 (data/, scripts/, Claude's .claude/settings.json).
+  A new lab file goes into the studio via build_labs.build_starter — never
+  into a "download it" prompt or troubleshooting fix.
 
 - Claude Edition: subagent files in .claude/agents/ (also used as agent-team
   teammate types), skills in .claude/skills/, claude.ai connectors (/mcp),
@@ -175,3 +180,7 @@ Re-verify before changing; do not "correct" from memory.
   Lab 15 is never assessed.
 - The Drive push script in .claude/skills/gdrive-push uploads question
   papers only; answer keys never leave the repo.
+- Drive and the LMS-TMS carry the **Claude Edition** (owner decision 11 Oct
+  2026); the ChatGPT Edition is on GitHub only. The FG and AP (Claude
+  Edition) are built by the wsq-fg-ap skill from build/fgap/course_maaw.py,
+  which reads the LP schedule, so rebuild them after any LP change.

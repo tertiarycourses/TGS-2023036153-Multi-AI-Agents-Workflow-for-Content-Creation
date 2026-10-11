@@ -3,7 +3,7 @@
 > **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (Claude Edition) (TGS-2023036153)\
-**Day 2 · Topic 3 · about 40 minutes · slides 115–122**\
+**Day 2 · Topic 3 · about 40 minutes · slides 115–120**\
 **Surface:** Claude Code (agent team) → LinkedIn, Facebook\
 **Features:** the publisher kit and its hook · an agent team: creator, designer, Lead · teammates message each other · human approval → you post
 
@@ -39,38 +39,17 @@ two posts with images, reviewed, approved by you and posted by you (or, optional
 ## Step by step
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 10". Run all of this lab's prompts in it.
-2. **Get the latest kit** — Copy and paste Prompt A. Claude downloads the newest course files into your folder and starts your website. Your own work stays as it is.
-3. **Test the gate** — Ask Claude to approve a post itself. The gate must block it.
-4. **Start the team** — After Claude says the kit is up to date, copy and paste Prompt B. The Lead starts two teammates and tells you as each one starts and finishes.
-5. **Watch them talk** — The review page opens with a Team chat: the designer asking the creator for each hook, and the Lead's fixes.
-6. **Approve as a person** — Review in the artifact (or open the review email and click its link). Click Approve or Request changes on each post, then Copy in the bottom bar and paste into the chat.
-7. **Get ready to post** — After you have approved the posts, copy and paste Prompt C. Each post appears with a Copy button for its text, and the folder with the two images opens on your computer.
-8. **Post it yourself** — Paste the text, add the image, Post — on LinkedIn and a test Facebook Page. Or stop at the preview.
-9. **Optional: post through the apps** — Follow "Optional: post through LinkedIn and Facebook" in this lab's README.
+2. **Test the gate** — Ask Claude to approve a post itself. The gate (set up in your folder since Lab 1) must block it.
+3. **Start the team** — Copy and paste Prompt A. The Lead starts two teammates and tells you as each one starts and finishes.
+4. **Watch them talk** — The review page opens with a Team chat: the designer asking the creator for each hook, and the Lead's fixes.
+5. **Approve as a person** — Review in the artifact or the review email. Click Approve or Request changes, then Copy and paste into the chat.
+6. **Get ready to post** — After you have approved the posts, copy and paste Prompt B. Each post gets a Copy button, and the folder with the two images opens.
+7. **Post it yourself** — Paste the text, add the image, Post — on LinkedIn and a test Facebook Page. Or stop at the preview.
+8. **Optional: post through the apps** — Follow "Optional: post through LinkedIn and Facebook" in this lab's README.
 
 ## The prompts
 
-### PROMPT A — Claude Code: get the latest kit
-
-> Bring this studio up to date with the course kit.
-> Download each file below from
-> https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_claude/horizon-studio/
-> into the same place here, replacing the old copy:
-> .claude/settings.json; scripts/approve-chat.mjs,
-> gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs
-> and submit.mjs; data/publishing-spec.md,
-> channel-formats.md, connect-accounts.md,
-> env.example, turning-55-brief.md and
-> turning-55-draft.md. Touch nothing else.
-> Then add these rules to CLAUDE.md if they are
-> missing: every post links to http://localhost:8080/ with
-> UTM tags, never a claude.ai artifact link; a person
-> approves by typing "approved <id> by <name>" in the
-> chat; never ask me to run a command.
-> Then start my website and tell me in one line that
-> the kit is up to date.
-
-### PROMPT B — Claude Code: the social team
+### PROMPT A — Claude Code: the social team
 
 > Create an agent team for Week 1 social from
 > data/social-brief.md and strategy/calendar.csv.
@@ -117,7 +96,7 @@ two posts with images, reviewed, approved by you and posted by you (or, optional
 > what it means and what I do next. Save a Word copy
 > (.docx) of each result.
 
-### PROMPT C — Claude Code: ready to post
+### PROMPT B — Claude Code: ready to post
 
 > For each Week 1 post approved in
 > review/approvals.csv, publish a "ready to post"
@@ -162,7 +141,7 @@ About 20 minutes, after you have approved the posts. Use test accounts only: you
 
 ## If it goes wrong
 
-- **You got subagents, not a team** — Check you are in the current horizon-studio folder from the course, start a new session and ask for "an agent team" by name.
+- **You got subagents, not a team** — Start a new session in horizon-studio and ask for "an agent team" by name.
 - **LinkedIn returns 426** — LINKEDIN_VERSION must be a recent YYYYMM.
 
 ## Stretch

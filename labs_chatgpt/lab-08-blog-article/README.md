@@ -3,7 +3,7 @@
 > **USE: CHATGPT** — the ChatGPT desktop app
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 1 · Topic 2 · about 40 minutes · slides 90–94**\
+**Day 1 · Topic 2 · about 40 minutes · slides 93–97**\
 **Surface:** ChatGPT (web search, your Horizon skills)\
 **Features:** one prompt runs the whole job: research · draft · fact-check and fin-compliance · fix · a person reads it last
 

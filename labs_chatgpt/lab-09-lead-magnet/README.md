@@ -3,7 +3,7 @@
 > **USE: CHATGPT** — the ChatGPT desktop app
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 2 · Topic 3 · about 40 minutes · slides 98–104**\
+**Day 2 · Topic 3 · about 40 minutes · slides 101–107**\
 **Surface:** ChatGPT (@Gmail drafts, your Horizon skills)\
 **Features:** lead-magnet skill · a printable A4 checklist (PDF) · a three-email welcome sequence · drafts only
 

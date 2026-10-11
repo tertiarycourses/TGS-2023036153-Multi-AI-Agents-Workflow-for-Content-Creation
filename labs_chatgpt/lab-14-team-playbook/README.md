@@ -3,7 +3,7 @@
 > **USE: CODEX** — Codex, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 2 · Topic 4 · about 40 minutes · slides 144–149**\
+**Day 2 · Topic 4 · about 40 minutes · slides 147–152**\
 **Surface:** Codex (subagents)\
 **Features:** compare agent patterns · the roster: instructions, skills, connectors · approval matrix · responsible-AI controls
 
@@ -97,7 +97,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 
 ## Next
 
-Lab 15 — Optional Demo: a Dot Team Lead and Workspace Agents. Keep what you built — the next lab starts from it.
+Lab 15 — Subagents at Work: A Strategy Debate and a QA Loop. Keep what you built — the next lab starts from it.
 
 ## Safety
 

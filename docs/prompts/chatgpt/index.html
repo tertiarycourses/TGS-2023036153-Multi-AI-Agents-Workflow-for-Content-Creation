@@ -64,7 +64,7 @@ footer{margin-top:40px;color:var(--muted);font-size:14px}
 .pick{margin:28px 0;padding:18px 20px;border:2px dashed var(--accent);
 border-radius:12px;font-size:18px;font-weight:600}
 </style></head><body><div class="wrap">
-<p class="eyebrow">TGS-2023036153 · ChatGPT Edition · v3.6</p>
+<p class="eyebrow">TGS-2023036153 · ChatGPT Edition · v3.7</p>
 <h1>Lab Prompts</h1>
 <p class="sub">Multi AI Agents Workflow for Content Creation. Pick your lab, click <b>Copy</b>, then paste
 into ChatGPT or Codex. <span class="edition">Using
@@ -492,33 +492,7 @@ fixes in the files and in the Gmail drafts.
 Write for a business owner, in plain English: no
 codes, IDs, file names or line numbers; start with
 what it means and what I do next. Save a Word copy
-(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Which checklist item do people most often miss, and why does it matter?</span><button class="copy small" type="button" data-copy="Which checklist item do people most often miss, and why does it matter?">Copy</button></li><li><span class="q">Read the day 3 email as a 55-year-old. Is anything unclear?</span><button class="copy small" type="button" data-copy="Read the day 3 email as a 55-year-old. Is anything unclear?">Copy</button></li><li><span class="q">Explain each issue in one line: what is wrong, and the fix.</span><button class="copy small" type="button" data-copy="Explain each issue in one line: what is wrong, and the fix.">Copy</button></li></ul></section></section><section class="lab" data-lab="10"><p class="eyebrow">Lab 10 · Day 2 · 40 min</p><h2>Campaign 2: Social Media Posts (Demo)</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> In Codex start a new thread in horizon-studio and name it &quot;Lab 10&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Get the latest kit</b> Copy and paste Prompt A. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.</li><li><b>Test the gate</b> Ask Codex to approve anything. approve.mjs refuses without a person at a terminal.</li><li><b>Run the team</b> After Codex says the kit is up to date, copy and paste Prompt B. Watch the Subagents panel: Active, then Done.</li><li><b>Read the review</b> The Lead&#x27;s fact-check and fin-compliance table — at least one fix.</li><li><b>Approve as a person</b> In your own terminal: node scripts/approve.mjs &lt;id&gt; --by &quot;Your Name&quot;.</li><li><b>Publish</b> After you have approved the posts, copy and paste Prompt C. A dry run only: it shows what would be sent.</li><li><b>Optional: post through the apps</b> Follow &quot;Optional: post through LinkedIn and Facebook&quot; in this lab&#x27;s README.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Make your key file</span></div><button class="copy" type="button" data-copy="Make my .env file from data/env.example and open it in a text editor.">Copy</button></header><pre>Make my .env file from data/env.example and open it in a text editor.</pre></article><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Your LinkedIn ID</span></div><button class="copy" type="button" data-copy="Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token.">Copy</button></header><pre>Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token.</pre></article><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Dry run</span></div><button class="copy" type="button" data-copy="Do a dry run of publishing the approved Week 1 posts and show me each request. Wait for my go.">Copy</button></header><pre>Do a dry run of publishing the approved Week 1 posts and show me each request. Wait for my go.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt A</span><span class="ptool">Codex: get the latest kit</span></div><button class="copy" type="button" data-copy="Bring this studio up to date with the course kit.
-From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/
-download scripts/serve-site.mjs and
-data/publishing-spec.md, channel-formats.md,
-connect-accounts.md and env.example into the same
-places here. From
-https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/
-download approve.mjs, gate-hook.mjs, lib.mjs,
-publish.mjs and submit.mjs into scripts/. Replace
-old copies; touch nothing else.
-Then add this rule to AGENTS.md if it is missing:
-every post links to http://localhost:8080/ with UTM tags.
-Then start my website and tell me in one line that
-the kit is up to date.">Copy</button></header><pre>Bring this studio up to date with the course kit.
-From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/
-download scripts/serve-site.mjs and
-data/publishing-spec.md, channel-formats.md,
-connect-accounts.md and env.example into the same
-places here. From
-https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/
-download approve.mjs, gate-hook.mjs, lib.mjs,
-publish.mjs and submit.mjs into scripts/. Replace
-old copies; touch nothing else.
-Then add this rule to AGENTS.md if it is missing:
-every post links to http://localhost:8080/ with UTM tags.
-Then start my website and tell me in one line that
-the kit is up to date.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt B</span><span class="ptool">Codex: the social team</span></div><button class="copy" type="button" data-copy="You are the Lead. Plan Week 1 social from
+(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Which checklist item do people most often miss, and why does it matter?</span><button class="copy small" type="button" data-copy="Which checklist item do people most often miss, and why does it matter?">Copy</button></li><li><span class="q">Read the day 3 email as a 55-year-old. Is anything unclear?</span><button class="copy small" type="button" data-copy="Read the day 3 email as a 55-year-old. Is anything unclear?">Copy</button></li><li><span class="q">Explain each issue in one line: what is wrong, and the fix.</span><button class="copy small" type="button" data-copy="Explain each issue in one line: what is wrong, and the fix.">Copy</button></li></ul></section></section><section class="lab" data-lab="10"><p class="eyebrow">Lab 10 · Day 2 · 40 min</p><h2>Campaign 2: Social Media Posts (Demo)</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> In Codex start a new thread in horizon-studio and name it &quot;Lab 10&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Switch on the gate</b> The publisher kit is in your scripts/ folder since Lab 1. Ask Codex: &quot;Add a hook that blocks any command running scripts/approve.mjs.&quot; Then trust it.</li><li><b>Test the gate</b> Ask Codex to approve anything. approve.mjs refuses without a person at a terminal.</li><li><b>Run the team</b> Copy and paste Prompt A. Watch the Subagents panel: Active, then Done.</li><li><b>Read the review</b> The Lead&#x27;s fact-check and fin-compliance table — at least one fix.</li><li><b>Approve as a person</b> In your own terminal: node scripts/approve.mjs &lt;id&gt; --by &quot;Your Name&quot;.</li><li><b>Publish</b> After you have approved the posts, copy and paste Prompt B. A dry run only: it shows what would be sent.</li><li><b>Optional: post through the apps</b> Follow &quot;Optional: post through LinkedIn and Facebook&quot; in this lab&#x27;s README.</li></ol></details><h3>The prompts</h3><p class="hint">Replace the <mark>highlighted</mark> parts before you send.</p><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Switch on the gate</span></div><button class="copy" type="button" data-copy="Add a hook that blocks any command running scripts/approve.mjs.">Copy</button></header><pre>Add a hook that blocks any command running scripts/approve.mjs.</pre></article><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Make your key file</span></div><button class="copy" type="button" data-copy="Make my .env file from data/env.example and open it in a text editor.">Copy</button></header><pre>Make my .env file from data/env.example and open it in a text editor.</pre></article><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Your LinkedIn ID</span></div><button class="copy" type="button" data-copy="Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token.">Copy</button></header><pre>Look up my LinkedIn author ID with the token in .env and fill it in. Do not show me the token.</pre></article><article class="prompt ask1"><header><div><span class="pname">Lab 10 · Ask</span><span class="ptool">Dry run</span></div><button class="copy" type="button" data-copy="Do a dry run of publishing the approved Week 1 posts and show me each request. Wait for my go.">Copy</button></header><pre>Do a dry run of publishing the approved Week 1 posts and show me each request. Wait for my go.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt A</span><span class="ptool">Codex: the social team</span></div><button class="copy" type="button" data-copy="You are the Lead. Plan Week 1 social from
 data/social-brief.md and strategy/calendar.csv.
 Use subagents in parallel, each following its card:
 - content-creator: 1 LinkedIn + 1 Facebook post with
@@ -556,7 +530,7 @@ Publish nothing.
 Write for a business owner, in plain English: no
 codes, IDs, file names or line numbers; start with
 what it means and what I do next. Save a Word copy
-(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt C</span><span class="ptool">Codex: publish</span></div><button class="copy" type="button" data-copy="For every Week 1 post approved in
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 10 · Prompt B</span><span class="ptool">Codex: publish</span></div><button class="copy" type="button" data-copy="For every Week 1 post approved in
 review/approvals.csv, run node scripts/publish.mjs
 &lt;id&gt; as a dry run and show me each request. Wait for
 me to say &quot;go&quot; before any --live run.">Copy</button></header><pre>For every Week 1 post approved in
@@ -638,7 +612,7 @@ Check it with ffprobe. Do not change approved words.</pre></article><article cla
 If I say &quot;go&quot;, run it with --live: it uploads as
 PRIVATE. Give me the YouTube Studio link.">Copy</button></header><pre>Run node scripts/publish.mjs yt-ep01 as a dry run.
 If I say &quot;go&quot;, run it with --live: it uploads as
-PRIVATE. Give me the YouTube Studio link.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Walk me through the video scene by scene, in plain English.</span><button class="copy small" type="button" data-copy="Walk me through the video scene by scene, in plain English.">Copy</button></li><li><span class="q">Which figure on screen should I double-check, and against what?</span><button class="copy small" type="button" data-copy="Which figure on screen should I double-check, and against what?">Copy</button></li><li><span class="q">What does the AI disclosure say, and why do we need it?</span><button class="copy small" type="button" data-copy="What does the AI disclosure say, and why do we need it?">Copy</button></li></ul></section></section><section class="lab" data-lab="13"><p class="eyebrow">Lab 13 · Day 2 · 35 min</p><h2>Campaign 5: Always On — the Weekly Growth Report</h2><p class="use"><b>Use:</b> ChatGPT Work — ChatGPT Work</p><details><summary>The steps</summary><ol><li><b>New session</b> Start a new ChatGPT Work chat and name it &quot;Lab 13&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Put the data on Drive</b> Upload campaign-results.csv to the Horizon Studio folder.</li><li><b>Bring the skill</b> Use @skill-creator to add campaign-report to ChatGPT.</li><li><b>Do it once</b> Copy and paste Prompt A. Refine the report until it is right.</li><li><b>Schedule it</b> After the report is right, copy and paste Prompt B. Runs appear in Scheduled.</li><li><b>Run it now</b> Run the task once and open the Gmail draft.</li><li><b>Pause it</b> After class, pause the scheduled task.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 13 · Prompt A</span><span class="ptool">ChatGPT Work</span></div><button class="copy" type="button" data-copy="Act as Horizon&#x27;s Growth Analyst. Using @Google Drive,
+PRIVATE. Give me the YouTube Studio link.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Walk me through the video scene by scene, in plain English.</span><button class="copy small" type="button" data-copy="Walk me through the video scene by scene, in plain English.">Copy</button></li><li><span class="q">Which figure on screen should I double-check, and against what?</span><button class="copy small" type="button" data-copy="Which figure on screen should I double-check, and against what?">Copy</button></li><li><span class="q">What does the AI disclosure say, and why do we need it?</span><button class="copy small" type="button" data-copy="What does the AI disclosure say, and why do we need it?">Copy</button></li></ul></section></section><section class="lab" data-lab="13"><p class="eyebrow">Lab 13 · Day 2 · 35 min</p><h2>Campaign 5: Always On — the Weekly Growth Report</h2><p class="use"><b>Use:</b> ChatGPT Work — ChatGPT Work</p><details><summary>The steps</summary><ol><li><b>New session</b> Start a new ChatGPT Work chat and name it &quot;Lab 13&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Bring the skill</b> Use @skill-creator to add campaign-report to ChatGPT.</li><li><b>Do it once</b> Copy and paste Prompt A. Refine the report until it is right.</li><li><b>Schedule it</b> After the report is right, copy and paste Prompt B. Runs appear in Scheduled.</li><li><b>Run it now</b> Run the task once and open the Gmail draft.</li><li><b>Pause it</b> After class, pause the scheduled task.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 13 · Prompt A</span><span class="ptool">ChatGPT Work</span></div><button class="copy" type="button" data-copy="Act as Horizon&#x27;s Growth Analyst. Using @Google Drive,
 read campaign-results.csv in the Horizon Studio
 folder. Use the campaign-report skill and
 weekly-report-brief.md. Leave the report as a
@@ -692,17 +666,105 @@ it.
 Write for a business owner, in plain English: no
 codes, IDs, file names or line numbers; start with
 what it means and what I do next. Save a Word copy
-(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">In one line each: when should we use one agent, subagents and a Lead review?</span><button class="copy small" type="button" data-copy="In one line each: when should we use one agent, subagents and a Lead review?">Copy</button></li><li><span class="q">Who must approve a post that has a CPF figure in it?</span><button class="copy small" type="button" data-copy="Who must approve a post that has a CPF figure in it?">Copy</button></li><li><span class="q">A wrong post went out. What are the first three things we do?</span><button class="copy small" type="button" data-copy="A wrong post went out. What are the first three things we do?">Copy</button></li></ul></section></section><section class="lab" data-lab="15"><p class="eyebrow">Lab 15 · Day 2 · 20 min</p><h2>Optional Demo: a Dot Team Lead and Workspace Agents</h2><p class="use"><b>Use:</b> ChatGPT — the ChatGPT desktop app</p><details><summary>The steps</summary><ol><li><b>Check the plan</b> Dots: the first one is included on Pro and Business Premium. Workspace agents: Business, Enterprise, Edu.</li><li><b>Make the Dot</b> Give it the Team Lead&#x27;s instructions and only the apps it needs.</li><li><b>Set Custom Rules</b> Block sending, deleting and posting; require approval for anything account-affecting.</li><li><b>Give it one job</b> Copy and paste the prompt. Watch the work in Activity View.</li><li><b>Build a workspace agent</b> Agents in the sidebar → describe the Growth Analyst&#x27;s weekly report → add apps → choose a trigger.</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 15 · Prompt</span><span class="ptool">the Dot</span></div><button class="copy" type="button" data-copy="You are Horizon Wealth Planning&#x27;s Marketing Team
-Lead. Every Monday, summarise the week&#x27;s calendar
-from the Horizon Studio Drive folder, list anything
-due for review, and draft — never send — a short
-brief to me. Ask before any action outside reading
-and drafting.">Copy</button></header><pre>You are Horizon Wealth Planning&#x27;s Marketing Team
-Lead. Every Monday, summarise the week&#x27;s calendar
-from the Horizon Studio Drive folder, list anything
-due for review, and draft — never send — a short
-brief to me. Ask before any action outside reading
-and drafting.</pre></article></section>
+(.docx) of each result.</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">In one line each: when should we use one agent, subagents and a Lead review?</span><button class="copy small" type="button" data-copy="In one line each: when should we use one agent, subagents and a Lead review?">Copy</button></li><li><span class="q">Who must approve a post that has a CPF figure in it?</span><button class="copy small" type="button" data-copy="Who must approve a post that has a CPF figure in it?">Copy</button></li><li><span class="q">A wrong post went out. What are the first three things we do?</span><button class="copy small" type="button" data-copy="A wrong post went out. What are the first three things we do?">Copy</button></li></ul></section></section><section class="lab" data-lab="15"><p class="eyebrow">Lab 15 · Day 2 · 30 min</p><h2>Subagents at Work: A Strategy Debate and a QA Loop</h2><p class="use"><b>Use:</b> Codex — Codex, in your horizon-studio folder</p><details><summary>The steps</summary><ol><li><b>New session</b> In Codex start a new thread in horizon-studio and name it &quot;Lab 15&quot;. Run all of this lab&#x27;s prompts in it.</li><li><b>Part 1: the debate</b> Copy and paste Prompt A. The advocate and the critic each make their case; the Lead passes each case to the other for a rebuttal.</li><li><b>Decide</b> Read the decision. Reply &quot;go&quot;, &quot;go with conditions&quot; or &quot;no-go&quot; — the call is yours.</li><li><b>Part 2: the QA loop</b> After you have made the call, copy and paste Prompt B. The audit fails on round 1; watch the Lead pass the fixes back to the writer.</li><li><b>Approve as a person</b> Read the pieces and the QA report, then in your own terminal: node scripts/approve.mjs &lt;id&gt; --by &quot;Your Name&quot;.</li><li><b>Compare</b> After you have approved the pieces, copy and paste Prompt C. How many fixes did the Lead have to relay?</li></ol></details><h3>The prompts</h3><article class="prompt"><header><div><span class="pname">Lab 15 · Prompt A</span><span class="ptool">Codex: the strategy debate</span></div><button class="copy" type="button" data-copy="Test the strategy in data/turning-55-brief.md
+before we spend on it. You are the Lead and the
+judge: do not argue. Use two subagents in parallel:
+- advocate, following agents/growth-strategist.md:
+  argue FOR the strategy.
+- critic, following agents/growth-analyst.md: argue
+  AGAINST it.
+- Both: cite data/campaign-results.csv,
+  strategy/personas.md, data/facts-2026.md or
+  data/compliance-checklist.md for every point.
+Then give each one the other&#x27;s case and ask for a
+rebuttal — two rounds at most.
+Write strategy/turning-55-decision.md with the pros,
+the cons, your verdict (go / go with conditions /
+no-go) and the conditions. Show me the verdict
+first, the pros and cons side by side, the debate
+round by round, and what I do next. Then wait for
+my decision.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Test the strategy in data/turning-55-brief.md
+before we spend on it. You are the Lead and the
+judge: do not argue. Use two subagents in parallel:
+- advocate, following agents/growth-strategist.md:
+  argue FOR the strategy.
+- critic, following agents/growth-analyst.md: argue
+  AGAINST it.
+- Both: cite data/campaign-results.csv,
+  strategy/personas.md, data/facts-2026.md or
+  data/compliance-checklist.md for every point.
+Then give each one the other&#x27;s case and ask for a
+rebuttal — two rounds at most.
+Write strategy/turning-55-decision.md with the pros,
+the cons, your verdict (go / go with conditions /
+no-go) and the conditions. Show me the verdict
+first, the pros and cons side by side, the debate
+round by round, and what I do next. Then wait for
+my decision.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 15 · Prompt B</span><span class="ptool">Codex: the QA loop</span></div><button class="copy" type="button" data-copy="Run Part 2 of data/turning-55-brief.md, using my
+decision. Use subagents, each following its card:
+- writer (content-creator): rewrite
+  data/turning-55-draft.md into
+  content/turning-55/email.md and
+  content/turning-55/video-script.md.
+- qa-auditor: audit each piece with fact-check and
+  fin-compliance; write review/turning-55-qa.md, one
+  section per round, PASS or FAIL per check, with
+  the lines to fix.
+- On FAIL, give the auditor&#x27;s lines to the writer
+  unchanged and audit again. Three rounds at most,
+  then ask me.
+- designer (creative-designer): once a piece passes,
+  make one thumbnail with $imagegen and alt text,
+  from its headline.
+- You, the Lead: never write or fix content. When
+  everything passes, run node scripts/submit.mjs on
+  each piece. Publish nothing.
+Show me the QA report: one row per round, PASS or
+FAIL per check.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.">Copy</button></header><pre>Run Part 2 of data/turning-55-brief.md, using my
+decision. Use subagents, each following its card:
+- writer (content-creator): rewrite
+  data/turning-55-draft.md into
+  content/turning-55/email.md and
+  content/turning-55/video-script.md.
+- qa-auditor: audit each piece with fact-check and
+  fin-compliance; write review/turning-55-qa.md, one
+  section per round, PASS or FAIL per check, with
+  the lines to fix.
+- On FAIL, give the auditor&#x27;s lines to the writer
+  unchanged and audit again. Three rounds at most,
+  then ask me.
+- designer (creative-designer): once a piece passes,
+  make one thumbnail with $imagegen and alt text,
+  from its headline.
+- You, the Lead: never write or fix content. When
+  everything passes, run node scripts/submit.mjs on
+  each piece. Publish nothing.
+Show me the QA report: one row per round, PASS or
+FAIL per check.
+Write for a business owner, in plain English: no
+codes, IDs, file names or line numbers; start with
+what it means and what I do next. Save a Word copy
+(.docx) of each result.</pre></article><article class="prompt"><header><div><span class="pname">Lab 15 · Prompt C</span><span class="ptool">Codex: compare</span></div><button class="copy" type="button" data-copy="Count how many fixes you relayed from the
+qa-auditor to the writer, and how many rounds each
+piece needed. In three lines: what would change if
+the writer and the auditor could message each
+other directly?">Copy</button></header><pre>Count how many fixes you relayed from the
+qa-auditor to the writer, and how many rounds each
+piece needed. In three lines: what would change if
+the writer and the auditor could message each
+other directly?</pre></article><section class="ask"><h3>Ask about the result</h3><p>Once a result opens, type any of these in the chat. Ask until it makes sense to you — then decide.</p><ul><li><span class="q">Summarise the debate: the best point for, the best point against, and your verdict.</span><button class="copy small" type="button" data-copy="Summarise the debate: the best point for, the best point against, and your verdict.">Copy</button></li><li><span class="q">What failed in the first QA round, in plain English?</span><button class="copy small" type="button" data-copy="What failed in the first QA round, in plain English?">Copy</button></li><li><span class="q">How many rounds did each piece need, and why?</span><button class="copy small" type="button" data-copy="How many rounds did each piece need, and why?">Copy</button></li></ul></section></section>
 <footer>Built from the course source on 11 October 2026. Fictitious business
 for training only. © Tertiary Infotech Academy Pte Ltd.</footer>
 </div><script>

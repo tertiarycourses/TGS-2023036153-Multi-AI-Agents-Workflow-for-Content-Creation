@@ -1,6 +1,6 @@
 # Multi AI Agents Workflow for Content Creation — Learner Guide
 
-TGS-2023036153 · Version 3.6 · Tertiary Infotech Academy Pte Ltd (UEN 201200696W)
+TGS-2023036153 · Version 3.7 · Tertiary Infotech Academy Pte Ltd (UEN 201200696W)
 
 ## How to Use This Guide
 
@@ -351,7 +351,7 @@ labs_claude/
 
 **PROMPT B — Claude Code: the charter**
 
-> Read data/team-charter.md, data/team-design.md and data/business-brief.md. Write CLAUDE.md for this studio in four sections — What this is, The team, Rules, Files — under 60 lines. The team is the one I chose in data/team-design.md. Rules: every number comes from data/facts-2026.md; every piece passes fact-check and fin-compliance; nothing is published or sent without a person's approval (the one exception: a review email to the approver); anything shown to me is in plain English for a business owner, with no codes, IDs, file names or line numbers. In Files, add two lines:
+> Read data/team-charter.md, data/team-design.md and data/business-brief.md. Write CLAUDE.md for this studio in four sections — What this is, The team, Rules, Files — under 60 lines. The team is the one I chose in data/team-design.md. Rules: every number comes from data/facts-2026.md; every piece passes fact-check and fin-compliance; nothing is published or sent without a person's approval (the one exception: a review email to the approver); anything shown to me is in plain English for a business owner, with no codes, IDs, file names or line numbers. A person approves by typing "approved <id> by <name>" in the chat; never ask me to run a command, open a terminal or edit a file. In Files, add two lines:
 > - Our copy of the site, which we edit: web/site/. "Start my website" runs scripts/serve-site.mjs in the background and opens http://localhost:8080/
 > - Every post links to http://localhost:8080/ with UTM tags, never to a claude.ai artifact link.
 
@@ -1034,7 +1034,7 @@ Everything the campaigns need tomorrow is in place.
 
 ## Topic 3 — Multi-Channel Content Creation and Agent Workflow Coordination
 
-Slides 98–138. In this topic you will:
+Slides 98–136. In this topic you will:
 
 - Subagents or an agent team?
 - The lead magnet: a checklist people want, and its emails
@@ -1216,7 +1216,7 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (agent team) → LinkedIn, Facebook  ·  **Time:** 40 min  ·  **Slides:** 115–122
+**Surface:** Claude Code (agent team) → LinkedIn, Facebook  ·  **Time:** 40 min  ·  **Slides:** 115–120
 
 **Lab folder:** labs_claude/lab-10-campaign-2-social-week/ — assets: social-brief.md, publisher-kit/, publishing-spec.md, approvals-format.csv, connect-accounts.md, env.example, sample-calendar.csv
 
@@ -1225,28 +1225,22 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 **Step-by-step**
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 10". Run all of this lab's prompts in it.
-1. **Get the latest kit** — Copy and paste Prompt A. Claude downloads the newest course files into your folder and starts your website. Your own work stays as it is.
-1. **Test the gate** — Ask Claude to approve a post itself. The gate must block it.
-1. **Start the team** — After Claude says the kit is up to date, copy and paste Prompt B. The Lead starts two teammates and tells you as each one starts and finishes.
+1. **Test the gate** — Ask Claude to approve a post itself. The gate (set up in your folder since Lab 1) must block it.
+1. **Start the team** — Copy and paste Prompt A. The Lead starts two teammates and tells you as each one starts and finishes.
 1. **Watch them talk** — The review page opens with a Team chat: the designer asking the creator for each hook, and the Lead's fixes.
-1. **Approve as a person** — Review in the artifact (or open the review email and click its link). Click Approve or Request changes on each post, then Copy in the bottom bar and paste into the chat.
-1. **Get ready to post** — After you have approved the posts, copy and paste Prompt C. Each post appears with a Copy button for its text, and the folder with the two images opens on your computer.
+1. **Approve as a person** — Review in the artifact or the review email. Click Approve or Request changes, then Copy and paste into the chat.
+1. **Get ready to post** — After you have approved the posts, copy and paste Prompt B. Each post gets a Copy button, and the folder with the two images opens.
 1. **Post it yourself** — Paste the text, add the image, Post — on LinkedIn and a test Facebook Page. Or stop at the preview.
 1. **Optional: post through the apps** — Follow "Optional: post through LinkedIn and Facebook" in this lab's README.
 
-**PROMPT A — Claude Code: get the latest kit**
-
-> Bring this studio up to date with the course kit. Download each file below from https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_claude/horizon-studio/ into the same place here, replacing the old copy:
-> .claude/settings.json; scripts/approve-chat.mjs, gate-hook.mjs, lib.mjs, publish.mjs, serve-site.mjs and submit.mjs; data/publishing-spec.md, channel-formats.md, connect-accounts.md, env.example, turning-55-brief.md and turning-55-draft.md. Touch nothing else. Then add these rules to CLAUDE.md if they are missing: every post links to http://localhost:8080/ with UTM tags, never a claude.ai artifact link; a person approves by typing "approved <id> by <name>" in the chat; never ask me to run a command. Then start my website and tell me in one line that the kit is up to date.
-
-**PROMPT B — Claude Code: the social team**
+**PROMPT A — Claude Code: the social team**
 
 > Create an agent team for Week 1 social from data/social-brief.md and strategy/calendar.csv. Spawn two teammates using the agent types content-creator and creative-designer; you are the Lead.
 > - content-creator: 1 LinkedIn + 1 Facebook post with linkedin-post, facebook-post and copywriting, one file each in content/social/week-01/, with the frontmatter in data/publishing-spec.md. Each post links to my website, http://localhost:8080/, with UTM tags.
 > - creative-designer: one image per post (a rendered card in Horizon colours: LinkedIn 1200 x 627, Facebook 1080 x 1080) with alt text; message the creator for each post's hook before designing. Save each as a PNG beside its post and fill in the post's image and alt lines.
 > - You: fact-check and fin-compliance on every post and image; message fixes to the teammate who owns it. Before you start, ask me how I will review: in the artifact, or by email (then ask for the approver's address). When a post passes, submit it for review with scripts/submit.mjs. Publish the two posts as an artifact. At the top, a Team chat: the messages the teammates and you sent each other, in order, each with who sent it. Then each post as it will look in the feed, with its image and alt text; under each post put two working buttons (JavaScript): Approve turns the card green; Request changes opens a box for my note. A bar at the bottom asks my name once, builds the exact lines to paste in the chat ("approved <id> by <name>", "changes <id>: <note>") and has a Copy button that says "Copied - now paste it in the chat". Keep the lines on screen in case copying is blocked. If I chose email, send ONE review email to the approver with Gmail: the artifact link and what passed the checks. Send nothing else; publish nothing. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
 
-**PROMPT C — Claude Code: ready to post**
+**PROMPT B — Claude Code: ready to post**
 
 > For each Week 1 post approved in review/approvals.csv, publish a "ready to post" artifact: the post text with a Copy button, its image, and the steps to post it by hand on LinkedIn or our Facebook Page. Then open the folder with the two images on my computer. Publish nothing yourself. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
 
@@ -1282,7 +1276,7 @@ About 20 minutes, after you have approved the posts. Use test accounts only: you
 
 **If it goes wrong**
 
-- **You got subagents, not a team** — Check you are in the current horizon-studio folder from the course, start a new session and ask for "an agent team" by name.
+- **You got subagents, not a team** — Start a new session in horizon-studio and ask for "an agent team" by name.
 - **LinkedIn returns 426** — LINKEDIN_VERSION must be a recent YYYYMM.
 
 **Stretch**
@@ -1322,7 +1316,7 @@ The PDPA, applied by an agent that counts.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (agent team) → Claude artifact, Gmail  ·  **Time:** 45 min  ·  **Slides:** 125–130
+**Surface:** Claude Code (agent team) → Claude artifact, Gmail  ·  **Time:** 45 min  ·  **Slides:** 123–128
 
 **Lab folder:** labs_claude/lab-11-campaign-3-newsletter-and-landing-page/ — assets: newsletter-brief.md, newsletter-spec.md, landing-page-brief.md, site-brief.md, checklist-items.md, subscribers.csv
 
@@ -1397,7 +1391,7 @@ Lab 12: the team writes and designs; you approve twice.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (agent team, render, upload)  ·  **Time:** 45 min  ·  **Slides:** 132–137
+**Surface:** Claude Code (agent team, render, upload)  ·  **Time:** 45 min  ·  **Slides:** 130–135
 
 **Lab folder:** labs_claude/lab-12-campaign-4-youtube-explainer/ — assets: youtube-brief.md, video-spec.md, sample-explainer.mp4
 
@@ -1465,7 +1459,7 @@ Three campaigns, every piece checked by the Lead and approved by a person. But t
 
 ## Topic 4 — Content Distribution, Strategy Guidelines and Responsible AI Practices
 
-Slides 139–174. In this topic you will:
+Slides 137–172. In this topic you will:
 
 - Campaign 5: always on, with a scheduled task
 - Responsible AI for financial content
@@ -1504,7 +1498,7 @@ What a scheduled agent should and should not do for a regulated firm.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (skill, routine, Drive, Gmail)  ·  **Time:** 35 min  ·  **Slides:** 142–147
+**Surface:** Claude Code (skill, routine, Drive, Gmail)  ·  **Time:** 35 min  ·  **Slides:** 140–145
 
 **Lab folder:** labs_claude/lab-13-campaign-5-weekly-growth-report/ — assets: campaign-results.csv, weekly-report-brief.md, scheduled-task-instructions.md
 
@@ -1513,7 +1507,6 @@ What a scheduled agent should and should not do for a regulated firm.
 **Step-by-step**
 
 1. **New session** — Left sidebar: click + next to horizon-studio. Click the session title at the top and rename it "Lab 13". Run all of this lab's prompts in it.
-1. **Put the data on Drive** — Ask: "Upload data/campaign-results.csv to my Google Drive folder Horizon Studio as a plain file, replacing any old copy."
 1. **Do it once** — Copy and paste Prompt A. Refine the report until it is right.
 1. **Schedule it** — After the report is right, copy and paste Prompt B into the instructions of a new routine: Routines → New routine → Local, Mondays at 8am.
 1. **Run it now** — Click Run now once, approve any permission prompts, then open the Gmail draft.
@@ -1547,7 +1540,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 **If it goes wrong**
 
 - **It sent the email** — Write "draft only — never send" in both the skill and the task instructions.
-- **Claude cannot upload to Drive** — Upload it yourself: drive.google.com → New → New folder "Horizon Studio" (if missing), open it → New → File upload.
+- **campaign-results.csv is not on Drive** — It went to the Horizon Studio folder in Lab 4. Open drive.google.com, open Horizon Studio → New → File upload, and choose it from your data/ folder.
 
 **Stretch**
 
@@ -1590,7 +1583,7 @@ Lab 14: the numbers decide next month — and which patterns earn their tokens.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (subagents)  ·  **Time:** 40 min  ·  **Slides:** 150–155
+**Surface:** Claude Code (subagents)  ·  **Time:** 40 min  ·  **Slides:** 148–153
 
 **Lab folder:** labs_claude/lab-14-team-playbook/ — assets: run-log.csv, playbook-outline.md, responsible-ai-checklist.md
 
@@ -1693,7 +1686,7 @@ Three rounds at most — then the Lead escalates to a person.
 
 **USE: CLAUDE CODE** — Code mode (the </> button) in the Claude desktop app, in your horizon-studio folder
 
-**Surface:** Claude Code (agent teams: Lead, teammates, shared task list, direct messages)  ·  **Time:** 30 min  ·  **Slides:** 159–165
+**Surface:** Claude Code (agent teams: Lead, teammates, shared task list, direct messages)  ·  **Time:** 30 min  ·  **Slides:** 157–163
 
 **Lab folder:** labs_claude/lab-15-agent-teams-debate-and-qa-loop/ — assets: turning-55-brief.md, turning-55-draft.md
 
@@ -1749,7 +1742,6 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 
 **If it goes wrong**
 
-- **Claude cannot find turning-55-brief.md** — Your folder is an older download. Ask: "Download turning-55-brief.md and turning-55-draft.md from https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_claude/horizon-studio/data/ into data/." Then paste Prompt A again.
 - **You got subagents, not a team** — Ask for "an agent team" by name in a new session.
 - **The loop never ends** — Remind the Lead: three rounds at most, then escalate to me.
 - **A task stays blocked** — Tell the Lead to check the task list and nudge the teammate who owns it.

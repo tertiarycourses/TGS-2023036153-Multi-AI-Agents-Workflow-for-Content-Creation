@@ -3,7 +3,7 @@
 > **USE: CODEX, THEN CHATGPT** — start in Codex; the step that moves you to ChatGPT says so
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 1 · Topic 1 · about 50 minutes · slides 49–54**\
+**Day 1 · Topic 1 · about 50 minutes · slides 52–57**\
 **Surface:** Codex ($skill-creator) → ChatGPT (@skill-creator)\
 **Features:** twenty skills owned by role — research, writing, LinkedIn, Facebook, blog, newsletter, web design, lead magnet, video, analysis and compliance · SKILL.md · the "Use when" trigger · test without naming
 

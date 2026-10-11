@@ -1,6 +1,6 @@
 # Multi AI Agents Workflow for Content Creation — Learner Guide
 
-TGS-2023036153 · Version 3.6 · Tertiary Infotech Academy Pte Ltd (UEN 201200696W)
+TGS-2023036153 · Version 3.7 · Tertiary Infotech Academy Pte Ltd (UEN 201200696W)
 
 ## How to Use This Guide
 
@@ -11,7 +11,7 @@ Before you start, have ready:
 - The ChatGPT desktop app on Plus or Pro (Work, Codex, plugins, Sites).
 - Node.js 22, Python 3 with Pillow, and ffmpeg.
 - A personal Google account for Drive, Gmail and Calendar — never an employer's.
-- The lab pack (labs_chatgpt/), unzipped. Keep one working folder, horizon-studio, from Lab 1 to Lab 14. Lab 15 is an optional demo.
+- The lab pack (labs_chatgpt/), unzipped. Keep one working folder, horizon-studio, from Lab 1 to Lab 15.
 
 Prompts appear as shaded quotes — paste them as written. Code, commands and configuration appear in grey monospace blocks. Product menus change between releases: if a name here differs from your screen, follow the screen and tell the trainer.
 
@@ -48,7 +48,7 @@ Four topics over two days. Day 1 forms the team; Day 2 runs its campaigns.
 1. **T1 · Ideation and Storyboarding** — The studio, the team's instructions, skills and connectors; Campaign 1. Labs 1–5.
 1. **T2 · Audience and Requirements** — Personas from evidence; cadence and calendar; the first blog article. Labs 6–8.
 1. **T3 · Creation and Coordination** — Lead magnet, social week, newsletter + landing page, video — behind a human gate. Labs 9–12.
-1. **T4 · Distribution and Responsible AI** — The weekly report on a schedule; the playbook; optional demo. Labs 13–15.
+1. **T4 · Distribution and Responsible AI** — The weekly report on a schedule; the playbook; subagents at work. Labs 13–15.
 
 #### Lab Materials
 
@@ -60,9 +60,9 @@ Fifteen labs, each in its own folder with a README, prompts (MD and PDF), assets
 | 1 | 5 Campaign 1: research to storyboard | T1 · Campaign 1 |
 | 1 | 6 Personas · 7 Cadence and calendar · 8 Blog article | T2 · audience, content |
 | 2 | 9 Lead magnet · 10 Social week · 11 Newsletter + landing page · 12 Video | T3 · Campaigns 2–4 |
-| 2 | 13 Weekly report · 14 Playbook · 15 Optional demo | T4 · Campaign 5 |
+| 2 | 13 Weekly report · 14 Playbook · 15 Subagents: debate + QA loop | T4 · Campaign 5 |
 
-Tip: One horizon-studio folder from Lab 1 to Lab 14 — the team keeps what it learns.
+Tip: One horizon-studio folder from Lab 1 to Lab 15 — the team keeps what it learns.
 
 #### ChatGPT or Codex?
 
@@ -70,8 +70,8 @@ Every lab says which to use. The rule: ChatGPT to create and schedule; Codex whe
 
 | Use | Labs | What it is for |
 |---|---|---|
-| ChatGPT | 8, 9, 15 | One person creating or designing. |
-| Codex | 1, 2, 5, 6, 7, 10, 12, 14 | The team's files: role cards, skills, subagents, scripts, the video. |
+| ChatGPT | 8, 9 | One person creating or designing. |
+| Codex | 1, 2, 5, 6, 7, 10, 12, 14, 15 | The team's files: role cards, skills, subagents, scripts, the video. |
 | Codex, then ChatGPT | 3 | Build in Codex, then share in ChatGPT. |
 | ChatGPT, then Codex | 4 | Install plugins, then test the agents. |
 | Codex, then ChatGPT Work | 11 | Build in Codex; Gmail drafts in ChatGPT Work. |
@@ -88,13 +88,13 @@ Tea breaks 10 min, lunch 45 min. Full timings and slide numbers are in the Lesso
 | Morning 1 | 9:00–10:30  Welcome · Topic 1 · Lab 1 | 9:00–10:40  Topic 3 · Labs 9–10 |
 | Morning 2 | 10:40–12:40  Labs 2–3 | 10:50–12:35  Labs 11–12 · recap |
 | Afternoon 1 | 13:25–15:20  Labs 4–5 | 13:20–15:00  Topic 4 · Labs 13–14 |
-| Afternoon 2 | 15:30–18:00  Topic 2 · Labs 6–8 · review | 15:10–16:00 Demo · summary · 16:00–18:00 Assessment |
+| Afternoon 2 | 15:30–18:00  Topic 2 · Labs 6–8 · review | 15:10–16:00 Subagents lab · summary · 16:00–18:00 Assessment |
 
 Tip: Day 2 assessment: Written Assessment 4:00–5:00 PM, Practical Performance 5:00–6:00 PM.
 
 ## Topic 1 — Multi-AI-Agent Content Ideation and Digital Storyboarding
 
-Slides 16–72. In this topic you will:
+Slides 16–75. In this topic you will:
 
 - AI agents, the tools, and Horizon's story
 - Why a team of agents
@@ -104,13 +104,42 @@ Slides 16–72. In this topic you will:
 
 ### Key ideas for Lab 1
 
-#### ChatGPT, ChatGPT Work and Codex
+#### The OpenAI Suite of Products
 
-One desktop app. The toggle above the composer picks Chat or Work; the sidebar holds Codex.
+OpenAI's products share the same models — they differ in where they run and who they are for.
 
-- **Codex — the team's home** — The Lead's chat; role cards; skills in .agents/skills/; subagents by asking; scripts and the video.
-- **ChatGPT and Work — the team's apps** — A Project for shared files; plugins (Drive, Gmail); skills; scheduled tasks; @Sites.
-- **Dots and workspace agents · optional** — An always-on Lead (Pro, Business Premium) and shared agents (Business). A demo at the end.
+- **ChatGPT** — Chat and Work in one app — web, desktop and mobile. Ask, write, analyse; run multi-step tasks with plugins.
+- **Codex** — The agentic tool for building: it works on a folder of files. The team's home in this course.
+- **Sites** — Pages published from a chat with @Sites (beta on Plus, Pro and workspaces).
+- **Dots** — Persistent agents with their own cloud computer (Pro, Business Premium).
+- **Workspace agents** — Shared agents with apps and triggers (Business, Enterprise, Edu).
+- **ChatGPT Space** — Shared pages where people, ChatGPT, Codex and Dots work together.
+
+#### What Is ChatGPT (Chat + Work)?
+
+One desktop app: the toggle above the composer picks Chat or Work, and the sidebar holds Codex.
+
+- **Chat** — Ask, draft, analyse and research; Projects keep shared files and instructions (Lab 1).
+- **Work** — Launched 9 July 2026: runs multi-step tasks with plugins, such as Google Drive and Gmail.
+- **Plugins and skills** — Plugins bundle apps, skills and app templates; build your own skills with @skill-creator.
+- **Sites and scheduled tasks** — Pages published with @Sites; tasks on a schedule — 5 active on Plus, 15 on Pro.
+
+#### What Is Codex?
+
+An agentic tool: describe a goal in plain English and Codex plans, writes, runs and checks the work — editing files and running commands for you.
+
+- **Runs where you work** — In the ChatGPT desktop app's sidebar, on a folder on your computer.
+- **Agentic** — Plans multi-step tasks and acts on them — not just answers or autocompletes.
+- **Tool-using** — Reads and writes files, runs commands in a sandbox, makes images with $imagegen.
+- **Extensible — the team's home** — AGENTS.md, role cards, skills, subagents and hooks. You build Horizon's team here (Labs 1–7, 10–12, 14, 15).
+
+#### Dots and Workspace Agents
+
+Always-on agents on the higher plans. Not needed for the labs — good to know.
+
+- **Dots** — Announced at OpenAI DevDay, 29 September 2026: a persistent agent with its own cloud computer that keeps working after you close the chat. The first Dot is included on Pro and Business Premium.
+- **Kept in check** — Background research is read-only. Custom Rules permit, require approval for, or prohibit actions; Activity View shows its work.
+- **Workspace agents** — Business, Enterprise and Edu: Agents in the sidebar → describe a workflow → add apps → choose a trigger.
 
 #### Which Plan Has What
 
@@ -122,8 +151,8 @@ Features by ChatGPT plan, checked 8 Oct 2026. Prices change — check chatgpt.co
 | Sites | Plus, Pro and workspaces (beta) | Lab 11 |
 | Plugins and skills | Paid plans | Labs 3, 4, 13 |
 | Scheduled tasks | Paid plans — 5 active on Plus, 15 on Pro | Lab 13 |
-| Dots (first one included) | Pro, Business Premium | Lab 15 demo |
-| Workspace agents | Business, Enterprise, Edu | Lab 15 demo |
+| Dots (first one included) | Pro, Business Premium | Good to know |
+| Workspace agents | Business, Enterprise, Edu | Good to know |
 
 Tip: This edition builds the team with skills and Codex subagents, so it works on Plus and Pro.
 
@@ -177,7 +206,7 @@ Both use tools, skills and memory. The difference is how long they live and what
 | Memory | Within the task, plus project memory across sessions. | Long-term memory about you and your work. |
 | Availability | Starts when you give it a task; stops when done. | Runs 24/7 on a computer or server. |
 | Started by | You, with a task. | You, a schedule, a message or another agent. |
-| In this course | Codex running a campaign (Labs 1–12). | The scheduled weekly report (Lab 13); Dots (Lab 15). |
+| In this course | Codex running a campaign (Labs 1–12). | The scheduled weekly report (Lab 13); Dots, if your plan has them. |
 
 Tip: Rule of thumb: a job with an end → agentic AI; a job that recurs → an always-on agent.
 
@@ -253,10 +282,9 @@ The ChatGPT Edition: ChatGPT, ChatGPT Work and Codex in one app.
 | Tool | What the team uses it for | Labs |
 |---|---|---|
 | ChatGPT Project | The team's shared files and instructions | Lab 1 |
-| Codex | The Lead's chat; role cards; skills; subagents; scripts; the video | Labs 1–12, 14 |
+| Codex | The Lead's chat; role cards; skills; subagents; scripts; the video; the Lab 15 debate and QA loop | Labs 1–12, 14, 15 |
 | ChatGPT Work | Plugins (Drive, Gmail), skills, scheduled tasks | Labs 4, 11, 13 |
 | @Sites | The campaign landing page; Horizon's website is given as a public link | Lab 11 |
-| Dots · workspace agents | Optional demo: an always-on Lead and shared agents | Lab 15 (optional) |
 
 Tip: Every external post, email and video passes one gate: a person approves the exact version.
 
@@ -324,7 +352,7 @@ labs_chatgpt/
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** ChatGPT Project → Codex  ·  **Time:** 30 min  ·  **Slides:** 33–38
+**Surface:** ChatGPT Project → Codex  ·  **Time:** 30 min  ·  **Slides:** 36–41
 
 **Lab folder:** labs_chatgpt/lab-01-studio-and-website/ — assets: horizon-site.html, team-charter.md, business-brief.md, brand.md, facts-2026.md, compliance-checklist.md
 
@@ -417,7 +445,7 @@ Five parts, every time. The "Never" part matters most in a regulated firm.
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (role cards, subagents)  ·  **Time:** 45 min  ·  **Slides:** 41–46
+**Surface:** Codex (role cards, subagents)  ·  **Time:** 45 min  ·  **Slides:** 44–49
 
 **Lab folder:** labs_chatgpt/lab-02-agent-instructions/ — assets: role-specs.md, team-org-chart.md
 
@@ -515,7 +543,7 @@ description: Use when planning a Horizon campaign.
 
 **USE: CODEX, THEN CHATGPT** — start in Codex; the step that moves you to ChatGPT says so
 
-**Surface:** Codex ($skill-creator) → ChatGPT (@skill-creator)  ·  **Time:** 50 min  ·  **Slides:** 49–54
+**Surface:** Codex ($skill-creator) → ChatGPT (@skill-creator)  ·  **Time:** 50 min  ·  **Slides:** 52–57
 
 **Lab folder:** labs_chatgpt/lab-03-agent-skills/ — assets: skills-spec.md, channel-formats.md, brand.md, facts-2026.md, compliance-checklist.md
 
@@ -598,7 +626,7 @@ A regulated firm gives each agent only what its job needs.
 
 **USE: CHATGPT, THEN CODEX** — start in ChatGPT; the step that moves you to Codex says so
 
-**Surface:** ChatGPT plugins → Codex  ·  **Time:** 45 min  ·  **Slides:** 57–61
+**Surface:** ChatGPT plugins → Codex  ·  **Time:** 45 min  ·  **Slides:** 60–64
 
 **Lab folder:** labs_chatgpt/lab-04-agent-connectors/ — assets: connectors-setup.md
 
@@ -692,7 +720,7 @@ Tip: MAS Guidelines on Standards of Conduct for Digital Advertising Activities a
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (subagents in parallel)  ·  **Time:** 50 min  ·  **Slides:** 65–71
+**Surface:** Codex (subagents in parallel)  ·  **Time:** 50 min  ·  **Slides:** 68–74
 
 **Lab folder:** labs_chatgpt/lab-05-campaign-1-research-to-storyboard/ — assets: campaign-objective.md, idea-rubric.md, storyboard-template.md, firm-metrics.csv, services.csv
 
@@ -765,7 +793,7 @@ The team exists and has run its first campaign. But who exactly is it for — an
 
 ## Topic 2 — Audience Research and Content Requirement Analysis
 
-Slides 73–95. In this topic you will:
+Slides 76–98. In this topic you will:
 
 - The Growth Analyst: personas from evidence
 - Content requirements every agent can follow
@@ -807,7 +835,7 @@ Tip: Ask "which rows show that?" of anything that sounds insightful.
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (analyst subagents)  ·  **Time:** 40 min  ·  **Slides:** 76–81
+**Surface:** Codex (analyst subagents)  ·  **Time:** 40 min  ·  **Slides:** 79–84
 
 **Lab folder:** labs_chatgpt/lab-06-personas-from-evidence/ — assets: survey-responses.csv, enquiries.csv, checklist-results.csv, persona-template.md, content-spec-template.md
 
@@ -881,7 +909,7 @@ Tip: A third LinkedIn post a week brings more unfollows than value. Weekly email
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (subagents)  ·  **Time:** 35 min  ·  **Slides:** 83–88
+**Surface:** Codex (subagents)  ·  **Time:** 35 min  ·  **Slides:** 86–91
 
 **Lab folder:** labs_chatgpt/lab-07-cadence-and-calendar/ — assets: channel-benchmarks.csv, team-capacity.md, calendar-format.csv
 
@@ -951,7 +979,7 @@ Lab 8: the first real piece — a blog article every post can link to.
 
 **USE: CHATGPT** — the ChatGPT desktop app
 
-**Surface:** ChatGPT (web search, your Horizon skills)  ·  **Time:** 40 min  ·  **Slides:** 90–94
+**Surface:** ChatGPT (web search, your Horizon skills)  ·  **Time:** 40 min  ·  **Slides:** 93–97
 
 **Lab folder:** labs_chatgpt/lab-08-blog-article/ — assets: facts-2026.md, brand.md
 
@@ -1012,7 +1040,7 @@ Everything the campaigns need tomorrow is in place.
 
 ## Topic 3 — Multi-Channel Content Creation and Agent Workflow Coordination
 
-Slides 96–133. In this topic you will:
+Slides 99–136. In this topic you will:
 
 - Subagents and the Lead's review
 - The lead magnet: a checklist people want, and its emails
@@ -1044,7 +1072,7 @@ Tip: Lab 11 builds the landing page that offers it.
 
 **USE: CHATGPT** — the ChatGPT desktop app
 
-**Surface:** ChatGPT (@Gmail drafts, your Horizon skills)  ·  **Time:** 40 min  ·  **Slides:** 98–104
+**Surface:** ChatGPT (@Gmail drafts, your Horizon skills)  ·  **Time:** 40 min  ·  **Slides:** 101–107
 
 **Lab folder:** labs_chatgpt/lab-09-lead-magnet/ — assets: checklist-items.md, brand.md
 
@@ -1119,6 +1147,20 @@ Subagents report back to the Lead; the Lead sends fixes back.
 
 Tip: Subagents talk to the Lead, not to each other. The Lead's review is what makes parallel work safe.
 
+#### Which Pattern When?
+
+Subagents alone, or subagents with the Lead's review loop.
+
+|  | Subagents | Lead review loop |
+|---|---|---|
+| Talks to | Returns a result to the Lead | The Lead passes fixes back to the subagent |
+| Coordination | The Lead splits the work | The Lead reviews, sends back and checks again |
+| Best for | Research, analysis, one-off drafts | Copy ↔ design ↔ review loops |
+| Cost | Lower: one round of results | Higher: every fix is another round |
+| Campaigns | Labs 5, 6 | Labs 10, 11, 12, 15 |
+
+Tip: Subagents run with your sandbox and permissions. The Lead is the only one who talks to everyone.
+
 #### Human in the Loop, Enforced
 
 A rule in a prompt persuades. The publisher kit builds a gate that holds.
@@ -1175,7 +1217,7 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (subagents) → LinkedIn, Facebook  ·  **Time:** 40 min  ·  **Slides:** 111–117
+**Surface:** Codex (subagents) → LinkedIn, Facebook  ·  **Time:** 40 min  ·  **Slides:** 115–120
 
 **Lab folder:** labs_chatgpt/lab-10-campaign-2-social-week/ — assets: social-brief.md, publisher-kit/, publishing-spec.md, approvals-format.csv, connect-accounts.md, env.example, sample-calendar.csv
 
@@ -1184,26 +1226,21 @@ Lab 10, a demo: one LinkedIn and one Facebook post, each with a visual.
 **Step-by-step**
 
 1. **New session** — In Codex start a new thread in horizon-studio and name it "Lab 10". Run all of this lab's prompts in it.
-1. **Get the latest kit** — Copy and paste Prompt A. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.
+1. **Switch on the gate** — The publisher kit is in your scripts/ folder since Lab 1. Ask Codex: "Add a hook that blocks any command running scripts/approve.mjs." Then trust it.
 1. **Test the gate** — Ask Codex to approve anything. approve.mjs refuses without a person at a terminal.
-1. **Run the team** — After Codex says the kit is up to date, copy and paste Prompt B. Watch the Subagents panel: Active, then Done.
+1. **Run the team** — Copy and paste Prompt A. Watch the Subagents panel: Active, then Done.
 1. **Read the review** — The Lead's fact-check and fin-compliance table — at least one fix.
 1. **Approve as a person** — In your own terminal: node scripts/approve.mjs <id> --by "Your Name".
-1. **Publish** — After you have approved the posts, copy and paste Prompt C. A dry run only: it shows what would be sent.
+1. **Publish** — After you have approved the posts, copy and paste Prompt B. A dry run only: it shows what would be sent.
 1. **Optional: post through the apps** — Follow "Optional: post through LinkedIn and Facebook" in this lab's README.
 
-**PROMPT A — Codex: get the latest kit**
-
-> Bring this studio up to date with the course kit. From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/ download scripts/serve-site.mjs and data/publishing-spec.md, channel-formats.md, connect-accounts.md and env.example into the same places here. From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/ download approve.mjs, gate-hook.mjs, lib.mjs, publish.mjs and submit.mjs into scripts/. Replace old copies; touch nothing else. Then add this rule to AGENTS.md if it is missing:
-> every post links to http://localhost:8080/ with UTM tags. Then start my website and tell me in one line that the kit is up to date.
-
-**PROMPT B — Codex: the social team**
+**PROMPT A — Codex: the social team**
 
 > You are the Lead. Plan Week 1 social from data/social-brief.md and strategy/calendar.csv. Use subagents in parallel, each following its card:
 > - content-creator: 1 LinkedIn + 1 Facebook post with linkedin-post, facebook-post and copywriting, one file each in content/social/week-01/, with the frontmatter in data/publishing-spec.md. Each post links to my website, http://localhost:8080/, with UTM tags.
 > - creative-designer: one image per post with $imagegen and alt text, from the brief. Save each as a PNG beside its post and fill in the post's image and alt lines, so the image is posted with it. Then run fact-check and fin-compliance on every post and send each fix back to the right subagent. When a post passes, run node scripts/submit.mjs on it. Publish nothing. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
 
-**PROMPT C — Codex: publish**
+**PROMPT B — Codex: publish**
 
 > For every Week 1 post approved in review/approvals.csv, run node scripts/publish.mjs <id> as a dry run and show me each request. Wait for me to say "go" before any --live run.
 
@@ -1279,7 +1316,7 @@ The PDPA, applied by an agent that counts.
 
 **USE: CODEX, THEN CHATGPT WORK** — start in Codex; the step that moves you to ChatGPT Work says so
 
-**Surface:** Codex (subagents) → @Sites → ChatGPT Work (@Gmail)  ·  **Time:** 45 min  ·  **Slides:** 120–125
+**Surface:** Codex (subagents) → @Sites → ChatGPT Work (@Gmail)  ·  **Time:** 45 min  ·  **Slides:** 123–128
 
 **Lab folder:** labs_chatgpt/lab-11-campaign-3-newsletter-and-landing-page/ — assets: newsletter-brief.md, newsletter-spec.md, landing-page-brief.md, site-brief.md, checklist-items.md, subscribers.csv
 
@@ -1353,7 +1390,7 @@ Lab 12: the team writes and designs; you approve twice.
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (subagents, $imagegen, render, upload)  ·  **Time:** 45 min  ·  **Slides:** 127–132
+**Surface:** Codex (subagents, $imagegen, render, upload)  ·  **Time:** 45 min  ·  **Slides:** 130–135
 
 **Lab folder:** labs_chatgpt/lab-12-campaign-4-youtube-explainer/ — assets: youtube-brief.md, video-spec.md, sample-explainer.mp4
 
@@ -1421,12 +1458,12 @@ Three campaigns, every piece checked by the Lead and approved by a person. But t
 
 ## Topic 4 — Content Distribution, Strategy Guidelines and Responsible AI Practices
 
-Slides 134–163. In this topic you will:
+Slides 137–170. In this topic you will:
 
 - Campaign 5: always on, with a scheduled task
 - Responsible AI for financial content
 - Measure the patterns; write the team playbook
-- Optional demo: a Dot Team Lead and workspace agents
+- Subagents at work: argue a strategy, then a QA loop
 
 ### Key ideas for Lab 13
 
@@ -1460,7 +1497,7 @@ What a scheduled agent should and should not do for a regulated firm.
 
 **USE: CHATGPT WORK** — ChatGPT Work
 
-**Surface:** ChatGPT Work (skill, scheduled task, @Drive, @Gmail)  ·  **Time:** 35 min  ·  **Slides:** 137–141
+**Surface:** ChatGPT Work (skill, scheduled task, @Drive, @Gmail)  ·  **Time:** 35 min  ·  **Slides:** 140–144
 
 **Lab folder:** labs_chatgpt/lab-13-campaign-5-weekly-growth-report/ — assets: campaign-results.csv, weekly-report-brief.md, scheduled-task-instructions.md
 
@@ -1469,7 +1506,6 @@ What a scheduled agent should and should not do for a regulated firm.
 **Step-by-step**
 
 1. **New session** — Start a new ChatGPT Work chat and name it "Lab 13". Run all of this lab's prompts in it.
-1. **Put the data on Drive** — Upload campaign-results.csv to the Horizon Studio folder.
 1. **Bring the skill** — Use @skill-creator to add campaign-report to ChatGPT.
 1. **Do it once** — Copy and paste Prompt A. Refine the report until it is right.
 1. **Schedule it** — After the report is right, copy and paste Prompt B. Runs appear in Scheduled.
@@ -1504,6 +1540,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 **If it goes wrong**
 
 - **It sent the email** — Write "draft only — never send" in both the skill and the task instructions.
+- **campaign-results.csv is not on Drive** — It went to the Horizon Studio folder in Lab 4. Open drive.google.com, open Horizon Studio → New → File upload, and choose it from your data/ folder.
 
 **Stretch**
 
@@ -1546,7 +1583,7 @@ Lab 14: the numbers decide next month — and which patterns earn their tokens.
 
 **USE: CODEX** — Codex, in your horizon-studio folder
 
-**Surface:** Codex (subagents)  ·  **Time:** 40 min  ·  **Slides:** 144–149
+**Surface:** Codex (subagents)  ·  **Time:** 40 min  ·  **Slides:** 147–152
 
 **Lab folder:** labs_chatgpt/lab-14-team-playbook/ — assets: run-log.csv, playbook-outline.md, responsible-ai-checklist.md
 
@@ -1596,70 +1633,126 @@ Why it matters: Teams cost more tokens. The run log shows what you buy with them
 
 ### Key ideas for Lab 15
 
-#### Dots: Always-On Agent Coworkers
+#### The Lead in the Middle
 
-Announced at OpenAI DevDay, 29 September 2026. A demo, not assessed.
+Subagents cannot message each other. When agents must talk, the Lead carries every message.
 
-- **What a Dot is** — A persistent agent with its own cloud computer and browser that keeps working after you close the chat.
-- **Kept in check** — Background research is read-only. Custom Rules permit, require approval for, or prohibit actions. Activity View shows its work.
-- **Who has it** — The first Dot is included on Pro and Business Premium; Enterprise and Edu can try the beta.
+1. **Ask** — The Lead gives each subagent its job and card.
+1. **Return** — Each subagent reports back to the Lead only.
+1. **Relay** — The Lead passes one agent's work to the other.
+1. **Repeat** — A rebuttal, or a fix and a new audit — another round.
+1. **Decide** — A person makes the call and approves.
 
-#### Workspace Agents
+Tip: Lab 15 counts how many messages the Lead had to relay.
 
-Shared agents for Business, Enterprise and Edu workspaces.
+#### A Team That Argues
 
-1. **Agents** — Click Agents in the sidebar.
-1. **Describe** — Describe the workflow — e.g. the weekly growth report.
-1. **Apps** — Add the approved apps it may use.
-1. **Trigger** — Choose when it runs — e.g. weekly.
-1. **Share** — The whole team uses the same agent.
+Lab 15, Part 1: test a strategy before Horizon spends on it.
 
-Tip: Same rule: draft, a person approves, then publish.
+**Advocate · growth-strategist**
 
-### Lab 15 — Optional Demo: a Dot Team Lead and Workspace Agents
+- Argues FOR the "Turning 55" CPF explainer
+- Cites results, personas and the facts sheet
+- Answers the critic's case — two rebuttals
 
-**The story so far:** Optional. Rachel asks whether the Lead could work around the clock. The trainer shows a Dot as an always-on Team Lead and a workspace agent on a weekly trigger.
+**Critic · growth-analyst**
 
-**Goal:** Optional: on the right plans, the Lead can be an always-on Dot and each specialist a shared workspace agent — the same roles, skills and rules, running without you.
+- Argues AGAINST it — cost, timing, audience
+- Every point backed by a file, not an opinion
+- The Lead judges; a person makes the call
 
-**You'll build:** a demo Dot with Custom Rules that block sending, and one workspace agent (Growth Analyst) on a weekly trigger
+#### The QA Loop
 
-**USE: CHATGPT** — the ChatGPT desktop app
+Lab 15, Part 2: a failed audit goes back to the writer — the Lead passes the lines on and never fixes them itself.
 
-**Surface:** ChatGPT Dots and workspace agents — trainer demo  ·  **Time:** 20 min  ·  **Slides:** 152–155
+**Writer** — content-creator: rewrites the intern's draft into an email and a video script. **QA Auditor** — fact-check + fin-compliance; PASS or FAIL per check, every round logged.
 
-**Lab folder:** labs_chatgpt/lab-15-optional-dot-and-workspace-agents/ — assets: dot-and-workspace-agents.md
+On **FAIL**, the auditor messages the writer directly with the lines to fix, and audits again. On **PASS**: Designer (a thumbnail from the headline, with $imagegen) → Lead (submits for approval; never rewrites) → Person (approves the exact version).
+
+The audit fails when:
+
+- A figure is not in facts-2026.md
+- A promise of savings or returns
+- Advice ("everyone should…")
+- A wrong age or a missing disclaimer
+
+Three rounds at most — then the Lead escalates to a person.
+
+### Lab 15 — Subagents at Work: A Strategy Debate and a QA Loop
+
+**The story so far:** January is for people turning 55. Before Horizon spends on a CPF explainer for them, Rachel wants it argued both ways — and the intern's draft checked until it passes.
+
+**Goal:** Subagents only report back to the Lead, so the Lead carries every rebuttal and every fix. Run a strategy debate and a QA loop that way, and see what a team that can talk would save.
+
+**You'll build:** the decision (pros, cons, verdict), then an email, a video script and a thumbnail that passed QA, submitted for your approval — with a Word copy of each
+
+**USE: CODEX** — Codex, in your horizon-studio folder
+
+**Surface:** Codex (subagents: an advocate, a critic, a writer, a QA Auditor and a designer; the Lead relays)  ·  **Time:** 30 min  ·  **Slides:** 156–162
+
+**Lab folder:** labs_chatgpt/lab-15-subagents-debate-and-qa-loop/ — assets: turning-55-brief.md, turning-55-draft.md, dot-and-workspace-agents.md
 
 **Copy the prompts: **https://tertiarycourses.github.io/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/prompts/chatgpt/#lab-15
 
 **Step-by-step**
 
-1. **Check the plan** — Dots: the first one is included on Pro and Business Premium. Workspace agents: Business, Enterprise, Edu.
-1. **Make the Dot** — Give it the Team Lead's instructions and only the apps it needs.
-1. **Set Custom Rules** — Block sending, deleting and posting; require approval for anything account-affecting.
-1. **Give it one job** — Copy and paste the prompt. Watch the work in Activity View.
-1. **Build a workspace agent** — Agents in the sidebar → describe the Growth Analyst's weekly report → add apps → choose a trigger.
+1. **New session** — In Codex start a new thread in horizon-studio and name it "Lab 15". Run all of this lab's prompts in it.
+1. **Part 1: the debate** — Copy and paste Prompt A. The advocate and the critic each make their case; the Lead passes each case to the other for a rebuttal.
+1. **Decide** — Read the decision. Reply "go", "go with conditions" or "no-go" — the call is yours.
+1. **Part 2: the QA loop** — After you have made the call, copy and paste Prompt B. The audit fails on round 1; watch the Lead pass the fixes back to the writer.
+1. **Approve as a person** — Read the pieces and the QA report, then in your own terminal: node scripts/approve.mjs <id> --by "Your Name".
+1. **Compare** — After you have approved the pieces, copy and paste Prompt C. How many fixes did the Lead have to relay?
 
-**PROMPT — the Dot**
+**PROMPT A — Codex: the strategy debate**
 
-> You are Horizon Wealth Planning's Marketing Team Lead. Every Monday, summarise the week's calendar from the Horizon Studio Drive folder, list anything due for review, and draft — never send — a short brief to me. Ask before any action outside reading and drafting.
+> Test the strategy in data/turning-55-brief.md before we spend on it. You are the Lead and the judge: do not argue. Use two subagents in parallel:
+> - advocate, following agents/growth-strategist.md:
+>   argue FOR the strategy.
+> - critic, following agents/growth-analyst.md: argue AGAINST it.
+> - Both: cite data/campaign-results.csv, strategy/personas.md, data/facts-2026.md or data/compliance-checklist.md for every point. Then give each one the other's case and ask for a rebuttal — two rounds at most. Write strategy/turning-55-decision.md with the pros, the cons, your verdict (go / go with conditions / no-go) and the conditions. Show me the verdict first, the pros and cons side by side, the debate round by round, and what I do next. Then wait for my decision. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
+
+**PROMPT B — Codex: the QA loop**
+
+> Run Part 2 of data/turning-55-brief.md, using my decision. Use subagents, each following its card:
+> - writer (content-creator): rewrite data/turning-55-draft.md into content/turning-55/email.md and content/turning-55/video-script.md.
+> - qa-auditor: audit each piece with fact-check and fin-compliance; write review/turning-55-qa.md, one section per round, PASS or FAIL per check, with the lines to fix.
+> - On FAIL, give the auditor's lines to the writer unchanged and audit again. Three rounds at most, then ask me.
+> - designer (creative-designer): once a piece passes, make one thumbnail with $imagegen and alt text, from its headline.
+> - You, the Lead: never write or fix content. When everything passes, run node scripts/submit.mjs on each piece. Publish nothing. Show me the QA report: one row per round, PASS or FAIL per check. Write for a business owner, in plain English: no codes, IDs, file names or line numbers; start with what it means and what I do next. Save a Word copy (.docx) of each result.
+
+**PROMPT C — Codex: compare**
+
+> Count how many fixes you relayed from the qa-auditor to the writer, and how many rounds each piece needed. In three lines: what would change if the writer and the auditor could message each other directly?
+
+**Ask about the result**
+
+Once a result opens, type any of these in the chat to get its meaning. Ask until it makes sense to you — then decide.
+
+- "Summarise the debate: the best point for, the best point against, and your verdict."
+- "What failed in the first QA round, in plain English?"
+- "How many rounds did each piece need, and why?"
 
 **Check your work**
 
-- ☐  The Dot has the Lead's instructions and only the apps it needs.
-- ☐  Custom Rules block sending and posting.
-- ☐  Activity View shows what it did.
-- ☐  The workspace agent has apps and a weekly trigger.
+- ☐  The advocate and the critic each answered the other's case; every point cites a file.
+- ☐  The decision has pros, cons, a verdict — and you made the call.
+- ☐  Round 1 of the QA report FAILED: the FRS figure, CPF LIFE "from 55", the promised payout, the advice and the missing disclaimer.
+- ☐  The Lead passed the fixes to the writer; a later round PASSED.
+- ☐  You approved in your own terminal; the rows show your name and a hash.
+- ☐  You know how many fixes the Lead relayed.
 
 **If it goes wrong**
 
-- **No Dot option** — Dots need Pro or Business Premium; watch the trainer demo.
+- **The Lead fixed the draft itself** — Remind it: "You never write or fix content — pass the lines to the writer."
+- **The loop never ends** — Remind the Lead: three rounds at most, then escalate to me.
+- **Only one subagent ran** — Ask for "subagents, one per role" and name each one.
 
 **Stretch**
 
-- @mention the Dot in a ChatGPT Space page about the campaign.
+- Add a third debater, a pre-retiree persona, who argues from the customer's side.
+- Optional, on Pro or Business Premium: ask the trainer to show a Dot as an always-on Team Lead with Custom Rules that block sending (data/dot-and-workspace-agents.md).
 
-Why it matters: Optional, not assessed. Always-on agents make the human gate more important, not less.
+Why it matters: Use subagents when only the result matters. When the agents must talk — to argue, or to send work back — the Lead becomes the messenger, and every message costs a turn.
 
 ## Course Summary
 

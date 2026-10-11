@@ -3,7 +3,7 @@
 > **USE: CHATGPT, THEN CODEX** — start in ChatGPT; the step that moves you to Codex says so
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 1 · Topic 1 · about 45 minutes · slides 57–61**\
+**Day 1 · Topic 1 · about 45 minutes · slides 60–64**\
 **Surface:** ChatGPT plugins → Codex\
 **Features:** @Google Drive · @Gmail (drafts) · @Computer Use · $imagegen · @Sites · least privilege per agent
 

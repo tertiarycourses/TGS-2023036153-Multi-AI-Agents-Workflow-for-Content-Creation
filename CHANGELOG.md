@@ -1,5 +1,13 @@
 # Changelog
 
+## v3.7 · 11 October 2026
+- Final clean-up: no catch-up prompts. Every lab file ships in horizon-studio/ from Lab 1, so Lab 10 no longer starts with "Get the latest kit" (its prompts are now A and B in both editions), Lab 13 drops its Drive upload (Lab 4 already uploads data/, campaign-results.csv included) and Lab 15 drops its download fix. The ChatGPT studio now ships the publisher kit in scripts/ and the Turning 55 files in data/.
+- Lab 1 (Claude Edition): the charter prompt now writes the rules the kit prompt used to add — approve by typing "approved <id> by <name>" in the chat; never ask the person to run a command.
+- ChatGPT deck aligned to the Claude deck: five overview slides (the OpenAI suite, What is ChatGPT, What is Codex, Dots and workspace agents, plans), "Which pattern when?" in Topic 3, and Lab 15 is now hands-on — "Subagents at Work: A Strategy Debate and a QA Loop" with Codex subagents and a relaying Lead, 30 min, same timings as the Claude Edition. The Dot demo moved to an overview slide and a stretch task. Old Lab 15 folder moved to archive/labs-v3.6-removed.
+- PP (both editions): each task's screenshot box now asks for that task's own result (Tasks 1-3 had pointed at Lab 8, 10 and 11 screenshots). Questions and K/A coverage unchanged.
+- New Facilitator Guide v2.0 and Assessment Plan v2.0 (Claude Edition, wsq-fg-ap): lesson plan generated from the LP schedule, CP K&A and durations, annexes with the v3.7 papers, answer keys and a C/NYC rubric.
+- v3.6 outputs moved to archive/courseware-v3.6 and archive/assessment-v3.6; build sources to archive/build-v3.6.
+
 ## v3.6 · 11 October 2026
 - Lab 10 (Claude Edition): Prompt A — the team writes both posts, the designer makes both images (LinkedIn 1200 x 627, Facebook 1080 x 1080), the Lead checks, you approve; Prompt B — a "ready to post" artifact, and the learner posts the text and image by hand. Posting through the API is an optional last step. Lab steps over eight split across two slides.
 - Claude Edition: Claude puts the data on Google Drive through the connector — Lab 4 "Create a Google Drive folder named Horizon Studio and upload every file in data/ to it as plain files", Lab 13 uploads campaign-results.csv (verified 11 Oct 2026: folder created, CSV uploaded unconverted and read back). Manual upload stays as the fallback in If it goes wrong; the ChatGPT Edition keeps the manual upload.

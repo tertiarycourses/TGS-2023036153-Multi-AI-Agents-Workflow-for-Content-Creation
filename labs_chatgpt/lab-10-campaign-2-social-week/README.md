@@ -3,7 +3,7 @@
 > **USE: CODEX** — Codex, in your horizon-studio folder
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 2 · Topic 3 · about 40 minutes · slides 111–117**\
+**Day 2 · Topic 3 · about 40 minutes · slides 115–120**\
 **Surface:** Codex (subagents) → LinkedIn, Facebook\
 **Features:** the publisher kit · creator and designer subagents in parallel · the Lead's review · human approval → post
 
@@ -39,34 +39,17 @@ two posts with images, reviewed, approved by you and posted (or dry-run) — wit
 ## Step by step
 
 1. **New session** — In Codex start a new thread in horizon-studio and name it "Lab 10". Run all of this lab's prompts in it.
-2. **Get the latest kit** — Copy and paste Prompt A. Then ask Codex to add a hook that blocks any command running approve.mjs, and trust it.
+2. **Switch on the gate** — The publisher kit is in your scripts/ folder since Lab 1. Ask Codex: "Add a hook that blocks any command running scripts/approve.mjs." Then trust it.
 3. **Test the gate** — Ask Codex to approve anything. approve.mjs refuses without a person at a terminal.
-4. **Run the team** — After Codex says the kit is up to date, copy and paste Prompt B. Watch the Subagents panel: Active, then Done.
+4. **Run the team** — Copy and paste Prompt A. Watch the Subagents panel: Active, then Done.
 5. **Read the review** — The Lead's fact-check and fin-compliance table — at least one fix.
 6. **Approve as a person** — In your own terminal: node scripts/approve.mjs <id> --by "Your Name".
-7. **Publish** — After you have approved the posts, copy and paste Prompt C. A dry run only: it shows what would be sent.
+7. **Publish** — After you have approved the posts, copy and paste Prompt B. A dry run only: it shows what would be sent.
 8. **Optional: post through the apps** — Follow "Optional: post through LinkedIn and Facebook" in this lab's README.
 
 ## The prompts
 
-### PROMPT A — Codex: get the latest kit
-
-> Bring this studio up to date with the course kit.
-> From https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/horizon-studio/
-> download scripts/serve-site.mjs and
-> data/publishing-spec.md, channel-formats.md,
-> connect-accounts.md and env.example into the same
-> places here. From
-> https://raw.githubusercontent.com/tertiarycourses/TGS-2023036153-Multi-AI-Agents-Workflow-for-Content-Creation/main/labs_chatgpt/lab-10-campaign-2-social-week/assets/publisher-kit/scripts/
-> download approve.mjs, gate-hook.mjs, lib.mjs,
-> publish.mjs and submit.mjs into scripts/. Replace
-> old copies; touch nothing else.
-> Then add this rule to AGENTS.md if it is missing:
-> every post links to http://localhost:8080/ with UTM tags.
-> Then start my website and tell me in one line that
-> the kit is up to date.
-
-### PROMPT B — Codex: the social team
+### PROMPT A — Codex: the social team
 
 > You are the Lead. Plan Week 1 social from
 > data/social-brief.md and strategy/calendar.csv.
@@ -89,7 +72,7 @@ two posts with images, reviewed, approved by you and posted (or dry-run) — wit
 > what it means and what I do next. Save a Word copy
 > (.docx) of each result.
 
-### PROMPT C — Codex: publish
+### PROMPT B — Codex: publish
 
 > For every Week 1 post approved in
 > review/approvals.csv, run node scripts/publish.mjs

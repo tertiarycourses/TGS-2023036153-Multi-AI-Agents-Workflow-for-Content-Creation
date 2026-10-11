@@ -3,7 +3,7 @@
 > **USE: CHATGPT WORK** — ChatGPT Work
 
 **Course:** Multi AI Agents Workflow for Content Creation (ChatGPT Edition) (TGS-2023036153)\
-**Day 2 · Topic 4 · about 35 minutes · slides 137–141**\
+**Day 2 · Topic 4 · about 35 minutes · slides 140–144**\
 **Surface:** ChatGPT Work (skill, scheduled task, @Drive, @Gmail)\
 **Features:** the Growth Analyst's campaign-report skill · do · verify · schedule · draft-only delivery
 
@@ -34,12 +34,11 @@ a scheduled task that drafts the weekly growth report every Monday at 8am, and o
 ## Step by step
 
 1. **New session** — Start a new ChatGPT Work chat and name it "Lab 13". Run all of this lab's prompts in it.
-2. **Put the data on Drive** — Upload campaign-results.csv to the Horizon Studio folder.
-3. **Bring the skill** — Use @skill-creator to add campaign-report to ChatGPT.
-4. **Do it once** — Copy and paste Prompt A. Refine the report until it is right.
-5. **Schedule it** — After the report is right, copy and paste Prompt B. Runs appear in Scheduled.
-6. **Run it now** — Run the task once and open the Gmail draft.
-7. **Pause it** — After class, pause the scheduled task.
+2. **Bring the skill** — Use @skill-creator to add campaign-report to ChatGPT.
+3. **Do it once** — Copy and paste Prompt A. Refine the report until it is right.
+4. **Schedule it** — After the report is right, copy and paste Prompt B. Runs appear in Scheduled.
+5. **Run it now** — Run the task once and open the Gmail draft.
+6. **Pause it** — After class, pause the scheduled task.
 
 ## The prompts
 
@@ -78,6 +77,7 @@ Once a result opens, type any of these in the chat to get its meaning. Ask until
 ## If it goes wrong
 
 - **It sent the email** — Write "draft only — never send" in both the skill and the task instructions.
+- **campaign-results.csv is not on Drive** — It went to the Horizon Studio folder in Lab 4. Open drive.google.com, open Horizon Studio → New → File upload, and choose it from your data/ folder.
 
 ## Stretch
 
